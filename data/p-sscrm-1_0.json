@@ -1,0 +1,86 @@
+{
+  "groups": [
+    {
+      "description": "Tasks that focus on the organization, measurement of a secure software supply chain, decision-making policies, accountability to third-party obligations, and compliance with legal and regulatory requirements.",
+      "id": "G",
+      "name": "Governance",
+      "practices": [
+        {
+          "description": "Compliance is following established guidelines or specifications, possibly demonstrated through an audit.",
+          "id": "G.1",
+          "name": "Perform compliance",
+          "tasks": [
+            {
+              "definition": "Identify, document, communicate, and maintain security requirements and policies for the organization\u0027s software development infrastructure and secure SDLC. Maintain the requirements and policies over time. Incorporate constraints imposed by standards and regulations and customer-driven security requirements.",
+              "id": "G.1.1",
+              "name": "Organizational security requirements",
+              "objective": "Organizational security requirements, such as those imposed by standards and regulations, are included in the SDLC.",
+              "questions": [
+                "Do you have a defined secure SDLC that the engineers are aware of?",
+                "How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?",
+                "How are these requirements and contributions maintained over time?",
+                "How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(ix)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.1.1"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "CP1.1",
+                    "CP1.2",
+                    "CP1.3",
+                    "SR1.1",
+                    "SR2.2",
+                    "SR3.3"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-15"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "C: Establish and adhere to contribution policies"
+                  ],
+                  "source": "CNCF SSC"
+                },
+                {
+                  "sections": [
+                    "2"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "800-161": "NIST Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations (800-161r1) - only the subset of tasks specifically identified in this document as mapping back to the Executive Order",
+    "BSIMM": "Building Security In Maturity Model Version 13",
+    "CNCF SSC": "Cloud Native Computing Foundation – Software Supply Chain Best Practices",
+    "EO": "Executive Order 14028 (EO)",
+    "OSSF Scorecard": "OpenSSF Scorecard metrics",
+    "OWASP SCVS": "Open Web Application Security Project Software Component Verification Standard Version 1.0",
+    "S2C2F": "OpenSSF Secure Supply Chain Consumption Framework",
+    "SLSA": "Supply-chain Levels for Software Artifacts v1.0",
+    "SSDF": "NIST Secure Software Development Framework version 1.1 (800-218)",
+    "Self-attestation": "DHS/CISA Secure Software Self-Attestation Common Form"
+  },
+  "version": "1.0"
+}
