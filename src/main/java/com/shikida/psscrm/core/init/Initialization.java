@@ -1,31 +1,20 @@
 package com.shikida.psscrm.core.init;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.shikida.psscrm.core.model.Group;
 import com.shikida.psscrm.core.model.Model;
 import com.shikida.psscrm.core.model.Practice;
 import com.shikida.psscrm.core.model.Task;
+import com.shikida.psscrm.core.persistence.PersistenceUtil;
 
 public class Initialization {
 
 	public static void main(String[] args) throws IOException {
 		
-		File dir = new File("data");
-		File file = new File(dir,"p-sscrm-1_0.json");
-		
 		Model model = populate_1_0();
+		PersistenceUtil.save(model, "p-sscrm-1_0.json");
 		
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		
-		FileWriter fw = new FileWriter(file);
-		gson.toJson(model, fw);
-		fw.flush();
-		fw.close();
 	}
 	
 	public static Model populate_1_0() {
