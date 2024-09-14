@@ -1,5 +1,10 @@
 # p-sscrm-core
-Java Library that encodes de P-SSCRM core entities, by Leonardo Shikida (shikida at gmail.com)
+Java Library that 
+
+1. encodes de P-SSCRM core entities, 
+1. that renders P-SSCRM into artifacts such as Word, HTML and Excel spreadsheets
+
+by Leonardo Shikida (shikida at gmail.com)
 
 This library is based on the work by Laurie Williams (laurie_williams at ncsu.edu), Sammy Migues (sammy.migues at gmail.com), Jamie Boote (arthur.boote at synopsys.com) and Ben Hutchison (ben.hutchison at synopsys.com)
 
