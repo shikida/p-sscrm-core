@@ -1,4 +1,4 @@
-package model;
+package com.shikida.model;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

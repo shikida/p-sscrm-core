@@ -1,4 +1,4 @@
-package init;
+package com.shikida.init;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,11 +6,10 @@ import java.io.IOException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import model.Group;
-import model.Model;
-import model.Practice;
-import model.Task;
+import com.shikida.model.Group;
+import com.shikida.model.Model;
+import com.shikida.model.Practice;
+import com.shikida.model.Task;
 
 public class Initialization {
 
