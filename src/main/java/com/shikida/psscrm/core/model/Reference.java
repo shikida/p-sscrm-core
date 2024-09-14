@@ -1,4 +1,4 @@
-package com.shikida.model;
+package com.shikida.psscrm.core.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;

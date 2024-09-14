@@ -1,4 +1,4 @@
-package com.shikida.init;
+package com.shikida.psscrm.core.init;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,10 +6,10 @@ import java.io.IOException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.shikida.model.Group;
-import com.shikida.model.Model;
-import com.shikida.model.Practice;
-import com.shikida.model.Task;
+import com.shikida.psscrm.core.model.Group;
+import com.shikida.psscrm.core.model.Model;
+import com.shikida.psscrm.core.model.Practice;
+import com.shikida.psscrm.core.model.Task;
 
 public class Initialization {
 
