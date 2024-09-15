@@ -24,8 +24,8 @@ public class Task {
 		this.definition = definition;
 	}
 
-	public void addReference(String source, String... sections) {
-		this.references.add(new Reference(source, sections));
+	public void addReference(SourceEnumV1_0 source, String... sections) {
+		this.references.add(new Reference(source.getPrefix(), sections));
 	}
 
 	public void addQuestion(String question) {

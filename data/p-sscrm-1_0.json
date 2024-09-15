@@ -64,6 +64,838 @@
                   "source": "Self-attestation"
                 }
               ]
+            },
+            {
+              "definition": "Software licenses may or may not allow certain types of usage, contain distribution requirements or limitations, or require specific action if the software is modified. Risk is increased if the licenses of components conflict with an organization\u0027s policies. Software licenses should be documented and tracked to trace the users and use of licenses to access control information and processes according to software usage restrictions. License metadata should be recorded during the build and made available in the SBOM.",
+              "id": "G.1.2",
+              "name": "Software license conflict",
+              "objective": "Software licenses that conflict with the organization\u0027s policies are identified.",
+              "questions": [
+                "How do you scan check that the software licenses for tools or third party components comply with your organization\u0027s use policies?",
+                "Is the process automated?",
+                "Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "CM-10"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "5.12"
+                  ],
+                  "source": "OWASP SCVS"
+                },
+                {
+                  "sections": [
+                    "SCA-2"
+                  ],
+                  "source": "S2C2F"
+                },
+                {
+                  "sections": [
+                    "AU: Scan software for license implications"
+                  ],
+                  "source": "CNCF SSC"
+                }
+              ]
+            },
+            {
+              "definition": "Configure tools to generate artifacts to create an audit trail of the use of secure software development practices that conforms with record retention requirements and preserves the integrity of the findings and the confidentiality of the information. Assign responsibility for creating artifacts that tools cannot generate. Attestation should be immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log.",
+              "id": "G.1.3",
+              "name": "Produce attestation",
+              "objective": "Produce evidence of the use of secure software development practices.",
+              "questions": [
+                "Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?",
+                "Where are the artifacts stored?",
+                "What are your auditability/retention requirements for these artifacts?",
+                "Is responsibility assigned for creating needed artifacts that tools cannot generate?",
+                "Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?",
+                "Do you need to provide self-attestation for your product?",
+                "Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(i)(F)",
+                    "4e(ii)",
+                    "4e(v)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.3.3"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SM1.4",
+                    "SR1.3"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-15",
+                    "AU-2",
+                    "AU-3",
+                    "AU-12"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "Distributing attestation"
+                  ],
+                  "source": "SLSA"
+                },
+                {
+                  "sections": [
+                    "1f"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            },
+            {
+              "definition": "Automatically collect and provide provenance data for generated products. For provenance data, including how the artifact was built, including: what entity built the package, what build process they used, and the top-level inputs to the build, such that the data\u0027s authenticity and integrity can be verified and is generated automatically from the build service using a convention common in the package ecosystem.",
+              "id": "G.1.4",
+              "name": "Deliver provenance",
+              "objective": "By providing provenance data, enable customers to analyze the integrity and verifiability of the actions performed while writing code, compiling, testing, and deploying software by making transparent the steps that were performed, by whom and in what order.",
+              "questions": [
+                "Can you tell me more about your provenance data generation process?",
+                "What authentications take place relative to the production of provenance data?",
+                "Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?",
+                "Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?",
+                "Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(vi)",
+                    "4e(vii)",
+                    "4e(x)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PS.3.2"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "Build L1: Provenance exists"
+                  ],
+                  "source": "SLSA"
+                },
+                {
+                  "sections": [
+                    "SR-4"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "6"
+                  ],
+                  "source": "OWASP SCVS"
+                },
+                {
+                  "sections": [
+                    "V: Ensure clients can perform verification of artifacts and associated metadata"
+                  ],
+                  "source": "CNCF SSC"
+                },
+                {
+                  "sections": [
+                    "3"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            },
+            {
+              "definition": "Generate (preferably during build time) and provide a SBOM (in a machine-readable, NTIA-supported format) for generated products. SBOMs should be digitally signed using a verifiable and trusted key. VEX data for all components should also be considered.",
+              "id": "G.1.5",
+              "name": "Deliver SBOM",
+              "objective": "By providing SBOM, enable customers to analyze the contents of the final software package, including the version of the dependencies.",
+              "questions": [
+                "Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?",
+                "How and when is the SBOM built?",
+                "What tool do you use?",
+                "Do you digitally sign the SBOMs?",
+                "Do you produce a VEX supplement for your SBOM?",
+                "What is your process for generating the VEX information?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(vi)",
+                    "4e(vii)",
+                    "4e(x)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PS.3.2"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SE3.6"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SR-4"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "1.4",
+                    "6"
+                  ],
+                  "source": "OWASP SCVS"
+                },
+                {
+                  "sections": [
+                    "REB-3",
+                    "REB-4"
+                  ],
+                  "source": "S2C2F"
+                },
+                {
+                  "sections": [
+                    "SM: Generate immutable SBOM of code"
+                  ],
+                  "source": "CNCF SSC"
+                },
+                {
+                  "sections": [
+                    "3"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Establishing organizational roles and tasks for driving internal security standards in alignment with the business purpose of the organization.",
+          "id": "G.2",
+          "name": "Develop security policies",
+          "tasks": [
+            {
+              "definition": "An upper management (e.g., c-suite) leadership team understands the business risk of insecure software development violating compliance and privacy obligations. The team is responsible for the entire software development process and deploying secure software to production. The commitment of this team is communicated to personnel associated with development-related roles and is backed up by the commitment to allocating adequate resources and making sometimes-difficult business decisions for security over faster release dates.",
+              "id": "G.2.1",
+              "name": "Upper management support",
+              "objective": "Upper management understands the business risks of insecure software and supports the resources necessary for secure software development.",
+              "questions": [
+                "Can you share about upper management\u0027s commitment to secure software development?",
+                "In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?",
+                "Comment on the adequacy of resources dedicated to secure software development."
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(ix)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.2.3"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SM1.3",
+                    "CP2.5"
+                  ],
+                  "source": "BSIMM"
+                }
+              ]
+            },
+            {
+              "definition": "Define criteria for a secure SDLC and associated software security checks that indicate how effectively software resulting from the SDLC meets the organization\u0027s expectations. These checks include key performance indicators (KPI), vulnerability severity scores, and security checks included in the \u0027definition of done\u0027 in an agile process and may be used for go/no-go decisions. The use of automated tools aids thoroughness, objectivity, and efficiency of these checks.",
+              "id": "G.2.2",
+              "name": "Secure SDLC checks",
+              "objective": "Criteria throughout the SDLC are used to check the software\u0027s security during development.",
+              "questions": [
+                "What kind of criteria for security checks has been established, such as for security testing results?",
+                "How can these checks indicate if security practices are being used and secure software is being developed?",
+                "How are these checks tracked through the SDLC?",
+                "Are the checks automated or manual?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(iv)",
+                    "4e(v)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.4.1"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SM1.4",
+                    "SM3.3"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-15"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "4"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            },
+            {
+              "definition": "Throughout the organization, create new roles and alter responsibilities for existing roles to incorporate security tasks and practices, as appropriate, into the SDLC and to keep management educated and informed on security issues. These roles can be centralized for the organization to promote thought leadership among developers and architects; and distributed throughout the organization in a network of security advocates.",
+              "id": "G.2.3",
+              "name": "Roles and responsibilities",
+              "objective": "Ownership for security tasks throughout the SDLC at the organizational level and at the product team- and operational- level are established and visible.",
+              "questions": [
+                "What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(ix)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.2.1"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SM2.3",
+                    "SM2.7",
+                    "CR1.7"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-3"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "The policies for whether security-focused code review (a person looks directly at the code to find issues) and security-focused code analysis (tools are used to find issues in code, either in a fully automated way or in conjunction with a person) should be conducted based upon the characteristics/criticality of the software and its stage of development. Policies are established for both code developed in-house and third-party code.",
+              "id": "G.2.4",
+              "name": "Security code review policy",
+              "objective": "Guidelines on which code should undergo a security-focused manual or automated review are communicated.",
+              "questions": [
+                "What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?",
+                "How are these guidelines communicated and enforced?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(iv)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PW.7.1"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "CR1.4",
+                    "CR1.5"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-11"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "2",
+                    "4"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            },
+            {
+              "definition": "Maintain a system component inventory, including hardware, software licenses, software versions, direct and transitive component owners, containers, machine names, and network addresses. Maintain an operations software inventory, including a map of source code; open source incorporated during the build and dynamic production; software deployments and related containerization, orchestration, and deployment automation code with respective owners. Unique identifiers for the inventoried assets should be established. Suppliers should also produce an asset inventory. Particular attention should be placed when a product or system is retired.",
+              "id": "G.2.5",
+              "name": "Asset inventory",
+              "objective": "Hardware and software assets are inventoried to enable incidence response; system analysis; traceability for critical components; and reliable identification when assets need to be changed or decommissioned.",
+              "questions": [
+                "How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?",
+                "Is the components inventory process automated or manual?",
+                "Are the artifacts machine-readable (such as through SBOM generation)?",
+                "What process is used for the asset inventory to be updated when a product or system goes to end-of-life?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "CMVM2.3",
+                    "SM3.1"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "CM-8",
+                    "IA-4",
+                    "PM-5"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "1"
+                  ],
+                  "source": "OWASP SCVS"
+                },
+                {
+                  "sections": [
+                    "INV-1"
+                  ],
+                  "source": "S2C2F"
+                },
+                {
+                  "sections": [
+                    "SM"
+                  ],
+                  "source": "CNCF SSC"
+                }
+              ]
+            },
+            {
+              "definition": "Data protection at rest aims to secure the confidentiality and integrity of data stored on any storage device or network. Mechanisms to achieve confidentiality and integrity protections include using encryption and file share scanning. Provisions for protecting information at rest should be included in agreements with suppliers, developers, system integrators, external system providers, and other service providers.",
+              "id": "G.2.6",
+              "name": "Protection of information at rest",
+              "objective": "Protect the confidentiality and integrity of information at rest.",
+              "questions": [
+                "What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?",
+                "What policies are set in place for the use of cryptography in the organization’s security policy?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "SC-28"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Tasks to require that third-party suppliers employ adequate security measures to protect information, applications, and services provided to the organization.",
+          "id": "G.3",
+          "name": "Manage suppliers",
+          "tasks": [
+            {
+              "definition": "Compliance requirements, security requirements, and secure SDLC practices are included in vendor contracts with specified means of adherence enforcement. Examples include supplying an SBOM, self-attestation of security practices and provenance information; having a vulnerability disclosure program and incident response plan; and a security training program. The vendors include component, cloud, middleware providers, container and orchestration providers, and contractors.",
+              "id": "G.3.1",
+              "name": "Security-related contract terms",
+              "objective": "Component, system, and service acquisition policies include the inclusion of adherence to security policies, security requirements, and secure SDLC practices that are compatible with compliance requirements.",
+              "questions": [
+                "What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?",
+                "Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?",
+                "How is adherence to contract terms verified?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(vi)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.1.3"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "ING-1"
+                  ],
+                  "source": "S2C2F"
+                },
+                {
+                  "sections": [
+                    "CP2.4",
+                    "CP3.2",
+                    "SR2.5",
+                    "SR3.2"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-1",
+                    "SA-4",
+                    "SA-9",
+                    "SR-3",
+                    "SR-4",
+                    "SR-5",
+                    "SR-6"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "3"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            },
+            {
+              "definition": "Ensure that appropriate separation of duties is established for decisions that require the acquisition and administration of information systems and the acquisition of components entering the supply chain. Separation of duties can be used to deny contracted developers the privilege to promote code they wrote from development to the production environment. Separation of duties can prevent collusion, for example, by ensuring personnel administering access control functions do not also administer acquisition.",
+              "id": "G.3.2",
+              "name": "Separation of duties",
+              "objective": "Reduce the potential for abuse of authorized privileges and the chance of collusion when acquiring components, systems, and services.",
+              "questions": [
+                "How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise\u0027s supply chain or contracted developers promoting code from development to production?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "AC-5"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "Unauthorized disclosure of information is a form of data leakage. Monitoring should be in place for contractor systems to detect the unauthorized disclosure of any data, and contract language should include a requirement that vendors notify of unauthorized disclosure of information.",
+              "id": "G.3.3",
+              "name": "Information disclosure",
+              "objective": "Contract language requires that a vendor monitors for information disclosure and notifies the enterprise of information disclosure.",
+              "questions": [
+                "What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?",
+                "What kind of contract language is in place to require that vendors notify of unauthorized disclosure?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "AU-13"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "Include contract employees and prime contractors in session audits to identify security risks in the supply chain. Session audits can include monitoring keystrokes, tracking websites visited, and recording information or file transfers and may involve implementing specialized session capture technology. As such, the privacy risks of session audits should be considered, and session audits may only be activated under certain circumstances, e.g., the organization is suspicious of a specific individual.",
+              "id": "G.3.4",
+              "name": "Session audits",
+              "objective": "Identify security risks in the supply chain.",
+              "questions": [
+                "Under what circumstances are contract employees included in audits to identify security risks in the supply chain?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "AU-14"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "Require suppliers to establish agreements and procedures for notification and monitoring capabilities, including notification of being the target of a supply chain threat. Timely notification of compromises and potential compromises in the supply chain is essential for an organization to initiate an incident response. Establish a minimum amount of time a vendor must declare that a product will be declared end-of-life and will no longer be supported and understand what end-of-life options exist (e.g. replace, upgrade, migrate to a new system, etc.).",
+              "id": "G.3.5",
+              "name": "Notification agreement",
+              "objective": "Timely notification of security threat and product end-of-life",
+              "questions": [
+                "What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?",
+                "How much notification does a vendor provide when a product goes end-of-life?",
+                "What end-of-life options exist?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "SR-8"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Educating all personnel in role-specific information about the secure software development, including awareness, technical skills, and emergency response.",
+          "id": "G.4",
+          "name": "Training",
+          "tasks": [
+            {
+              "definition": "Provide literacy and role-based training on software security and secure software supply chain. This training should include information about the firm\u0027s security culture, the secure software development lifecycle, containerization and security orchestration, common security mistakes, technology such as CI/CD and DevSecOps, and recognizing insider threat. Require this training as part of onboarding and periodically.",
+              "id": "G.4.1",
+              "name": "Role-based training",
+              "objective": "Provide security training for all personnel involved in software development",
+              "questions": [
+                "Can you tell me about the training given to employees and to vendors related to software supply chain security?",
+                "Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?",
+                "Is the training specific to their roles, development tools, and language?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(vi)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.2.2"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "T1.1",
+                    "T1.7",
+                    "T1.8",
+                    "T2.5",
+                    "T2.8",
+                    "T2.9",
+                    "T3.1",
+                    "T3.2"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "AT-2",
+                    "AT-3",
+                    "SA-16"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "Conduct contingency training to prepare for emergency response, backup operations, and post-disaster recovery to ensure the availability of critical information resources in emergencies. Critical suppliers should also be included in the training.",
+              "id": "G.4.2",
+              "name": "Contingency training",
+              "objective": "Provide training on procedures in the event of a security emergency.",
+              "questions": [
+                "Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "T1.1"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "CP-3",
+                    "IR-2"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "Have a process for continuously learning about emerging attack trends and vulnerabilities. Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software and third-party components that the software uses, and investigate all credible reports. Use a subscription to a cyber threat intelligence feed, attend technical conferences, monitor attacker forums, and study trends within the enterprise. Make this information on attack trends actionable and useful for developers, testers, security operations, and others to identify vulnerabilities in existing products, perform improved threat modeling and security architecture, and evolve the SDLC.",
+              "id": "G.4.3",
+              "name": "Gather attack trends",
+              "objective": "Stay current on attack trends.",
+              "questions": [
+                "How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(vi)",
+                    "4e(vii)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "RV.1.1"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "AM1.5",
+                    "CMVM1.2"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SI-4",
+                    "SI-5"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "2"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Proactively analyzing, mitigating, and managing software supply chain risk and achieving the objectives of a software security program.",
+          "id": "G.5",
+          "name": "Assess and manage risk",
+          "tasks": [
+            {
+              "definition": "Perform a criticality analysis of system components, functions, or services to assign cybersecurity supply chain risk management activities commensurate with the analysis based upon the likelihood and impact of an attack. Not all system components, functions, or services necessarily require significant protection. Items to consider in the analysis include system assets/data involved in the product, applicable laws, regulations, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. The criticality analysis impacts the procedures contractually imposed on vendors.",
+              "id": "G.5.1",
+              "name": "Criticality analysis",
+              "objective": "Identify critical system components and functions by performing a criticality analysis.",
+              "questions": [
+                "What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "AA1.4"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "RA-9"
+                  ],
+                  "source": "800-161"
+                }
+              ]
+            },
+            {
+              "definition": "Record when a design tradeoff, vulnerability decision/exception, or component choice has been made that incurs security risk and a mitigation plan to reduce that risk including with vendors. Periodically re-evaluate these exceptions and mitigation plans, potentially including a review board that can provide security guidance in design guidance, patterns, standards, features, and frameworks.",
+              "id": "G.5.2",
+              "name": "Track security risks and decisions",
+              "objective": "Record and track the software’s security risk-based exceptions and mitigation plans.",
+              "questions": [
+                "How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved? How are approved exceptions to the security requirements periodically evaluated?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(v)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PW.1.2"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SFD3.1",
+                    "SM3.5"
+                  ],
+                  "source": "BSIMM"
+                }
+              ]
+            },
+            {
+              "definition": "Identify and regularly review metrics to measure the effectiveness of the software security program, including establishing Key Performance Indicators (KPIs). The regular review can drive budgeting and resource allocations and measure performance against risk appetite and risk tolerance statements. Publish data/dashboards about the state of software security within the organization. Automate metrics collection via security telemetry, as possible, to gather measurements to enhance efficiency and objectivity.",
+              "id": "G.5.3",
+              "name": "Security metrics",
+              "objective": "Provide the basis for the measurement of an effective plan for tracking and realizing software security objectives within an organization.",
+              "questions": [
+                "What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)? Are these metrics collected automatically or manually?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "SM2.1",
+                    "SM3.3"
+                  ],
+                  "source": "BSIMM"
+                }
+              ]
+            },
+            {
+              "definition": "Implement processes and mechanisms, automated when possible, to gather and safeguard information in support of security decision-making at the product level. This information can be used to drive SDLC change at the product or organizational level and/or drive a security risk exception process.",
+              "id": "G.5.4",
+              "name": "Data-informed product decisions",
+              "objective": "Make security decisions on software release based upon criteria for checking the security of the software.",
+              "questions": [
+                "Do you use the toolchain to gather information that informs security decision-making automatically? If not, is this information collected and reviewed manually?"
+              ],
+              "references": [
+                {
+                  "sections": [
+                    "4e(iv)",
+                    "4e(v)"
+                  ],
+                  "source": "EO"
+                },
+                {
+                  "sections": [
+                    "PO.4.2"
+                  ],
+                  "source": "SSDF"
+                },
+                {
+                  "sections": [
+                    "SM1.4",
+                    "SM2.2"
+                  ],
+                  "source": "BSIMM"
+                },
+                {
+                  "sections": [
+                    "SA-15"
+                  ],
+                  "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "4"
+                  ],
+                  "source": "Self-attestation"
+                }
+              ]
             }
           ]
         }
