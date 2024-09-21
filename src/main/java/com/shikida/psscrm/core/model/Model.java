@@ -1,14 +1,14 @@
 package com.shikida.psscrm.core.model;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
 
 public class Model {
-	private Set<Group> groups = new TreeSet<>();
-	private Map<String, String> metadata = new TreeMap<>();
+	private Set<Group> groups = new LinkedHashSet<>();
+	private Map<String, String> metadata = new LinkedHashMap<>();
 	private String version;
 
 	public Model() {

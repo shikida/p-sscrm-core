@@ -1,15 +1,15 @@
 package com.shikida.psscrm.core.model;
 
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Group implements Comparable<Group> {
 
 	private String description;
 	private String id;
 	private String name;
-	private Set<Practice> practices = new TreeSet<>();
+	private Set<Practice> practices = new LinkedHashSet<>();
 
 	public Group() {
 		super();

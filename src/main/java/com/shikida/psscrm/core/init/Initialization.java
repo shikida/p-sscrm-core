@@ -132,7 +132,7 @@ public class Initialization {
 		Group e = populateGroup_E(e1,e2,e3);
 		Group d = populateGroup_D(d1,d2);
 
-		Model m = populateModel_1_0(g);
+		Model m = populateModel_1_0(g,p,e,d);
 		
 		return m;
 	}
