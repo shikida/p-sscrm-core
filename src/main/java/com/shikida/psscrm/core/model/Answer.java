@@ -1,23 +1,19 @@
 package com.shikida.psscrm.core.model;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-public class Question {
+public class Answer {
 	private String id;
 	private String text;
-	private Set<Answer> answers = new LinkedHashSet<>();
+	private double weight;
 	
-	public Question() {
-		super();
-	}
-
-	public Question(String id, String text) {
+	public Answer(String id, String text, double weight) {
 		super();
 		this.id = id;
 		this.text = text;
+		this.weight = weight;
 	}
-	
+	public Answer() {
+		super();
+	}
 	public String getId() {
 		return id;
 	}
@@ -30,13 +26,11 @@ public class Question {
 	public void setText(String text) {
 		this.text = text;
 	}
-
-	public Set<Answer> getAnswers() {
-		return answers;
+	public double getWeight() {
+		return weight;
 	}
-
-	public void setAnswers(Set<Answer> answers) {
-		this.answers = answers;
+	public void setWeight(double weight) {
+		this.weight = weight;
 	}
 	
 	

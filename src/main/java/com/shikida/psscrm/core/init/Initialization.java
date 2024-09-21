@@ -2,9 +2,11 @@ package com.shikida.psscrm.core.init;
 
 import java.io.IOException;
 
+import com.shikida.psscrm.core.model.Answer;
 import com.shikida.psscrm.core.model.Group;
 import com.shikida.psscrm.core.model.Model;
 import com.shikida.psscrm.core.model.Practice;
+import com.shikida.psscrm.core.model.Question;
 import com.shikida.psscrm.core.model.SourceEnumV1_0;
 import com.shikida.psscrm.core.model.Task;
 import com.shikida.psscrm.core.persistence.PersistenceUtil;
@@ -325,7 +327,9 @@ public class Initialization {
 				"Organizational security requirements, such as those imposed by standards and regulations, are included in the SDLC.",
 				"Identify, document, communicate, and maintain security requirements and policies for the organization's software development infrastructure and secure SDLC. Maintain the requirements and policies over time. Incorporate constraints imposed by standards and regulations and customer-driven security requirements.");
 		
-		t.addQuestion("G.1.1.1","Do you have a defined secure SDLC that the engineers are aware of?");
+		Question q1 = t.addQuestion("G.1.1.1","Do you have a defined secure SDLC that the engineers are aware of?");
+		q1.getAnswers().add(new Answer("G.1.1.1.1","Answer 1",0.75));
+		
 		t.addQuestion("G.1.1.2","How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?");  
 		t.addQuestion("G.1.1.3","How are these requirements and contributions maintained over time?");  
 		t.addQuestion("G.1.1.4","How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?");

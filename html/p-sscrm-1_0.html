@@ -4,23 +4,2951 @@
  </head>
  <body>
   <ul>
+   <li>800-161:NIST Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations (800-161r1) - only the subset of tasks specifically identified in this document as mapping back to the Executive Order</li>
+   <li>BSIMM:Building Security In Maturity Model Version 13</li>
+   <li>CNCF SSC:Cloud Native Computing Foundation – Software Supply Chain Best Practices</li>
+   <li>EO:Executive Order 14028 (EO)</li>
+   <li>OSSF Scorecard:OpenSSF Scorecard metrics</li>
+   <li>OWASP SCVS:Open Web Application Security Project Software Component Verification Standard Version 1.0</li>
+   <li>S2C2F:OpenSSF Secure Supply Chain Consumption Framework</li>
+   <li>SLSA:Supply-chain Levels for Software Artifacts v1.0</li>
+   <li>SSDF:NIST Secure Software Development Framework version 1.1 (800-218)</li>
+   <li>Self-attestation:DHS/CISA Secure Software Self-Attestation Common Form</li>
+  </ul>
+  <ul>
+   <li>G</li>
+   <li>Governance</li>
+   <li>Tasks that focus on the organization, measurement of a secure software supply chain, decision-making policies, accountability to third-party obligations, and compliance with legal and regulatory requirements.</li>
    <ul>
-    <li>800-161:NIST Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations (800-161r1) - only the subset of tasks specifically identified in this document as mapping back to the Executive Order</li>
-    <li>BSIMM:Building Security In Maturity Model Version 13</li>
-    <li>CNCF SSC:Cloud Native Computing Foundation – Software Supply Chain Best Practices</li>
-    <li>EO:Executive Order 14028 (EO)</li>
-    <li>OSSF Scorecard:OpenSSF Scorecard metrics</li>
-    <li>OWASP SCVS:Open Web Application Security Project Software Component Verification Standard Version 1.0</li>
-    <li>S2C2F:OpenSSF Secure Supply Chain Consumption Framework</li>
-    <li>SLSA:Supply-chain Levels for Software Artifacts v1.0</li>
-    <li>SSDF:NIST Secure Software Development Framework version 1.1 (800-218)</li>
-    <li>Self-attestation:DHS/CISA Secure Software Self-Attestation Common Form</li>
+    <li>G.1</li>
+    <li>Perform compliance</li>
+    <li>Compliance is following established guidelines or specifications, possibly demonstrated through an audit.</li>
+    <ul>
+     <li>G.1.1</li>
+     <li>Organizational security requirements</li>
+     <li>Identify, document, communicate, and maintain security requirements and policies for the organization's software development infrastructure and secure SDLC. Maintain the requirements and policies over time. Incorporate constraints imposed by standards and regulations and customer-driven security requirements.</li>
+     <ul>
+      <li>G.1.1.1</li>
+      <li>Do you have a defined secure SDLC that the engineers are aware of?</li>
+      <ul>
+       <li>G.1.1.1.1</li>
+       <li>Answer 1</li>
+       <li>0.75</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>G.1.1.2</li>
+      <li>How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?</li>
+     </ul>
+     <ul>
+      <li>G.1.1.3</li>
+      <li>How are these requirements and contributions maintained over time?</li>
+     </ul>
+     <ul>
+      <li>G.1.1.4</li>
+      <li>How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.1.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CP1.1</li>
+      </ul>
+      <ul>
+       <li>CP1.2</li>
+      </ul>
+      <ul>
+       <li>CP1.3</li>
+      </ul>
+      <ul>
+       <li>SR1.1</li>
+      </ul>
+      <ul>
+       <li>SR2.2</li>
+      </ul>
+      <ul>
+       <li>SR3.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>C: Establish and adhere to contribution policies</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>2</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.1.2</li>
+     <li>Software license conflict</li>
+     <li>Software licenses may or may not allow certain types of usage, contain distribution requirements or limitations, or require specific action if the software is modified. Risk is increased if the licenses of components conflict with an organization's policies. Software licenses should be documented and tracked to trace the users and use of licenses to access control information and processes according to software usage restrictions. License metadata should be recorded during the build and made available in the SBOM.</li>
+     <ul>
+      <li>G.1.2.1</li>
+      <li>How do you scan check that the software licenses for tools or third party components comply with your organization's use policies?</li>
+     </ul>
+     <ul>
+      <li>G.1.2.2</li>
+      <li>Is the process automated?</li>
+     </ul>
+     <ul>
+      <li>G.1.2.1</li>
+      <li>Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CM-10</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>5.12</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>SCA-2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>AU: Scan software for license implications</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.1.3</li>
+     <li>Produce attestation</li>
+     <li>Configure tools to generate artifacts to create an audit trail of the use of secure software development practices that conforms with record retention requirements and preserves the integrity of the findings and the confidentiality of the information. Assign responsibility for creating artifacts that tools cannot generate. Attestation should be immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log.</li>
+     <ul>
+      <li>G.1.3.1</li>
+      <li>Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?</li>
+     </ul>
+     <ul>
+      <li>G.1.3.2</li>
+      <li>Where are the artifacts stored?</li>
+     </ul>
+     <ul>
+      <li>G.1.3.3</li>
+      <li>What are your auditability/retention requirements for these artifacts?</li>
+     </ul>
+     <ul>
+      <li>G.1.3.4</li>
+      <li>Is responsibility assigned for creating needed artifacts that tools cannot generate?</li>
+     </ul>
+     <ul>
+      <li>G.1.3.5</li>
+      <li>Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?</li>
+     </ul>
+     <ul>
+      <li>G.1.3.6</li>
+      <li>Do you need to provide self-attestation for your product?</li>
+     </ul>
+     <ul>
+      <li>G.1.3.7</li>
+      <li>Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(i)(F)</li>
+      </ul>
+      <ul>
+       <li>4e(ii)</li>
+      </ul>
+      <ul>
+       <li>4e(v)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.3.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SM1.4</li>
+      </ul>
+      <ul>
+       <li>SR1.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+      <ul>
+       <li>AU-2</li>
+      </ul>
+      <ul>
+       <li>AU-3</li>
+      </ul>
+      <ul>
+       <li>AU-12</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SLSA</li>
+      <ul>
+       <li>Distributing attestation</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>1f</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.1.4</li>
+     <li>Deliver provenance</li>
+     <li>Automatically collect and provide provenance data for generated products. For provenance data, including how the artifact was built, including: what entity built the package, what build process they used, and the top-level inputs to the build, such that the data's authenticity and integrity can be verified and is generated automatically from the build service using a convention common in the package ecosystem.</li>
+     <ul>
+      <li>G.1.4.1</li>
+      <li>Can you tell me more about your provenance data generation process?</li>
+     </ul>
+     <ul>
+      <li>G.1.4.2</li>
+      <li>What authentications take place relative to the production of provenance data?</li>
+     </ul>
+     <ul>
+      <li>G.1.4.3</li>
+      <li>Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?</li>
+     </ul>
+     <ul>
+      <li>G.1.4.4</li>
+      <li>Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?</li>
+     </ul>
+     <ul>
+      <li>G.1.4.5</li>
+      <li>Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(vi)</li>
+      </ul>
+      <ul>
+       <li>4e(vii)</li>
+      </ul>
+      <ul>
+       <li>4e(x)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PS.3.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SLSA</li>
+      <ul>
+       <li>Build L1: Provenance exists</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SR-4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>6</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>V: Ensure clients can perform verification of artifacts and associated metadata</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.1.5</li>
+     <li>Deliver SBOM</li>
+     <li>Generate (preferably during build time) and provide a SBOM (in a machine-readable, NTIA-supported format) for generated products. SBOMs should be digitally signed using a verifiable and trusted key. VEX data for all components should also be considered.</li>
+     <ul>
+      <li>G.1.5.1</li>
+      <li>Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?</li>
+     </ul>
+     <ul>
+      <li>G.1.5.2</li>
+      <li>How and when is the SBOM built?</li>
+     </ul>
+     <ul>
+      <li>G.1.5.3</li>
+      <li>What tool do you use?</li>
+     </ul>
+     <ul>
+      <li>G.1.5.4</li>
+      <li>Do you digitally sign the SBOMs?</li>
+     </ul>
+     <ul>
+      <li>G.1.5.5</li>
+      <li>Do you produce a VEX supplement for your SBOM?</li>
+     </ul>
+     <ul>
+      <li>G.1.5.6</li>
+      <li>What is your process for generating the VEX information?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(vi)</li>
+      </ul>
+      <ul>
+       <li>4e(vii)</li>
+      </ul>
+      <ul>
+       <li>4e(x)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PS.3.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SE3.6</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SR-4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>1.4</li>
+      </ul>
+      <ul>
+       <li>6</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>REB-3</li>
+      </ul>
+      <ul>
+       <li>REB-4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SM: Generate immutable SBOM of code</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>3</li>
+      </ul>
+     </ul>
+    </ul>
    </ul>
    <ul>
-    <li>G</li>
-    <li>P</li>
-    <li>E</li>
-    <li>D</li>
+    <li>G.2</li>
+    <li>Develop security policies</li>
+    <li>Establishing organizational roles and tasks for driving internal security standards in alignment with the business purpose of the organization.</li>
+    <ul>
+     <li>G.2.1</li>
+     <li>Upper management support</li>
+     <li>An upper management (e.g., c-suite) leadership team understands the business risk of insecure software development violating compliance and privacy obligations. The team is responsible for the entire software development process and deploying secure software to production. The commitment of this team is communicated to personnel associated with development-related roles and is backed up by the commitment to allocating adequate resources and making sometimes-difficult business decisions for security over faster release dates.</li>
+     <ul>
+      <li>G.2.1.1</li>
+      <li>Can you share about upper management's commitment to secure software development?</li>
+     </ul>
+     <ul>
+      <li>G.2.1.2</li>
+      <li>In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?</li>
+     </ul>
+     <ul>
+      <li>G.2.1.3</li>
+      <li>Comment on the adequacy of resources dedicated to secure software development.</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.2.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SM1.3</li>
+      </ul>
+      <ul>
+       <li>CP2.5</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.2.2</li>
+     <li>Secure SDLC checks</li>
+     <li>Define criteria for a secure SDLC and associated software security checks that indicate how effectively software resulting from the SDLC meets the organization's expectations. These checks include key performance indicators (KPI), vulnerability severity scores, and security checks included in the 'definition of done' in an agile process and may be used for go/no-go decisions. The use of automated tools aids thoroughness, objectivity, and efficiency of these checks.</li>
+     <ul>
+      <li>G.2.2.1</li>
+      <li>What kind of criteria for security checks has been established, such as for security testing results?</li>
+     </ul>
+     <ul>
+      <li>G.2.2.2</li>
+      <li>How can these checks indicate if security practices are being used and secure software is being developed?</li>
+     </ul>
+     <ul>
+      <li>G.2.2.3</li>
+      <li>How are these checks tracked through the SDLC?</li>
+     </ul>
+     <ul>
+      <li>G.2.2.4</li>
+      <li>Are the checks automated or manual?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+      <ul>
+       <li>4e(v)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.4.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SM1.4</li>
+      </ul>
+      <ul>
+       <li>SM3.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.2.3</li>
+     <li>Roles and responsibilities</li>
+     <li>Throughout the organization, create new roles and alter responsibilities for existing roles to incorporate security tasks and practices, as appropriate, into the SDLC and to keep management educated and informed on security issues. These roles can be centralized for the organization to promote thought leadership among developers and architects; and distributed throughout the organization in a network of security advocates.</li>
+     <ul>
+      <li>G.2.3.1</li>
+      <li>What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.2.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SM2.3</li>
+      </ul>
+      <ul>
+       <li>SM2.7</li>
+      </ul>
+      <ul>
+       <li>CR1.7</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.2.4</li>
+     <li>Security code review policy</li>
+     <li>The policies for whether security-focused code review (a person looks directly at the code to find issues) and security-focused code analysis (tools are used to find issues in code, either in a fully automated way or in conjunction with a person) should be conducted based upon the characteristics/criticality of the software and its stage of development. Policies are established for both code developed in-house and third-party code.</li>
+     <ul>
+      <li>G.2.4.1</li>
+      <li>What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?</li>
+     </ul>
+     <ul>
+      <li>G.2.4.2</li>
+      <li>How are these guidelines communicated and enforced?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.7.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CR1.4</li>
+      </ul>
+      <ul>
+       <li>CR1.5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-11</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>2</li>
+      </ul>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.2.5</li>
+     <li>Asset inventory</li>
+     <li>Maintain a system component inventory, including hardware, software licenses, software versions, direct and transitive component owners, containers, machine names, and network addresses. Maintain an operations software inventory, including a map of source code; open source incorporated during the build and dynamic production; software deployments and related containerization, orchestration, and deployment automation code with respective owners. Unique identifiers for the inventoried assets should be established. Suppliers should also produce an asset inventory. Particular attention should be placed when a product or system is retired.</li>
+     <ul>
+      <li>G.2.5.1</li>
+      <li>How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?</li>
+     </ul>
+     <ul>
+      <li>G.2.5.2</li>
+      <li>Is the components inventory process automated or manual?</li>
+     </ul>
+     <ul>
+      <li>G.2.5.3</li>
+      <li>Are the artifacts machine-readable (such as through SBOM generation)?</li>
+     </ul>
+     <ul>
+      <li>G.2.5.4</li>
+      <li>What process is used for the asset inventory to be updated when a product or system goes to end-of-life?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CMVM2.3</li>
+      </ul>
+      <ul>
+       <li>SM3.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CM-8</li>
+      </ul>
+      <ul>
+       <li>IA-4</li>
+      </ul>
+      <ul>
+       <li>PM-5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>INV-1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SM</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.2.6</li>
+     <li>Protection of information at rest</li>
+     <li>Data protection at rest aims to secure the confidentiality and integrity of data stored on any storage device or network. Mechanisms to achieve confidentiality and integrity protections include using encryption and file share scanning. Provisions for protecting information at rest should be included in agreements with suppliers, developers, system integrators, external system providers, and other service providers.</li>
+     <ul>
+      <li>G.2.6.1</li>
+      <li>What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?</li>
+     </ul>
+     <ul>
+      <li>G.2.6.2</li>
+      <li>What policies are set in place for the use of cryptography in the organization’s security policy?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SC-28</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>G.3</li>
+    <li>Manage suppliers</li>
+    <li>Tasks to require that third-party suppliers employ adequate security measures to protect information, applications, and services provided to the organization.</li>
+    <ul>
+     <li>G.3.1</li>
+     <li>Security-related contract terms</li>
+     <li>Compliance requirements, security requirements, and secure SDLC practices are included in vendor contracts with specified means of adherence enforcement. Examples include supplying an SBOM, self-attestation of security practices and provenance information; having a vulnerability disclosure program and incident response plan; and a security training program. The vendors include component, cloud, middleware providers, container and orchestration providers, and contractors.</li>
+     <ul>
+      <li>G.3.1.1</li>
+      <li>What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?</li>
+     </ul>
+     <ul>
+      <li>G.3.1.2</li>
+      <li>Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?</li>
+     </ul>
+     <ul>
+      <li>G.3.1.3</li>
+      <li>How is adherence to contract terms verified?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(vi)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.1.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>ING-1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CP2.4</li>
+      </ul>
+      <ul>
+       <li>CP3.2</li>
+      </ul>
+      <ul>
+       <li>SR2.5</li>
+      </ul>
+      <ul>
+       <li>SR3.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-1</li>
+      </ul>
+      <ul>
+       <li>SA-4</li>
+      </ul>
+      <ul>
+       <li>SA-9</li>
+      </ul>
+      <ul>
+       <li>SR-3</li>
+      </ul>
+      <ul>
+       <li>SR-4</li>
+      </ul>
+      <ul>
+       <li>SR-5</li>
+      </ul>
+      <ul>
+       <li>SR-6</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.3.2</li>
+     <li>Separation of duties</li>
+     <li>Ensure that appropriate separation of duties is established for decisions that require the acquisition and administration of information systems and the acquisition of components entering the supply chain. Separation of duties can be used to deny contracted developers the privilege to promote code they wrote from development to the production environment. Separation of duties can prevent collusion, for example, by ensuring personnel administering access control functions do not also administer acquisition.</li>
+     <ul>
+      <li>G.3.2.1</li>
+      <li>How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise's supply chain or contracted developers promoting code from development to production?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>AC-5</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.3.3</li>
+     <li>Information disclosure</li>
+     <li>Unauthorized disclosure of information is a form of data leakage. Monitoring should be in place for contractor systems to detect the unauthorized disclosure of any data, and contract language should include a requirement that vendors notify of unauthorized disclosure of information.</li>
+     <ul>
+      <li>G.3.3.1</li>
+      <li>What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?</li>
+     </ul>
+     <ul>
+      <li>G.3.3.2</li>
+      <li>What kind of contract language is in place to require that vendors notify of unauthorized disclosure?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>AU-13</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.3.4</li>
+     <li>Session audits</li>
+     <li>Include contract employees and prime contractors in session audits to identify security risks in the supply chain. Session audits can include monitoring keystrokes, tracking websites visited, and recording information or file transfers and may involve implementing specialized session capture technology. As such, the privacy risks of session audits should be considered, and session audits may only be activated under certain circumstances, e.g., the organization is suspicious of a specific individual.</li>
+     <ul>
+      <li>G.3.4.1</li>
+      <li>Under what circumstances are contract employees included in audits to identify security risks in the supply chain?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>AU-14</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.3.5</li>
+     <li>Notification agreement</li>
+     <li>Require suppliers to establish agreements and procedures for notification and monitoring capabilities, including notification of being the target of a supply chain threat. Timely notification of compromises and potential compromises in the supply chain is essential for an organization to initiate an incident response. Establish a minimum amount of time a vendor must declare that a product will be declared end-of-life and will no longer be supported and understand what end-of-life options exist (e.g. replace, upgrade, migrate to a new system, etc.).</li>
+     <ul>
+      <li>G.3.5.1</li>
+      <li>What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?</li>
+     </ul>
+     <ul>
+      <li>G.3.5.2</li>
+      <li>How much notification does a vendor provide when a product goes end-of-life?</li>
+     </ul>
+     <ul>
+      <li>G.3.5.3</li>
+      <li>What end-of-life options exist?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SR-8</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>G.4</li>
+    <li>Training</li>
+    <li>Educating all personnel in role-specific information about the secure software development, including awareness, technical skills, and emergency response.</li>
+    <ul>
+     <li>G.4.1</li>
+     <li>Role-based training</li>
+     <li>Provide literacy and role-based training on software security and secure software supply chain. This training should include information about the firm's security culture, the secure software development lifecycle, containerization and security orchestration, common security mistakes, technology such as CI/CD and DevSecOps, and recognizing insider threat. Require this training as part of onboarding and periodically.</li>
+     <ul>
+      <li>G.4.1.1</li>
+      <li>Can you tell me about the training given to employees and to vendors related to software supply chain security?</li>
+     </ul>
+     <ul>
+      <li>G.4.1.2</li>
+      <li>Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?</li>
+     </ul>
+     <ul>
+      <li>G.4.1.3</li>
+      <li>Is the training specific to their roles, development tools, and language?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(vi)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.2.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>T1.1</li>
+      </ul>
+      <ul>
+       <li>T1.7</li>
+      </ul>
+      <ul>
+       <li>T1.8</li>
+      </ul>
+      <ul>
+       <li>T2.5</li>
+      </ul>
+      <ul>
+       <li>T2.8</li>
+      </ul>
+      <ul>
+       <li>T2.9</li>
+      </ul>
+      <ul>
+       <li>T3.1</li>
+      </ul>
+      <ul>
+       <li>T3.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>AT-2</li>
+      </ul>
+      <ul>
+       <li>AT-3</li>
+      </ul>
+      <ul>
+       <li>SA-16</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.4.2</li>
+     <li>Contingency training</li>
+     <li>Conduct contingency training to prepare for emergency response, backup operations, and post-disaster recovery to ensure the availability of critical information resources in emergencies. Critical suppliers should also be included in the training.</li>
+     <ul>
+      <li>G.4.2.1</li>
+      <li>Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>T1.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CP-3</li>
+      </ul>
+      <ul>
+       <li>IR-2</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.4.3</li>
+     <li>Gather attack trends</li>
+     <li>Have a process for continuously learning about emerging attack trends and vulnerabilities. Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software and third-party components that the software uses, and investigate all credible reports. Use a subscription to a cyber threat intelligence feed, attend technical conferences, monitor attacker forums, and study trends within the enterprise. Make this information on attack trends actionable and useful for developers, testers, security operations, and others to identify vulnerabilities in existing products, perform improved threat modeling and security architecture, and evolve the SDLC.</li>
+     <ul>
+      <li>G.4.3.1</li>
+      <li>How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(vi)</li>
+      </ul>
+      <ul>
+       <li>4e(vii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.1.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>AM1.5</li>
+      </ul>
+      <ul>
+       <li>CMVM1.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SI-4</li>
+      </ul>
+      <ul>
+       <li>SI-5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>2</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>G.5</li>
+    <li>Assess and manage risk</li>
+    <li>Proactively analyzing, mitigating, and managing software supply chain risk and achieving the objectives of a software security program.</li>
+    <ul>
+     <li>G.5.1</li>
+     <li>Criticality analysis</li>
+     <li>Perform a criticality analysis of system components, functions, or services to assign cybersecurity supply chain risk management activities commensurate with the analysis based upon the likelihood and impact of an attack. Not all system components, functions, or services necessarily require significant protection. Items to consider in the analysis include system assets/data involved in the product, applicable laws, regulations, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. The criticality analysis impacts the procedures contractually imposed on vendors.</li>
+     <ul>
+      <li>G.5.1.1</li>
+      <li>What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>AA1.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>RA-9</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.5.2</li>
+     <li>Track security risks and decisions</li>
+     <li>Record when a design tradeoff, vulnerability decision/exception, or component choice has been made that incurs security risk and a mitigation plan to reduce that risk including with vendors. Periodically re-evaluate these exceptions and mitigation plans, potentially including a review board that can provide security guidance in design guidance, patterns, standards, features, and frameworks.</li>
+     <ul>
+      <li>G.5.2.1</li>
+      <li>How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved?</li>
+     </ul>
+     <ul>
+      <li>G.5.2.2</li>
+      <li>How are approved exceptions to the security requirements periodically evaluated?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(v)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.1.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SFD3.1</li>
+      </ul>
+      <ul>
+       <li>SM3.5</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.5.3</li>
+     <li>Security metrics</li>
+     <li>Identify and regularly review metrics to measure the effectiveness of the software security program, including establishing Key Performance Indicators (KPIs). The regular review can drive budgeting and resource allocations and measure performance against risk appetite and risk tolerance statements. Publish data/dashboards about the state of software security within the organization. Automate metrics collection via security telemetry, as possible, to gather measurements to enhance efficiency and objectivity.</li>
+     <ul>
+      <li>G.5.3.1</li>
+      <li>What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)?</li>
+     </ul>
+     <ul>
+      <li>G.5.3.2</li>
+      <li>Are these metrics collected automatically or manually?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SM2.1</li>
+      </ul>
+      <ul>
+       <li>SM3.3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>G.5.4</li>
+     <li>Data-informed product decisions</li>
+     <li>Implement processes and mechanisms, automated when possible, to gather and safeguard information in support of security decision-making at the product level. This information can be used to drive SDLC change at the product or organizational level and/or drive a security risk exception process.</li>
+     <ul>
+      <li>G.5.4.1</li>
+      <li>Do you use the toolchain to gather information that informs security decision-making automatically?</li>
+     </ul>
+     <ul>
+      <li>G.5.4.2</li>
+      <li>If not, is this information collected and reviewed manually?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+      <ul>
+       <li>4e(v)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.4.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SM1.4</li>
+      </ul>
+      <ul>
+       <li>SM2.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+  </ul>
+  <ul>
+   <li>P</li>
+   <li>Product</li>
+   <li>Tasks to lead to deploying a secure product with minimal vulnerabilities with associated required attestations and artifacts.</li>
+   <ul>
+    <li>P.1</li>
+    <li>Develop security requirements</li>
+    <li>The development of software-related objectives and expectations to protect the service and data at the core of the application.</li>
+    <ul>
+     <li>P.1.1</li>
+     <li>Product security requirements</li>
+     <li>Identify and document security requirements for organization-developed software, including risk-reducing software architecture and design choices, security patterns, and translating compliance constraints to requirements. Examples include using memory-safe languages and secure frameworks, isolation and sandboxing component strategies, code modularity, security features, secure-by-design components, application containers, and product features that aid in secure deployment, operation, and maintenance. Containers can be used as a strategy for tighter coupling of an application and its dependencies, immutability, and some isolation benefits. Maintain these requirements over time.</li>
+     <ul>
+      <li>P.1.1.1</li>
+      <li>How are risk-reducing security architecture and design requirements for products considered and developed?</li>
+     </ul>
+     <ul>
+      <li>P.1.1.2</li>
+      <li>Which of the following strategies are considered: the use of memory-safe languages, secure frameworks, isolation and sandboxing?</li>
+     </ul>
+     <ul>
+      <li>P.1.1.3</li>
+      <li>Are completion and adherence tracked?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.1.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CP1.1</li>
+      </ul>
+      <ul>
+       <li>CP1.2</li>
+      </ul>
+      <ul>
+       <li>CP1.3</li>
+      </ul>
+      <ul>
+       <li>CP2.1</li>
+      </ul>
+      <ul>
+       <li>SE2.5</li>
+      </ul>
+      <ul>
+       <li>SFD1.1</li>
+      </ul>
+      <ul>
+       <li>SFD2.1</li>
+      </ul>
+      <ul>
+       <li>SDF3.2</li>
+      </ul>
+      <ul>
+       <li>SR1.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-8</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.1.2</li>
+     <li>Software release integrity</li>
+     <li>Use code protection mechanisms, such as the use of an established certificate authority for code signing, to enable the attestation of the provenance, integrity, and authorization of important code. Make software integrity verification information, such as cryptographic hashes for release files, available to software acquirers on a well-secure website.</li>
+     <ul>
+      <li>P.1.2.1</li>
+      <li>What software integrity artifacts do you make available to software acquirers, such as cryptographic hashes of release files?</li>
+     </ul>
+     <ul>
+      <li>P.1.2.2</li>
+      <li>Do you use a certificate authority for code/commit signing?</li>
+     </ul>
+     <ul>
+      <li>P.1.2.3</li>
+      <li>How often do you review code signing processes, such as certificate renewal and key rotation?</li>
+     </ul>
+     <ul>
+      <li>P.1.2.4</li>
+      <li>Do you ensure use a dedicated, protected signing server when signing is required?</li>
+     </ul>
+     <ul>
+      <li>P.1.2.5</li>
+      <li>What kind of license is declared for a project?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PS.2.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SE2.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>6</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>signed-release, licenses</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>REB-2</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>P.2</li>
+    <li>Build security in</li>
+    <li>Use software development practices and processes that will lead to the development of secure software products.</li>
+    <ul>
+     <li>P.2.1</li>
+     <li>Security design review</li>
+     <li>Enumerate possible threat vectors. Conduct threat modeling and attack surface analysis to identify weaknesses in the software architecture and design such that the system is resistant to attack. Identify missing security features and requirements. Identify unused components in the design. Address the identified security risks through re-design, or develop and track a mitigation plan for exceptions.</li>
+     <ul>
+      <li>P.2.1.1</li>
+      <li>For all critical software components and external services that your team operates and owns, has a qualified person not involved in the design reviewed the design and conducted an attack surface analysis and threat model?</li>
+     </ul>
+     <ul>
+      <li>P.2.1.2</li>
+      <li>What kind of approaches are you using to narrow attack vectors?</li>
+     </ul>
+     <ul>
+      <li>P.2.1.3</li>
+      <li>What kind of tool or methodology (like STRIDE) do you use to structure your threat modeling?</li>
+     </ul>
+     <ul>
+      <li>P.2.1.4</li>
+      <li>Do you perform analysis such that only required modules are included in the product and unused modules are uninstalled and removed, decreasing the attack surface?</li>
+     </ul>
+     <ul>
+      <li>P.2.1.5</li>
+      <li>How are unused modules identified - such as 'debloating' a product for unused components and containers?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(v), 4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.1.1, PW.2.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>AA1.1, AA1.2, AA2.1, AA3.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.2.2</li>
+     <li>Secure coding</li>
+     <li>Follow secure coding standards and practices appropriate to the development languages, APIs, and environment. Examples include validating all inputs, encoding outputs, and avoiding unsafe functions. Use development environments and static analysis tools that support compliance with secure coding practices as source code is being implemented.</li>
+     <ul>
+      <li>P.2.2.1</li>
+      <li>What kind of secure coding practices are used?</li>
+     </ul>
+     <ul>
+      <li>P.2.2.2</li>
+      <li>How are these practices communicated to developers and enforced?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.5.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SR3.3, CR1.4, CR3.5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.2.3</li>
+     <li>Secure-by-default implementation</li>
+     <li>Reduce the likelihood of software deploying with weak security settings by defining secure deployment parameters so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.</li>
+     <ul>
+      <li>P.2.3.1</li>
+      <li>Are the default installation settings for products, platform, network infrastructure, services defined to be secure by default?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.9.1, PW.9.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SE2.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.2.4</li>
+     <li>Standard security features</li>
+     <li>Build support for standardized rather than proprietary security features, such as using existing log management, identity management, access control, or vulnerability management systems. These reused components are more likely to have their security posture already checked.</li>
+     <ul>
+      <li>P.2.4.1</li>
+      <li>Can you tell me about your philosophy of whether it is better to use available security features or to 'roll your own,' for example, log management, identity management, access control, and vulnerability management?</li>
+     </ul>
+     <ul>
+      <li>P.2.4.2</li>
+      <li>Or a combination of in-house/proprietary and standard features?</li>
+     </ul>
+     <ul>
+      <li>P.2.4.2</li>
+      <li>What factors determine if you use in-house or standard features?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.1.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SFD1.1, SFD3.2</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.2.5</li>
+     <li>In-house components</li>
+     <li>Well-secured in-house components and scripts are built following a secure SDLC process when third-party components cannot meet development needs. Similar to the processes for third-party components, in-house components should be kept in a repository, maintained, and regularly scanned for vulnerabilities, with new versions deployed through the organization as needed.</li>
+     <ul>
+      <li>P.2.5.1</li>
+      <li>What processes are used to scan in-house components built using SDLC processes for vulnerabilities and how is the process similar or different to what is done for third-party components?</li>
+     </ul>
+     <ul>
+      <li>P.2.5.2</li>
+      <li>What causes a need for a new version?</li>
+     </ul>
+     <ul>
+      <li>P.2.5.3</li>
+      <li>Are in-house components monitored to ensure they are regularly maintained?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.4.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SFD2.1</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>P.3</li>
+    <li>Manage component and container choices</li>
+    <li>Software supply chain risk can be reduced by careful choice and handling of third-party components and containers.</li>
+    <ul>
+     <li>P.3.1</li>
+     <li>Component and container choice</li>
+     <li>Consider component characteristics, such as the use of secure SDLC practice, evidence of ongoing maintenance, and open vulnerabilities, as quality indicators of direct and transitive dependencies. OpenSSF Scorecard metrics may be used as an indication of the security posture of a component. Components with the least functionality reduce the attack surface. Have a deny-list that prevents malicious components from being consumed.</li>
+     <ul>
+      <li>P.3.1.1</li>
+      <li>What kind of approval process do you have, if any, for third-party libraries and containers included in a product?</li>
+     </ul>
+     <ul>
+      <li>P.3.1.2</li>
+      <li>What do you consider when selecting a third-party component or container?</li>
+     </ul>
+     <ul>
+      <li>P.3.1.3</li>
+      <li>Do you consider solutions with the least functionality to reduce the attack surface?</li>
+     </ul>
+     <ul>
+      <li>P.3.1.4</li>
+      <li>How would the approval process handle dependencies that are no longer receiving updates?</li>
+     </ul>
+     <ul>
+      <li>P.3.1.5</li>
+      <li>Do you look at the OpenSSF Scorecard metrics for a component?</li>
+     </ul>
+     <ul>
+      <li>P.3.1.6</li>
+      <li>Are you concerned when a component contains binary artifacts that cannot be easily reviewed and more easily sneak in a vulnerability?</li>
+     </ul>
+     <ul>
+      <li>P.3.1.7</li>
+      <li>Do you have a Deny List to prevent the choice of vulnerable and malicious components?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SR2.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CM-7</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>Binary-artifacts; contributors</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>ING-3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SM: Second and third-party risk management</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.3.2</li>
+     <li>Trusted repositories</li>
+     <li>Trusted public repositories may require signed packages and provide the means to verify the signatures; the packages and containers from these ecosystems should still be scanned. Organizations should host scanned repositories for high-assurance software and restrict build machines to only those sources.</li>
+     <ul>
+      <li>P.3.2.1</li>
+      <li>Do you search for candidate components in package managers trusted by your organization?</li>
+     </ul>
+     <ul>
+      <li>P.3.2.2</li>
+      <li>Do you use container registries you trust?</li>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>1.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>ING-1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>V: Define and prioritize trusted package managers</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.3.3</li>
+     <li>Require signed commits</li>
+     <li>Using code that has been contributed with signed source code commits provides an integrity mechanism.</li>
+     <ul>
+      <li>P.3.3.1</li>
+      <li>Do you require the software producers to sign code commits of the components and tools you bring into your product?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SE2.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>V: Require signed commits</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.3.4</li>
+     <li>Vetted third-party component and container repositories</li>
+     <li>Components, binaries, and containers chosen from public ecosystems undergo a vetting process, including reviewing component meta-data and provenance data; secure composition analysis; binary composition analysis; and other security scanning. Rebuild software dependencies from source code when possible to remove additional software that may be contained in a compiled version. Establish repositories to host organization-approved components and containers.</li>
+     <ul>
+      <li>P.3.4.1</li>
+      <li>Do you have a local component repository in which binaries and source code of third-party components are stored?</li>
+     </ul>
+     <ul>
+      <li>P.3.4.2</li>
+      <li>Do you rebuild a component from source when possible?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iii), 4e(vi), 4e(x)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.4.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SFD2.1, SFD3.2, SR2.4, SR2.7</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SLSA</li>
+      <ul>
+       <li>Build L1: Prevenance exists</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SR-3, SR-4, SR-11</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>4.1, 5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>SCA-1, SCA-4, SCA-5, ING-2, ING-4, ENF-2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SM: Verify 3rd party artifacts and opensource libraries; SM: Build libraries based upon source code</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>2, 3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.3.5</li>
+     <li>Prevent component vetting bypass</li>
+     <li>Audit to ensure developers are consuming components that have gone through the approved vetting process even on their own machines because developer endpoints can become infected. Restrict product build to only packages in the repository of vetted components.</li>
+     <ul>
+      <li>P.3.5.1</li>
+      <li>What mechanisms are in place, if any, to audit that developers are consuming third party code through the approved ingestion method and not bypassing the vetting process?</li>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>AUD-2</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>P.4</li>
+    <li>Discover vulnerabilities</li>
+    <li>Use automated and manual vulnerability discovery techniques to identify previously-undisclosed vulnerabilities in in-house and third-party code.</li>
+    <ul>
+     <li>P.4.1</li>
+     <li>Security code review</li>
+     <li>Perform peer code review on in-house developed code, AI-generated code, and some third-party code based on the organization’s secure coding standards. Create and use review checklists that may be informed by 'Top N' vulnerability lists. While the manual review of another programmer before check-in is essential for finding vulnerabilities injected with malicious intent, supplementing code review with automated tools, such as static analysis tools, is beneficial. Record and triage discovered issues and recommended remediations in the development team’s workflow or issue-tracking system.</li>
+     <ul>
+      <li>P.4.1.1</li>
+      <li>How does the team perform security-related code reviews?</li>
+     </ul>
+     <ul>
+      <li>P.4.1.2</li>
+      <li>Is a secure coding standard used?</li>
+     </ul>
+     <ul>
+      <li>P.4.1.3</li>
+      <li>How do discovered vulnerabilities get recorded, tracked, and remediated?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(v)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.7.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CR1.2, CR1.4, CR1.6, CR2.6, CR2.7, CR3.4, CR3.5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>Code review</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>C: Enforce an independent four-eyes principle</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.4.2</li>
+     <li>Automated security scanning tools</li>
+     <li>Specify which tools or tool types must or should be included in each toolchain to reduce human effort in discovering vulnerabilities and mitigating identified security risks and to improve the accuracy, reproducibility, usability, and comprehensiveness of security practices in the SDLC. Tools commonly include SAST, DAST, IAST, SCA, and secret detection tools. Specify how the toolchain components will be integrated, such as through the CI/CD pipeline. Follow recommended practices for tool selection/scanning, deploying, operating, and maintaining tools and toolchains.</li>
+     <ul>
+      <li>P.4.2.1</li>
+      <li>What security tools are in your toolchain?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.2</li>
+      <li>SAST?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.3</li>
+      <li>DAST?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.4</li>
+      <li>IAST?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.5</li>
+      <li>How often is the scanning done for third-party components?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.6</li>
+      <li>Do you use a tool to detect secrets in code?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.7</li>
+      <li>What happens with the reported vulnerabilities?</li>
+     </ul>
+     <ul>
+      <li>P.4.2.8</li>
+      <li>Do you scan your tools for vulnerabilities?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(i)(F), 4e(ii), 4e(iii), 4e(v), 4e(vi)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.3.1; PO.3.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CR1.4, ST1.4, ST2.5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>SAST; Fuzzing</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>A: Prevent committing secrets; A: Automate software security scanning; AU: Scan software for vulnerabilities</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>1f, 2, 3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.4.3</li>
+     <li>Automated vulnerability detection</li>
+     <li>Review, analyze, and/or test the software’s code to identify or confirm the presence, remediation, and disclosure of previously undetected vulnerabilities. Record and triage discovered issues and recommended remediations in the development team’s workflow or issue-tracking system.</li>
+     <ul>
+      <li>P.4.3.1</li>
+      <li>How is code reviewed, analyzed, and tested to identify or confirm the presence, remediation, and disclosure of previously-undetected vulnerabilities such as through automated tools?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(vi), 4e(viii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.1.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CMVM3.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-11, RA-9, SI-7</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>6</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>3, 4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.4.4</li>
+     <li>Executable security testing</li>
+     <li>Executable testing, such as done by in-house testers or third-party penetration testers, is performed to find previously-undiscovered vulnerabilities. In-house testers should be guided by design review results, threat modeling, security requirements, and the security mechanisms in security features. Testing should include containers. Automate security tests as possible. Scope the testing, design the tests, perform the testing, and document the results, including recording and triaging all discovered issues and recommended remediations in the development team’s workflow or issue tracking system. Test the build process and scripts.</li>
+     <ul>
+      <li>P.4.4.1</li>
+      <li>How are security features tested?</li>
+     </ul>
+     <ul>
+      <li>P.4.4.2</li>
+      <li>How are test cases developed to test the security of an application?</li>
+     </ul>
+     <ul>
+      <li>P.4.4.3</li>
+      <li>Is security testing factored into a product's test suite?</li>
+     </ul>
+     <ul>
+      <li>P.4.4.4</li>
+      <li>Is executable code testing, such as in-house or external penetration testing, used to find vulnerabilities not found by previous reviews, analysis, and testing?</li>
+     </ul>
+     <ul>
+      <li>P.4.4.5</li>
+      <li>Do you do executable testing on containers?</li>
+     </ul>
+     <ul>
+      <li>P.4.4.6</li>
+      <li>Do you test your build process, scripts, GitHub actions?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(v)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.8.1, PW.8.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>ST1.1, ST1.3, ST1.4, ST2.4, ST2.5, ST2.6, ST3.3, ST3.4, ST3.5, ST3.6, PT1.1, PT1.2, PT1.3, PT2.3, PT3.1, CMVM3.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-11</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>CI-Tests</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>2, 4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.4.5</li>
+     <li>Regular third-party compliance</li>
+     <li>Regularly check that third-party software components comply with the contractual requirements, such as following a secure SDLC, and fix detected vulnerabilities. Regularly scan components and containers to monitor for vulnerabilities and for evidence that artifacts are being maintained and have not been abandoned or deprecated.</li>
+     <ul>
+      <li>P.4.5.1</li>
+      <li>How do you verify that third-party software components continue to comply with the requirements defined by the organization, such as through using a secure SDLC and the delivery of attestation of security practices?</li>
+     </ul>
+     <ul>
+      <li>P.4.5.2</li>
+      <li>Do you check that components are being maintained and are not at end-of-life or have been abandoned?</li>
+     </ul>
+     <ul>
+      <li>P.4.5.3</li>
+      <li>How are known critical vulnerabilities in third-party and open-source components and containers mitigated?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iii), 4e(iv), 4e(vi), 4e(x)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.4.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-4, SA-9, SA-11, SA-15, SR-3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>SCA-1, SCA-3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>2, 3, 4</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>P.5</li>
+    <li>Manage vulnerable components and containers</li>
+    <li>Develop and implement a strategy for patching/upgrading components and containers to the latest secure version.</li>
+    <ul>
+     <li>P.5.1</li>
+     <li>SBOM consumption</li>
+     <li>Obtain or generate an SBOM for a product that provides a clear and direct link to the dependencies and their versions used within a product. Ideally, the SBOM will provide signed metadata from the build process. Tools can automate analysis and obtain desired information from the SBOM, such as aligning with vulnerability data to identify vulnerabilities within the exact package contents.</li>
+     <ul>
+      <li>P.5.1.1</li>
+      <li>Does anyone check the SBOM information about pending security vulnerabilities?</li>
+     </ul>
+     <ul>
+      <li>P.5.1.2</li>
+      <li>How do you consume the SBOMs for your components?</li>
+     </ul>
+     <ul>
+      <li>P.5.1.3</li>
+      <li>Do you have any specific experience being aided by information provided by the SBOM?</li>
+     </ul>
+     <ul>
+      <li>P.5.1.4</li>
+      <li>How do you feel about the assistance provided by tools to help you consume an SBOM?</li>
+     </ul>
+     <ul>
+      <li>P.5.1.5</li>
+      <li>If not now, do you have plans to consume SBOMs in the future?</li>
+     </ul>
+     <ul>
+      <li>P.5.1.6</li>
+      <li>Do you consider and trust the VEX information in the SBOM?</li>
+     </ul>
+     <ul>
+      <li>P.5.1.7</li>
+      <li>What expectations do you put on the component producers for the vulnerabilities identified in the SBOM?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SR-4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SM: Require SBOM from third-party supplier; SM: Track dependencies between OS components</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>P.5.2</li>
+     <li>Dependency update</li>
+     <li>SCA tools, SBOM tools, and ecosystem tools (such as Dependabot) inform a product of vulnerabilities and provide an automated pull request for new versions of direct and transitive dependencies discovered vulnerable. Organizations need a process/strategy for updating dependencies - which may be manual or automated. Specify the software assets that require automated updates, defined from criticality/risk-based analysis. Rebuild, do not patch, containers with vulnerabilities.</li>
+     <ul>
+      <li>P.5.2.1</li>
+      <li>What is your strategy for updating dependencies based on SCA, SBOM, or automated pull requests?</li>
+     </ul>
+     <ul>
+      <li>P.5.2.2</li>
+      <li>Do you have a strategy for updating all, such as through a tool such as Dependabot that automates PR?</li>
+     </ul>
+     <ul>
+      <li>P.5.2.3</li>
+      <li>Does the project use tools to help update its dependencies e.g. Dependabot, RenovateBot?</li>
+     </ul>
+     <ul>
+      <li>P.5.2.4</li>
+      <li>Are the software assets that require automated updates defined from a criticality/risk-based perspective?</li>
+     </ul>
+     <ul>
+      <li>P.5.2.5</li>
+      <li>How are containers updated when a vulnerability is detected?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SI-2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>Dependency update tool</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>UPD-1, UPD-2, UPD-3</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+  </ul>
+  <ul>
+   <li>E</li>
+   <li>Environment</li>
+   <li>Tasks to protect the confidentiality and integrity of source code, software components, and the build infrastructure from tampering and unauthorized access.</li>
+   <ul>
+    <li>E.1</li>
+    <li>Safeguard artifact integrity</li>
+    <li>Protect from unauthorized or accidental access and alteration of project artifacts.</li>
+    <ul>
+     <li>E.1.1</li>
+     <li>Safely store release artifacts</li>
+     <li>Securely archive the necessary files and supporting data (e.g., integrity verification information, provenance data, metadata) to be retained for each software release.</li>
+     <ul>
+      <li>E.1.1.1</li>
+      <li>What files and supporting data (like integrity validation, provenance, and metadata) do you securely archive and retain for each software release?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iii), 4e(vi), 4e(x)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PS.3.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>6.3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.1.2</li>
+     <li>Version control</li>
+     <li>Store project artifacts, including but not limited to source code, executable code, infrastructure as code, and configuration-as-code, in a repository with restricted access using the principle of least privilege based on the nature of the artifact. Use version control to track and store all changes to this code with accountability to an authenticated individual account with access granted to personnel, tools, and services. As appropriate, sign or encrypt artifacts. Indefinitely retain change history.</li>
+     <ul>
+      <li>E.1.2.1</li>
+      <li>Are code and other important project artifacts stored with version control with access granted to strongly-authenticated personnel using the principle of least privilege?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(i)C, 4e(iii), 4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PS.1.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-8, SA-10</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.1.3</li>
+     <li>Multi-factor authentication (MFA)</li>
+     <li>Enforce multi-factor authentication (MFA) at the source code repository level by requiring a soft or physical token in addition to traditional passwords/credentials that are more likely to be compromised using techniques such as brute force guessing.</li>
+     <ul>
+      <li>E.1.3.1</li>
+      <li>Is MFA mandated and enforced at the source code repository level?</li>
+     </ul>
+     <ul>
+      <li>E.1.3.2</li>
+      <li>Are soft or physical tokens used?</li>
+     </ul>
+     <ul>
+      <li>E.1.3.3</li>
+      <li>Is MFA enforced for endpoints?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SA: Enforce MFA</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.1.4</li>
+     <li>Developer SSH key</li>
+     <li>Use SSH keys or SSH certificates for developers and agents in CI/CD pipelines to access source code repositories from their development tools rather than traditional passwords/credentials that are more likely to be compromised. Passphrases should be used to protect SSH keys.</li>
+     <ul>
+      <li>E.1.4.1</li>
+      <li>Do you avoid using passwords through the use of SSH keys, SSH certificates, or short-term rotated Access Tokens?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SA: Use SSH keys</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.1.5</li>
+     <li>Branch protection</li>
+     <li>Branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch. Branch protection can prevent forced pushings, overwriting history, and obfuscation of code changes. In high-risk, high-assurance environments, attribution of code changes, commit signing, and full attestation can be used with branch protection to prevent and detect complex attacks.</li>
+     <ul>
+      <li>E.1.5.1</li>
+      <li>Do you use branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch?</li>
+     </ul>
+     <ul>
+      <li>E.1.5.2</li>
+      <li>In high assurance, high risk environments, is commit signing with full-attestation required?</li>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>Branch protection</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>V: Enforce full attestation and verification for protected branches; C: Use branch protection rules; C: Establish and adhere to contribution policies</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.1.6</li>
+     <li>Decommission assets</li>
+     <li>Live but abandoned systems may not get new security patches or be monitored for malicious activity, even though they may be vulnerable to new security threats and can be an attack vector. When a product or system has been declared end-of-life, decommission associated accounts, machines, data, keys, and passwords.</li>
+     <ul>
+      <li>E.1.6.1</li>
+      <li>What decommissioning procedures are in place when a live product or system goes to end-of-life?</li>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>E.2</li>
+    <li>Safeguard build integrity</li>
+    <li>Protect from and detect malicious infiltration into software build infrastructure that could lead to the build and deployment of compromised products.</li>
+    <ul>
+     <li>E.2.1</li>
+     <li>Release policy verification</li>
+     <li>A release policy should be maintained as a policy template and outline the required workflow while the software is developed, built, tested, and packaged to ensure the integrity, authentication, and auditability of a software product from initiation to end-user installation. A framework, such as in-toto, can produce meta-data during the build pipeline to enable attestation to the steps in the desired workflow. The meta-data can be analyzed to ascertain whether the steps in the workflow have occurred and to produce cryptographic guarantees by hashing and signing the inputs and outputs of steps in the pipeline.</li>
+     <ul>
+      <li>E.2.1.1</li>
+      <li>Do you have a templated build policy that specifies the required build workflow to ensure the integrity, authentication, and auditability?</li>
+     </ul>
+     <ul>
+      <li>E.2.1.2</li>
+      <li>Do you verify the build policy in a cryptographically provable way, such as with in-toto?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>BV: Cryptographically guaranteed policy adherence</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.2.2</li>
+     <li>Verify dependencies and environment</li>
+     <li>Analyze the integrity of build tools, components, and containers before bringing them into the pipeline. Validate the point of origin/provenance, checksums, and signatures in the downloading and ingesting processes. Request SBOM, provenance, and self-attestation to aid in achieving this goal.</li>
+     <ul>
+      <li>E.2.2.1</li>
+      <li>Can you track a package back to its repo?</li>
+     </ul>
+     <ul>
+      <li>E.2.2.2</li>
+      <li>Do you verify the integrity (i.e. digital signature or hash match) and the provenance data of each component and container?</li>
+     </ul>
+     <ul>
+      <li>E.2.2.3</li>
+      <li>Do you validate that the build environment's sources and dependencies come from a secure, trusted source of truth?</li>
+     </ul>
+     <ul>
+      <li>SLSA</li>
+      <ul>
+       <li>Build L1: Provenance exists</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>1.10, 6.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>AUD-1, AUD-3, AUD-4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>V: Verify third-party artifacts; BV: Validate environments and dependencies</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.2.3</li>
+     <li>Defensive compilation and build</li>
+     <li>Determine which compiler, interpreter, and build tool features should be used to reduce vulnerabilities, such as producing compiler warnings for vulnerable code that are treated as errors; application of obfuscation techniques; approved configurations being used; verification of sources and manifests of dependencies; and approved tools configurations are available as configuration-as-code.</li>
+     <ul>
+      <li>E.2.3.1</li>
+      <li>Do you use compiler, interpreter, and build tool features to detect vulnerabilities?</li>
+     </ul>
+     <ul>
+      <li>E.2.3.2</li>
+      <li>Do you have a Deny List to prevent using a vulnerable and/or malicious component in the build?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.6.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SLSA</li>
+      <ul>
+       <li>4_Reproducible build</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>REB-1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>BV: Validate build artefacts through verifiably reproducible builds.</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.2.4</li>
+     <li>CI/CD hosting and automation</li>
+     <li>All CI/CD pipeline build steps should be automated with automation standardized across the enterprise via clear templated build pipelines that meet organizational standards. This automation should be treated as 'pipeline as code' with modifications being reviewed and should be immutable. The build should run in an ephemeral and hermetic (isolated and sealed) environment with no parameters or network connectivity except to the hardened local repository of source code and dependencies and code signing infrastructure. The build runs on a hosted build platform that generates and signs the provenance.</li>
+     <ul>
+      <li>E.2.4.1</li>
+      <li>Are your build steps defined in a build script, with the only manual step being to invoke the script?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.2</li>
+      <li>Is the build definition executed by the build service stored in a version control system fetched through a trusted channel with a trustworthy provenance chain?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.3</li>
+      <li>Does the build run on a hosted build platform?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.4</li>
+      <li>Is the build service run in an ephemeral environment, such as a container or VM, provisioned solely for the build?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.5</li>
+      <li>Is the build service run in an isolated environment free of influence from other build instances?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.6</li>
+      <li>Can the build output be affected by user parameters other than the build entry point?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.7</li>
+      <li>Are the build steps, sources, and dependencies declared up front with immutable references/use immutable artifacts stored in a local repository manager?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.8</li>
+      <li>Is the build run with no network access (i.e., hermetic)?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.9</li>
+      <li>Are infrastructure, build scripts, and GitHub Actions handled 'as code', such as with code review, scanning, testing, and version control?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.10</li>
+      <li>Are configuration changes reviewed?</li>
+     </ul>
+     <ul>
+      <li>E.2.4.11</li>
+      <li>Are CI/CD pipelines standardized across the enterprise?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PW.6.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SE2.4, SE3.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SLSA</li>
+      <ul>
+       <li>Build L2: Hosted build platform; Build L2: Hardened/isolated builds</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>Dangerous workflow; token permissions; pinned-dependencies</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>BV: Build and related CI/CD should be automated; BV: Standardize pipelines; BV: Build workers should be single-use; CE: Ensure software factory had minimal network connectivity; CE: Segregate the duties of each build worker; CE: Pass in build worker environment and commands: SA: Only allow pipeline modifications through 'pipeline as code'</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>4</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.2.5</li>
+     <li>Secured orchestration platform</li>
+     <li>The build pipeline should be a series of hardened build steps implemented through a hardened container image stored within a secured repository and deployed through a hardened orchestration platform, such as Kubernetes. Orchestration processes can take advantage of built-in and added-on security features, such as checking for secrets and rollbacks to ensure that each deployed workload meets predetermined security requirements.</li>
+     <ul>
+      <li>E.2.5.1</li>
+      <li>Are containers used throughout the build process?</li>
+     </ul>
+     <ul>
+      <li>E.2.5.2</li>
+      <li>Do you deploy Kubernetes as the orchestration layer?</li>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>SE2.7</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>BA: Provision a secured orchestration platform</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.2.6</li>
+     <li>Reproducible builds</li>
+     <li>Follow recommended security practices to deploy, operate, and maintain tools and toolchains, including the reproducible build steps whereby identical input artifacts are rebuilt from source in a trusted build environment, non-determinism is eliminated, and the results can be cryptographically attested to be the same output in a bit-for-bit comparison.</li>
+     <ul>
+      <li>E.2.6.1</li>
+      <li>Do you practice reproducible builds on different protected environments and compare bit-for-bit results?</li>
+     </ul>
+     <ul>
+      <li>OWASP SCVS</li>
+      <ul>
+       <li>3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>REB-1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>BV: Validate build artefacts through verifiably reproducible builds.</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.2.7</li>
+     <li>Build output</li>
+     <li>Write the output from the build process to separate storage from the inputs. A process separate from the build process should upload the artifact to the appropriate deployable repository.</li>
+     <ul>
+      <li>E.2.7.1</li>
+      <li>Do you write artifacts from the build to a separate shared storage from the inputs?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>CD: Write output to a separate secured storage repo</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>E.3</li>
+    <li>Secure software development environment</li>
+    <li>Protect the software development environment from internal and external threats that can lead to compromise.</li>
+    <ul>
+     <li>E.3.1</li>
+     <li>Authentication</li>
+     <li>Authenticate employees and contractors to enable access control, traceability, non-repudiation, chain-of-custody, and provenance for systems, software, and services.</li>
+     <ul>
+      <li>E.3.1.1</li>
+      <li>Are employees and contractors authenticated to enable access control, traceability, non-repudiation, chain of custody, and provenance for systems, software, and services?</li>
+     </ul>
+     <ul>
+      <li>E.3.1.2</li>
+      <li>Where do you store access credentials (e.g., hashes for passwords) and secrets in a secured (e.g., encrypted) location, such as a secure vault?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>IA-5, IA-9</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.2</li>
+     <li>Environmental separation</li>
+     <li>Using network segmentation and access control to separate and protect each environment (e.g., endpoints, development, build, test, deployment) involved in software development to protect from internal and external threats. Remote access to the build environment should be rare, logged, and require multi-party approval. Log and monitor access, particularly privileged access. Configure the environment's hosting infrastructure following a zero-trust architecture.</li>
+     <ul>
+      <li>E.3.2.1</li>
+      <li>Are environments involved in software development (e.g., endpoints, development, build, test, deployment) separated and protected from physical and remote access to the build environment?</li>
+     </ul>
+     <ul>
+      <li>E.3.2.2</li>
+      <li>Is access logged?</li>
+     </ul>
+     <ul>
+      <li>E.3.2.3</li>
+      <li>What kind of approval is needed for access to the build environment?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(i)(A), 4e(i)(B), 4e(i)(C), 4e(i)(D), 4e(i)(E), 4e(i)(F), 4e(ii), 4e(iii), 4e(v), 4e(vi)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>PO.5.1, PO.5.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-8, SA-15</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>Self-attestation</li>
+      <ul>
+       <li>1a, 1b, 1c, 1d, 1e, 1f, 2, 3</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.3</li>
+     <li>Role-based access control</li>
+     <li>Define a set of roles and accounts with an associated access control/authorization level considering remote access requirements, the period for which access is needed, and careful vetting of contractor personnel. These roles can be used for access control to ensure proper traceability of actions and actors. A process should be implemented to manage mission-critical systems' temporary or emergency access. Role-based access is enforced by physical and logical access enforcement mechanisms.</li>
+     <ul>
+      <li>E.3.3.1</li>
+      <li>How are authorization levels for accounts associated with roles and the associated level of access control, including remote access, proper vetting of contractors, and that authorization does not exceed the period of performance?</li>
+     </ul>
+     <ul>
+      <li>E.3.3.2</li>
+      <li>How are access control violations handled?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>AC-2, AC-3, AC-6, AC-17, IA-2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>A: Define individuals/teams responsible for code; C: Define roles aligned to functional responsibilities; SA: Define user roles</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.4</li>
+     <li>Information flow enforcement</li>
+     <li>Specify how information flow across trust boundaries is enforced to ensure only the required information is communicated to participants in the supply chain, including but not limited to suppliers, developers, system integrators, and external system providers. Requirements for transmission confidentiality and integrity are integrated into agreements with suppliers. The degree of protection should be based on the sensitivity of the information. Security mechanisms such as authentication, authorization, and encryption can be used to achieve enterprise confidentiality and integrity requirements.</li>
+     <ul>
+      <li>E.3.4.1</li>
+      <li>How is information flow enforced to ensure only the required information is communicated across trust boundaries to participants in the supply chain through mechanisms that ensure transmission confidentiality and integrity?</li>
+     </ul>
+     <ul>
+      <li>E.3.4.2</li>
+      <li>What kind of requirements for transmission confidentiality and integrity are integrated into agreements with suppliers?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>AC-4, SC-8</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.5</li>
+     <li>Baseline configuration</li>
+     <li>Establish a baseline configuration of the information system and the development environment, including documenting, formally reviewing, and securing the agreement of stakeholders. The baseline provides a starting point for tracking changes to components, code, and settings for traceability and provenance.</li>
+     <ul>
+      <li>E.3.5.1</li>
+      <li>Is a baseline configuration of the information system and development environment in place to provide a starting point for tracking changes to components, code, and/or settings for traceability and provenance?</li>
+     </ul>
+     <ul>
+      <li>E.3.5.2</li>
+      <li>Who sets the baseline?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CM-2</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.6</li>
+     <li>Monitor changes to configuration settings</li>
+     <li>Monitor and audit configuration settings and change controls within the information systems and networks throughout the SDLC. Changes should be tested and approved before being implemented. Configuration settings should be monitored so designated employees can be alerted when a change has occurred.</li>
+     <ul>
+      <li>E.3.6.1</li>
+      <li>What kind of monitoring and auditing of changes to configuration settings is in place?</li>
+     </ul>
+     <ul>
+      <li>E.3.6.2</li>
+      <li>What designated employees are alerted when an unauthorized change occurs?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CM-3, CM-6</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.7</li>
+     <li>Boundary protection</li>
+     <li>The enterprise should consider the trust boundaries and provide separation and isolation of development, test, and security assessment tools and external networks or information systems. The connections should only be through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.</li>
+     <ul>
+      <li>E.3.7.1</li>
+      <li>How are development, test, and security assessment tools and operational environments separated and isolated from external networks or information systems and each other, as appropriate considering trust boundaries?</li>
+     </ul>
+     <ul>
+      <li>E.3.7.2</li>
+      <li>How are trust boundaries considered, and how is the separation/isolation implemented?</li>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SC-7</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.8</li>
+     <li>Key rotation</li>
+     <li>Have a key rotation policy to ensure that compromised keys will cease to be usable after a certain period. Replace and revoke a private key immediately if it is known to have been compromised to shut off access.</li>
+     <ul>
+      <li>E.3.8.1</li>
+      <li>What is your key rotation policy?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SA: Have a key rotation policy</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.9</li>
+     <li>Ephemeral credentials</li>
+     <li>As an alternative to passwords, ephemeral credentials are randomly generated, short-lived access credentials that exist only for one session to authenticate and authorize privileged connections. These credentials are automatically issued as needed, so users do not have to input credentials when connecting and enable fine-grained permissions and automation of provisioning access tokens.</li>
+     <ul>
+      <li>E.3.9.1</li>
+      <li>Do you use short-lived tokens for access management of machines and services such as CI/CD pipeline agents?</li>
+     </ul>
+     <ul>
+      <li>E.3.9.2</li>
+      <li>Who uses these tokens and for what types of systems?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SA: Use short-lived/ephemeral credentials</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>E.3.10</li>
+     <li>Establish a root of trust</li>
+     <li>Roots of trust (RoT) are highly-reliable hardware, firmware, and software components that perform specific, critical security functions, such as storing the keys used for cryptographic functions and enabling a secure boot process. Many RoT are implemented in hardware so that malware cannot tamper with the functions they provide. The RoT is established from an offline source.</li>
+     <ul>
+      <li>E.3.10.1</li>
+      <li>Do you have a root of trust that can perform specific, critical security functions such as storing keys for cryptographic functions or enabling secure boot? How are these implemented?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>SA: Follow established practices for establishing a root of trust</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+  </ul>
+  <ul>
+   <li>D</li>
+   <li>Deployment</li>
+   <li>Tasks for identifying, analyzing, and addressing vulnerabilities in products in production/that have been deployed</li>
+   <ul>
+    <li>D.1</li>
+    <li>Respond to/disclose vulnerabilities</li>
+    <li>Tasks for identifying and addressing vulnerabilities in products and preventing similar ones from occuring in the future.</li>
+    <ul>
+     <li>D.1.1</li>
+     <li>Vulnerability analysis</li>
+     <li>Enter discovered vulnerabilities into a defect management system. Analyze each vulnerability to gather sufficient information to plan its remediation. Plan a risk response and prioritization, such as by estimating the probability of exploitation and the impact if it is exploited.</li>
+     <ul>
+      <li>D.1.1.1</li>
+      <li>How are discovered vulnerabilities recorded and triaged?</li>
+     </ul>
+     <ul>
+      <li>D.1.1.2</li>
+      <li>How are the vulnerabilities prioritized for remediation?</li>
+     </ul>
+     <ul>
+      <li>D.1.1.3</li>
+      <li>Is a severity rating, such as CVSS, used to aid prioritization?</li>
+     </ul>
+     <ul>
+      <li>D.1.1.4</li>
+      <li>Is the access control to vulnerability information more restrictive than plain bug tracker defects?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(viii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.2.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>SCA-5</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CMVM2.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>D.1.2</li>
+     <li>Risk-based vulnerability remediation</li>
+     <li>Make risk-based decisions on whether to remediate a vulnerability or if the risk will be addressed another way (e.g. acceptance, temporary remediation, deferred remediation). Prioritize actions that will be taken. Deliver remediations via an automated and trusted delivery mechanism.</li>
+     <ul>
+      <li>D.1.2.1</li>
+      <li>Can you tell me about your process for making decisions on which vulnerabilities should be remediated?</li>
+     </ul>
+     <ul>
+      <li>D.1.2.2</li>
+      <li>What is your process for responding to reported incidents quickly?</li>
+     </ul>
+     <ul>
+      <li>D.1.2.3</li>
+      <li>Can high-priority vulnerabilities prevent the shipment of the product?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(v), 4e(viii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.2.2</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-5, SA-11</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>OSSF Scorecard</li>
+      <ul>
+       <li>Vulnerabilities, maintained</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>D.1.3</li>
+     <li>Vulnerability disclosure</li>
+     <li>Have a policy that invokes vulnerability disclosure and remediation, and organizational response. Implement the roles, responsibilities, and processes needed to support that policy, including a Product Security Incident Response Team (PSIRT) to handle responses to vulnerability reports and incidents. The disclosure program will require insight from internal stakeholders, such as legal, marketing, and public relations.</li>
+     <ul>
+      <li>D.1.3.1</li>
+      <li>What is your process for addressing vulnerability disclosure and remediation with roles, responsibilities, and processes in place?</li>
+     </ul>
+     <ul>
+      <li>D.1.3.2</li>
+      <li>How do you develop and release security advisories to your software acquirers?</li>
+     </ul>
+     <ul>
+      <li>D.1.3.3</li>
+      <li>Do you publish a security policy (via a security.md file) to inform users about a vulnerability and how to report it?</li>
+     </ul>
+     <ul>
+      <li>D.1.3.4</li>
+      <li>Do users know how to report vulnerabilities?</li>
+     </ul>
+     <ul>
+      <li>D.1.3.5</li>
+      <li>Who handles PSIRT?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(viii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.1.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CMVM1.1, CMVM2.1, CMVM3.7</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SA-15</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>INV-2</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>D.1.4</li>
+     <li>Vulnerability eradication</li>
+     <li>Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, not just the instance originally discovered. Proactively fix a class of vulnerabilities rather than waiting for the discovery of each vulnerability through automation, testing, or an external incident. Automation and custom rules in vulnerability discovery tools or compilers can be used. Patterns of remediation efforts should provide feedback into the secure SDLC.</li>
+     <ul>
+      <li>D.1.4.1</li>
+      <li>Does your team have a process of proactively eradicating or reducing a whole class of vulnerabilities based upon previously-identified vulnerabilities or incidents?</li>
+     </ul>
+     <ul>
+      <li>D.1.4.2</li>
+      <li>Are these patterns folded back into the SDLC?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(iv), 4e(viii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.3.3</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CR3.3, CMVM3.1</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>SI-2</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>D.1.5</li>
+     <li>Emergency artifact fix</li>
+     <li>Zero-day vulnerabilities may not be fixed by an upstream maintainer in a desired timeframe. Implement an emergency response process to fix the vulnerability, re-build, deploy to your organization, and contribute the fix to the upstream maintainer.</li>
+     <ul>
+      <li>D.1.5.1</li>
+      <li>How do you handle it when an external artifact has a zero-day vulnerability that is not being fixed by an upstream maintainer in a desired timeframe?</li>
+     </ul>
+     <ul>
+      <li>S2C2F</li>
+      <ul>
+       <li>FIX-1</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>D.1.6</li>
+     <li>Root cause analysis</li>
+     <li>Analyze vulnerabilities discovered throughout the process and in production to determine their root cause for being injected and not discovered earlier before production. Incident response feedback should be fed back to developers and be considered when evolving the SDLC. Record lessons learned. Identify patterns, such as security tasks in the SDLC needing to be followed. Discuss and disseminate these patterns to developers. Guide process correction if the current process is not being followed.</li>
+     <ul>
+      <li>D.1.6.1</li>
+      <li>Do you analyze identified vulnerabilities to determine their root cause, including how the vulnerability was injected and, perhaps, how it escaped vulnerability detection efforts and made it into production?</li>
+     </ul>
+     <ul>
+      <li>D.1.6.2</li>
+      <li>Do you communicate trends to developers? How can trends identified in root cause be factored into your SDLC process?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(ix)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>SSDF</li>
+      <ul>
+       <li>RV.3.1, RV.3.2, RV.3.4</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>BSIMM</li>
+      <ul>
+       <li>CP3.3, CMVM3.2</li>
+      </ul>
+     </ul>
+    </ul>
+   </ul>
+   <ul>
+    <li>D.2</li>
+    <li>Monitor intrusions/violations</li>
+    <li>Tasks for identifying malicious activity at runtime.</li>
+    <ul>
+     <li>D.2.1</li>
+     <li>System monitoring</li>
+     <li>Continuously monitor the running system to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, policy non-compliance, and insider threat detection, including boundary protection, supply chain components, and supply chain information flow.</li>
+     <ul>
+      <li>D.2.1.1</li>
+      <li>Are running systems continuously monitored to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, and insider threat, including boundary protections of supply chain components and supply chain information flow?</li>
+     </ul>
+     <ul>
+      <li>D.2.1.1</li>
+      <li>What is the process when an intrusion or violation is detected? Is there a QoS target?</li>
+     </ul>
+     <ul>
+      <li>EO</li>
+      <ul>
+       <li>4e(vii)</li>
+      </ul>
+     </ul>
+     <ul>
+      <li>800-161</li>
+      <ul>
+       <li>CA-7</li>
+      </ul>
+     </ul>
+    </ul>
+    <ul>
+     <li>D.2.2</li>
+     <li>Build process monitoring</li>
+     <li>Do you monitor the build chain for unauthorized access and modifications? Have you completed an attack surface investigation of your build environment? What kinds of actions do you take to narrow the attack vectors?</li>
+     <ul>
+      <li>D.2.2.1</li>
+      <li>Do you monitor the build chain for unauthorized access and modifications?</li>
+     </ul>
+     <ul>
+      <li>D.2.2.2</li>
+      <li>Have you completed an attack surface investigation of your build environment?</li>
+     </ul>
+     <ul>
+      <li>D.2.2.3</li>
+      <li>What kinds of actions do you take to narrow the attack vectors?</li>
+     </ul>
+     <ul>
+      <li>CNCF SSC</li>
+      <ul>
+       <li>V: Validate runtime security of build workers; SA: Use short-lived workload certificates</li>
+      </ul>
+     </ul>
+    </ul>
    </ul>
   </ul>
  </body>

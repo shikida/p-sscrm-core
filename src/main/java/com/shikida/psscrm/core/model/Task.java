@@ -28,9 +28,10 @@ public class Task {
 		this.references.add(new Reference(source.getPrefix(), sections));
 	}
 
-	public void addQuestion(String id, String text) {
+	public Question addQuestion(String id, String text) {
 		Question q = new Question(id,text);
 		this.questions.add(q);
+		return q;
 	}
 
 	public String getDefinition() {

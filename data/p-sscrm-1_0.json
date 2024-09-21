@@ -18,19 +18,29 @@
               "questions": [
                 {
                   "id": "G.1.1.1",
-                  "text": "Do you have a defined secure SDLC that the engineers are aware of?"
+                  "text": "Do you have a defined secure SDLC that the engineers are aware of?",
+                  "answers": [
+                    {
+                      "id": "G.1.1.1.1",
+                      "text": "Answer 1",
+                      "weight": 0.75
+                    }
+                  ]
                 },
                 {
                   "id": "G.1.1.2",
-                  "text": "How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?"
+                  "text": "How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.1.3",
-                  "text": "How are these requirements and contributions maintained over time?"
+                  "text": "How are these requirements and contributions maintained over time?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.1.4",
-                  "text": "How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?"
+                  "text": "How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -85,15 +95,18 @@
               "questions": [
                 {
                   "id": "G.1.2.1",
-                  "text": "How do you scan check that the software licenses for tools or third party components comply with your organization\u0027s use policies?"
+                  "text": "How do you scan check that the software licenses for tools or third party components comply with your organization\u0027s use policies?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.2.2",
-                  "text": "Is the process automated?"
+                  "text": "Is the process automated?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.2.1",
-                  "text": "Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?"
+                  "text": "Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -131,31 +144,38 @@
               "questions": [
                 {
                   "id": "G.1.3.1",
-                  "text": "Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?"
+                  "text": "Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.3.2",
-                  "text": "Where are the artifacts stored?"
+                  "text": "Where are the artifacts stored?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.3.3",
-                  "text": "What are your auditability/retention requirements for these artifacts?"
+                  "text": "What are your auditability/retention requirements for these artifacts?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.3.4",
-                  "text": "Is responsibility assigned for creating needed artifacts that tools cannot generate?"
+                  "text": "Is responsibility assigned for creating needed artifacts that tools cannot generate?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.3.5",
-                  "text": "Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?"
+                  "text": "Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.3.6",
-                  "text": "Do you need to provide self-attestation for your product?"
+                  "text": "Do you need to provide self-attestation for your product?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.3.7",
-                  "text": "Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?"
+                  "text": "Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -211,23 +231,28 @@
               "questions": [
                 {
                   "id": "G.1.4.1",
-                  "text": "Can you tell me more about your provenance data generation process?"
+                  "text": "Can you tell me more about your provenance data generation process?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.4.2",
-                  "text": "What authentications take place relative to the production of provenance data?"
+                  "text": "What authentications take place relative to the production of provenance data?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.4.3",
-                  "text": "Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?"
+                  "text": "Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.4.4",
-                  "text": "Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?"
+                  "text": "Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.4.5",
-                  "text": "Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?"
+                  "text": "Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -285,27 +310,33 @@
               "questions": [
                 {
                   "id": "G.1.5.1",
-                  "text": "Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?"
+                  "text": "Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.5.2",
-                  "text": "How and when is the SBOM built?"
+                  "text": "How and when is the SBOM built?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.5.3",
-                  "text": "What tool do you use?"
+                  "text": "What tool do you use?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.5.4",
-                  "text": "Do you digitally sign the SBOMs?"
+                  "text": "Do you digitally sign the SBOMs?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.5.5",
-                  "text": "Do you produce a VEX supplement for your SBOM?"
+                  "text": "Do you produce a VEX supplement for your SBOM?",
+                  "answers": []
                 },
                 {
                   "id": "G.1.5.6",
-                  "text": "What is your process for generating the VEX information?"
+                  "text": "What is your process for generating the VEX information?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -378,15 +409,18 @@
               "questions": [
                 {
                   "id": "G.2.1.1",
-                  "text": "Can you share about upper management\u0027s commitment to secure software development?"
+                  "text": "Can you share about upper management\u0027s commitment to secure software development?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.1.2",
-                  "text": "In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?"
+                  "text": "In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.1.3",
-                  "text": "Comment on the adequacy of resources dedicated to secure software development."
+                  "text": "Comment on the adequacy of resources dedicated to secure software development.",
+                  "answers": []
                 }
               ],
               "references": [
@@ -419,19 +453,23 @@
               "questions": [
                 {
                   "id": "G.2.2.1",
-                  "text": "What kind of criteria for security checks has been established, such as for security testing results?"
+                  "text": "What kind of criteria for security checks has been established, such as for security testing results?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.2.2",
-                  "text": "How can these checks indicate if security practices are being used and secure software is being developed?"
+                  "text": "How can these checks indicate if security practices are being used and secure software is being developed?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.2.3",
-                  "text": "How are these checks tracked through the SDLC?"
+                  "text": "How are these checks tracked through the SDLC?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.2.4",
-                  "text": "Are the checks automated or manual?"
+                  "text": "Are the checks automated or manual?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -477,7 +515,8 @@
               "questions": [
                 {
                   "id": "G.2.3.1",
-                  "text": "What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?"
+                  "text": "What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -517,11 +556,13 @@
               "questions": [
                 {
                   "id": "G.2.4.1",
-                  "text": "What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?"
+                  "text": "What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.4.2",
-                  "text": "How are these guidelines communicated and enforced?"
+                  "text": "How are these guidelines communicated and enforced?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -567,19 +608,23 @@
               "questions": [
                 {
                   "id": "G.2.5.1",
-                  "text": "How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?"
+                  "text": "How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.5.2",
-                  "text": "Is the components inventory process automated or manual?"
+                  "text": "Is the components inventory process automated or manual?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.5.3",
-                  "text": "Are the artifacts machine-readable (such as through SBOM generation)?"
+                  "text": "Are the artifacts machine-readable (such as through SBOM generation)?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.5.4",
-                  "text": "What process is used for the asset inventory to be updated when a product or system goes to end-of-life?"
+                  "text": "What process is used for the asset inventory to be updated when a product or system goes to end-of-life?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -626,11 +671,13 @@
               "questions": [
                 {
                   "id": "G.2.6.1",
-                  "text": "What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?"
+                  "text": "What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?",
+                  "answers": []
                 },
                 {
                   "id": "G.2.6.2",
-                  "text": "What policies are set in place for the use of cryptography in the organization’s security policy?"
+                  "text": "What policies are set in place for the use of cryptography in the organization’s security policy?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -657,15 +704,18 @@
               "questions": [
                 {
                   "id": "G.3.1.1",
-                  "text": "What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?"
+                  "text": "What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?",
+                  "answers": []
                 },
                 {
                   "id": "G.3.1.2",
-                  "text": "Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?"
+                  "text": "Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?",
+                  "answers": []
                 },
                 {
                   "id": "G.3.1.3",
-                  "text": "How is adherence to contract terms verified?"
+                  "text": "How is adherence to contract terms verified?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -724,7 +774,8 @@
               "questions": [
                 {
                   "id": "G.3.2.1",
-                  "text": "How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise\u0027s supply chain or contracted developers promoting code from development to production?"
+                  "text": "How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise\u0027s supply chain or contracted developers promoting code from development to production?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -744,11 +795,13 @@
               "questions": [
                 {
                   "id": "G.3.3.1",
-                  "text": "What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?"
+                  "text": "What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?",
+                  "answers": []
                 },
                 {
                   "id": "G.3.3.2",
-                  "text": "What kind of contract language is in place to require that vendors notify of unauthorized disclosure?"
+                  "text": "What kind of contract language is in place to require that vendors notify of unauthorized disclosure?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -768,7 +821,8 @@
               "questions": [
                 {
                   "id": "G.3.4.1",
-                  "text": "Under what circumstances are contract employees included in audits to identify security risks in the supply chain?"
+                  "text": "Under what circumstances are contract employees included in audits to identify security risks in the supply chain?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -788,15 +842,18 @@
               "questions": [
                 {
                   "id": "G.3.5.1",
-                  "text": "What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?"
+                  "text": "What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?",
+                  "answers": []
                 },
                 {
                   "id": "G.3.5.2",
-                  "text": "How much notification does a vendor provide when a product goes end-of-life?"
+                  "text": "How much notification does a vendor provide when a product goes end-of-life?",
+                  "answers": []
                 },
                 {
                   "id": "G.3.5.3",
-                  "text": "What end-of-life options exist?"
+                  "text": "What end-of-life options exist?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -823,15 +880,18 @@
               "questions": [
                 {
                   "id": "G.4.1.1",
-                  "text": "Can you tell me about the training given to employees and to vendors related to software supply chain security?"
+                  "text": "Can you tell me about the training given to employees and to vendors related to software supply chain security?",
+                  "answers": []
                 },
                 {
                   "id": "G.4.1.2",
-                  "text": "Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?"
+                  "text": "Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?",
+                  "answers": []
                 },
                 {
                   "id": "G.4.1.3",
-                  "text": "Is the training specific to their roles, development tools, and language?"
+                  "text": "Is the training specific to their roles, development tools, and language?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -878,7 +938,8 @@
               "questions": [
                 {
                   "id": "G.4.2.1",
-                  "text": "Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?"
+                  "text": "Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -905,7 +966,8 @@
               "questions": [
                 {
                   "id": "G.4.3.1",
-                  "text": "How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?"
+                  "text": "How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -959,7 +1021,8 @@
               "questions": [
                 {
                   "id": "G.5.1.1",
-                  "text": "What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?"
+                  "text": "What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -985,11 +1048,13 @@
               "questions": [
                 {
                   "id": "G.5.2.1",
-                  "text": "How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved?"
+                  "text": "How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved?",
+                  "answers": []
                 },
                 {
                   "id": "G.5.2.2",
-                  "text": "How are approved exceptions to the security requirements periodically evaluated?"
+                  "text": "How are approved exceptions to the security requirements periodically evaluated?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1022,11 +1087,13 @@
               "questions": [
                 {
                   "id": "G.5.3.1",
-                  "text": "What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)?"
+                  "text": "What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)?",
+                  "answers": []
                 },
                 {
                   "id": "G.5.3.2",
-                  "text": "Are these metrics collected automatically or manually?"
+                  "text": "Are these metrics collected automatically or manually?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1047,11 +1114,13 @@
               "questions": [
                 {
                   "id": "G.5.4.1",
-                  "text": "Do you use the toolchain to gather information that informs security decision-making automatically?"
+                  "text": "Do you use the toolchain to gather information that informs security decision-making automatically?",
+                  "answers": []
                 },
                 {
                   "id": "G.5.4.2",
-                  "text": "If not, is this information collected and reviewed manually?"
+                  "text": "If not, is this information collected and reviewed manually?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1111,15 +1180,18 @@
               "questions": [
                 {
                   "id": "P.1.1.1",
-                  "text": "How are risk-reducing security architecture and design requirements for products considered and developed?"
+                  "text": "How are risk-reducing security architecture and design requirements for products considered and developed?",
+                  "answers": []
                 },
                 {
                   "id": "P.1.1.2",
-                  "text": "Which of the following strategies are considered: the use of memory-safe languages, secure frameworks, isolation and sandboxing?"
+                  "text": "Which of the following strategies are considered: the use of memory-safe languages, secure frameworks, isolation and sandboxing?",
+                  "answers": []
                 },
                 {
                   "id": "P.1.1.3",
-                  "text": "Are completion and adherence tracked?"
+                  "text": "Are completion and adherence tracked?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1165,23 +1237,28 @@
               "questions": [
                 {
                   "id": "P.1.2.1",
-                  "text": "What software integrity artifacts do you make available to software acquirers, such as cryptographic hashes of release files?"
+                  "text": "What software integrity artifacts do you make available to software acquirers, such as cryptographic hashes of release files?",
+                  "answers": []
                 },
                 {
                   "id": "P.1.2.2",
-                  "text": "Do you use a certificate authority for code/commit signing?"
+                  "text": "Do you use a certificate authority for code/commit signing?",
+                  "answers": []
                 },
                 {
                   "id": "P.1.2.3",
-                  "text": "How often do you review code signing processes, such as certificate renewal and key rotation?"
+                  "text": "How often do you review code signing processes, such as certificate renewal and key rotation?",
+                  "answers": []
                 },
                 {
                   "id": "P.1.2.4",
-                  "text": "Do you ensure use a dedicated, protected signing server when signing is required?"
+                  "text": "Do you ensure use a dedicated, protected signing server when signing is required?",
+                  "answers": []
                 },
                 {
                   "id": "P.1.2.5",
-                  "text": "What kind of license is declared for a project?"
+                  "text": "What kind of license is declared for a project?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1238,23 +1315,28 @@
               "questions": [
                 {
                   "id": "P.2.1.1",
-                  "text": "For all critical software components and external services that your team operates and owns, has a qualified person not involved in the design reviewed the design and conducted an attack surface analysis and threat model?"
+                  "text": "For all critical software components and external services that your team operates and owns, has a qualified person not involved in the design reviewed the design and conducted an attack surface analysis and threat model?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.1.2",
-                  "text": "What kind of approaches are you using to narrow attack vectors?"
+                  "text": "What kind of approaches are you using to narrow attack vectors?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.1.3",
-                  "text": "What kind of tool or methodology (like STRIDE) do you use to structure your threat modeling?"
+                  "text": "What kind of tool or methodology (like STRIDE) do you use to structure your threat modeling?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.1.4",
-                  "text": "Do you perform analysis such that only required modules are included in the product and unused modules are uninstalled and removed, decreasing the attack surface?"
+                  "text": "Do you perform analysis such that only required modules are included in the product and unused modules are uninstalled and removed, decreasing the attack surface?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.1.5",
-                  "text": "How are unused modules identified - such as \u0027debloating\u0027 a product for unused components and containers?"
+                  "text": "How are unused modules identified - such as \u0027debloating\u0027 a product for unused components and containers?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1292,11 +1374,13 @@
               "questions": [
                 {
                   "id": "P.2.2.1",
-                  "text": "What kind of secure coding practices are used?"
+                  "text": "What kind of secure coding practices are used?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.2.2",
-                  "text": "How are these practices communicated to developers and enforced?"
+                  "text": "How are these practices communicated to developers and enforced?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1334,7 +1418,8 @@
               "questions": [
                 {
                   "id": "P.2.3.1",
-                  "text": "Are the default installation settings for products, platform, network infrastructure, services defined to be secure by default?"
+                  "text": "Are the default installation settings for products, platform, network infrastructure, services defined to be secure by default?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1378,15 +1463,18 @@
               "questions": [
                 {
                   "id": "P.2.4.1",
-                  "text": "Can you tell me about your philosophy of whether it is better to use available security features or to \u0027roll your own,\u0027 for example, log management, identity management, access control, and vulnerability management?"
+                  "text": "Can you tell me about your philosophy of whether it is better to use available security features or to \u0027roll your own,\u0027 for example, log management, identity management, access control, and vulnerability management?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.4.2",
-                  "text": "Or a combination of in-house/proprietary and standard features?"
+                  "text": "Or a combination of in-house/proprietary and standard features?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.4.2",
-                  "text": "What factors determine if you use in-house or standard features?"
+                  "text": "What factors determine if you use in-house or standard features?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1418,15 +1506,18 @@
               "questions": [
                 {
                   "id": "P.2.5.1",
-                  "text": "What processes are used to scan in-house components built using SDLC processes for vulnerabilities and how is the process similar or different to what is done for third-party components?"
+                  "text": "What processes are used to scan in-house components built using SDLC processes for vulnerabilities and how is the process similar or different to what is done for third-party components?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.5.2",
-                  "text": "What causes a need for a new version?"
+                  "text": "What causes a need for a new version?",
+                  "answers": []
                 },
                 {
                   "id": "P.2.5.3",
-                  "text": "Are in-house components monitored to ensure they are regularly maintained?"
+                  "text": "Are in-house components monitored to ensure they are regularly maintained?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1465,31 +1556,38 @@
               "questions": [
                 {
                   "id": "P.3.1.1",
-                  "text": "What kind of approval process do you have, if any, for third-party libraries and containers included in a product?"
+                  "text": "What kind of approval process do you have, if any, for third-party libraries and containers included in a product?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.1.2",
-                  "text": "What do you consider when selecting a third-party component or container?"
+                  "text": "What do you consider when selecting a third-party component or container?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.1.3",
-                  "text": "Do you consider solutions with the least functionality to reduce the attack surface?"
+                  "text": "Do you consider solutions with the least functionality to reduce the attack surface?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.1.4",
-                  "text": "How would the approval process handle dependencies that are no longer receiving updates?"
+                  "text": "How would the approval process handle dependencies that are no longer receiving updates?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.1.5",
-                  "text": "Do you look at the OpenSSF Scorecard metrics for a component?"
+                  "text": "Do you look at the OpenSSF Scorecard metrics for a component?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.1.6",
-                  "text": "Are you concerned when a component contains binary artifacts that cannot be easily reviewed and more easily sneak in a vulnerability?"
+                  "text": "Are you concerned when a component contains binary artifacts that cannot be easily reviewed and more easily sneak in a vulnerability?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.1.7",
-                  "text": "Do you have a Deny List to prevent the choice of vulnerable and malicious components?"
+                  "text": "Do you have a Deny List to prevent the choice of vulnerable and malicious components?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1533,11 +1631,13 @@
               "questions": [
                 {
                   "id": "P.3.2.1",
-                  "text": "Do you search for candidate components in package managers trusted by your organization?"
+                  "text": "Do you search for candidate components in package managers trusted by your organization?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.2.2",
-                  "text": "Do you use container registries you trust?"
+                  "text": "Do you use container registries you trust?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1569,7 +1669,8 @@
               "questions": [
                 {
                   "id": "P.3.3.1",
-                  "text": "Do you require the software producers to sign code commits of the components and tools you bring into your product?"
+                  "text": "Do you require the software producers to sign code commits of the components and tools you bring into your product?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1595,11 +1696,13 @@
               "questions": [
                 {
                   "id": "P.3.4.1",
-                  "text": "Do you have a local component repository in which binaries and source code of third-party components are stored?"
+                  "text": "Do you have a local component repository in which binaries and source code of third-party components are stored?",
+                  "answers": []
                 },
                 {
                   "id": "P.3.4.2",
-                  "text": "Do you rebuild a component from source when possible?"
+                  "text": "Do you rebuild a component from source when possible?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1667,7 +1770,8 @@
               "questions": [
                 {
                   "id": "P.3.5.1",
-                  "text": "What mechanisms are in place, if any, to audit that developers are consuming third party code through the approved ingestion method and not bypassing the vetting process?"
+                  "text": "What mechanisms are in place, if any, to audit that developers are consuming third party code through the approved ingestion method and not bypassing the vetting process?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1694,15 +1798,18 @@
               "questions": [
                 {
                   "id": "P.4.1.1",
-                  "text": "How does the team perform security-related code reviews?"
+                  "text": "How does the team perform security-related code reviews?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.1.2",
-                  "text": "Is a secure coding standard used?"
+                  "text": "Is a secure coding standard used?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.1.3",
-                  "text": "How do discovered vulnerabilities get recorded, tracked, and remediated?"
+                  "text": "How do discovered vulnerabilities get recorded, tracked, and remediated?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1752,35 +1859,43 @@
               "questions": [
                 {
                   "id": "P.4.2.1",
-                  "text": "What security tools are in your toolchain?"
+                  "text": "What security tools are in your toolchain?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.2",
-                  "text": "SAST?"
+                  "text": "SAST?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.3",
-                  "text": "DAST?"
+                  "text": "DAST?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.4",
-                  "text": "IAST?"
+                  "text": "IAST?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.5",
-                  "text": "How often is the scanning done for third-party components?"
+                  "text": "How often is the scanning done for third-party components?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.6",
-                  "text": "Do you use a tool to detect secrets in code?"
+                  "text": "Do you use a tool to detect secrets in code?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.7",
-                  "text": "What happens with the reported vulnerabilities?"
+                  "text": "What happens with the reported vulnerabilities?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.2.8",
-                  "text": "Do you scan your tools for vulnerabilities?"
+                  "text": "Do you scan your tools for vulnerabilities?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1836,7 +1951,8 @@
               "questions": [
                 {
                   "id": "P.4.3.1",
-                  "text": "How is code reviewed, analyzed, and tested to identify or confirm the presence, remediation, and disclosure of previously-undetected vulnerabilities such as through automated tools?"
+                  "text": "How is code reviewed, analyzed, and tested to identify or confirm the presence, remediation, and disclosure of previously-undetected vulnerabilities such as through automated tools?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1886,27 +2002,33 @@
               "questions": [
                 {
                   "id": "P.4.4.1",
-                  "text": "How are security features tested?"
+                  "text": "How are security features tested?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.4.2",
-                  "text": "How are test cases developed to test the security of an application?"
+                  "text": "How are test cases developed to test the security of an application?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.4.3",
-                  "text": "Is security testing factored into a product\u0027s test suite?"
+                  "text": "Is security testing factored into a product\u0027s test suite?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.4.4",
-                  "text": "Is executable code testing, such as in-house or external penetration testing, used to find vulnerabilities not found by previous reviews, analysis, and testing?"
+                  "text": "Is executable code testing, such as in-house or external penetration testing, used to find vulnerabilities not found by previous reviews, analysis, and testing?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.4.5",
-                  "text": "Do you do executable testing on containers?"
+                  "text": "Do you do executable testing on containers?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.4.6",
-                  "text": "Do you test your build process, scripts, GitHub actions?"
+                  "text": "Do you test your build process, scripts, GitHub actions?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -1956,15 +2078,18 @@
               "questions": [
                 {
                   "id": "P.4.5.1",
-                  "text": "How do you verify that third-party software components continue to comply with the requirements defined by the organization, such as through using a secure SDLC and the delivery of attestation of security practices?"
+                  "text": "How do you verify that third-party software components continue to comply with the requirements defined by the organization, such as through using a secure SDLC and the delivery of attestation of security practices?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.5.2",
-                  "text": "Do you check that components are being maintained and are not at end-of-life or have been abandoned?"
+                  "text": "Do you check that components are being maintained and are not at end-of-life or have been abandoned?",
+                  "answers": []
                 },
                 {
                   "id": "P.4.5.3",
-                  "text": "How are known critical vulnerabilities in third-party and open-source components and containers mitigated?"
+                  "text": "How are known critical vulnerabilities in third-party and open-source components and containers mitigated?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2021,31 +2146,38 @@
               "questions": [
                 {
                   "id": "P.5.1.1",
-                  "text": "Does anyone check the SBOM information about pending security vulnerabilities?"
+                  "text": "Does anyone check the SBOM information about pending security vulnerabilities?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.1.2",
-                  "text": "How do you consume the SBOMs for your components?"
+                  "text": "How do you consume the SBOMs for your components?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.1.3",
-                  "text": "Do you have any specific experience being aided by information provided by the SBOM?"
+                  "text": "Do you have any specific experience being aided by information provided by the SBOM?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.1.4",
-                  "text": "How do you feel about the assistance provided by tools to help you consume an SBOM?"
+                  "text": "How do you feel about the assistance provided by tools to help you consume an SBOM?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.1.5",
-                  "text": "If not now, do you have plans to consume SBOMs in the future?"
+                  "text": "If not now, do you have plans to consume SBOMs in the future?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.1.6",
-                  "text": "Do you consider and trust the VEX information in the SBOM?"
+                  "text": "Do you consider and trust the VEX information in the SBOM?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.1.7",
-                  "text": "What expectations do you put on the component producers for the vulnerabilities identified in the SBOM?"
+                  "text": "What expectations do you put on the component producers for the vulnerabilities identified in the SBOM?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2071,23 +2203,28 @@
               "questions": [
                 {
                   "id": "P.5.2.1",
-                  "text": "What is your strategy for updating dependencies based on SCA, SBOM, or automated pull requests?"
+                  "text": "What is your strategy for updating dependencies based on SCA, SBOM, or automated pull requests?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.2.2",
-                  "text": "Do you have a strategy for updating all, such as through a tool such as Dependabot that automates PR?"
+                  "text": "Do you have a strategy for updating all, such as through a tool such as Dependabot that automates PR?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.2.3",
-                  "text": "Does the project use tools to help update its dependencies e.g. Dependabot, RenovateBot?"
+                  "text": "Does the project use tools to help update its dependencies e.g. Dependabot, RenovateBot?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.2.4",
-                  "text": "Are the software assets that require automated updates defined from a criticality/risk-based perspective?"
+                  "text": "Are the software assets that require automated updates defined from a criticality/risk-based perspective?",
+                  "answers": []
                 },
                 {
                   "id": "P.5.2.5",
-                  "text": "How are containers updated when a vulnerability is detected?"
+                  "text": "How are containers updated when a vulnerability is detected?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2133,7 +2270,8 @@
               "questions": [
                 {
                   "id": "E.1.1.1",
-                  "text": "What files and supporting data (like integrity validation, provenance, and metadata) do you securely archive and retain for each software release?"
+                  "text": "What files and supporting data (like integrity validation, provenance, and metadata) do you securely archive and retain for each software release?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2165,7 +2303,8 @@
               "questions": [
                 {
                   "id": "E.1.2.1",
-                  "text": "Are code and other important project artifacts stored with version control with access granted to strongly-authenticated personnel using the principle of least privilege?"
+                  "text": "Are code and other important project artifacts stored with version control with access granted to strongly-authenticated personnel using the principle of least privilege?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2197,15 +2336,18 @@
               "questions": [
                 {
                   "id": "E.1.3.1",
-                  "text": "Is MFA mandated and enforced at the source code repository level?"
+                  "text": "Is MFA mandated and enforced at the source code repository level?",
+                  "answers": []
                 },
                 {
                   "id": "E.1.3.2",
-                  "text": "Are soft or physical tokens used?"
+                  "text": "Are soft or physical tokens used?",
+                  "answers": []
                 },
                 {
                   "id": "E.1.3.3",
-                  "text": "Is MFA enforced for endpoints?"
+                  "text": "Is MFA enforced for endpoints?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2225,7 +2367,8 @@
               "questions": [
                 {
                   "id": "E.1.4.1",
-                  "text": "Do you avoid using passwords through the use of SSH keys, SSH certificates, or short-term rotated Access Tokens?"
+                  "text": "Do you avoid using passwords through the use of SSH keys, SSH certificates, or short-term rotated Access Tokens?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2245,11 +2388,13 @@
               "questions": [
                 {
                   "id": "E.1.5.1",
-                  "text": "Do you use branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch?"
+                  "text": "Do you use branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch?",
+                  "answers": []
                 },
                 {
                   "id": "E.1.5.2",
-                  "text": "In high assurance, high risk environments, is commit signing with full-attestation required?"
+                  "text": "In high assurance, high risk environments, is commit signing with full-attestation required?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2275,7 +2420,8 @@
               "questions": [
                 {
                   "id": "E.1.6.1",
-                  "text": "What decommissioning procedures are in place when a live product or system goes to end-of-life?"
+                  "text": "What decommissioning procedures are in place when a live product or system goes to end-of-life?",
+                  "answers": []
                 }
               ],
               "references": []
@@ -2295,11 +2441,13 @@
               "questions": [
                 {
                   "id": "E.2.1.1",
-                  "text": "Do you have a templated build policy that specifies the required build workflow to ensure the integrity, authentication, and auditability?"
+                  "text": "Do you have a templated build policy that specifies the required build workflow to ensure the integrity, authentication, and auditability?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.1.2",
-                  "text": "Do you verify the build policy in a cryptographically provable way, such as with in-toto?"
+                  "text": "Do you verify the build policy in a cryptographically provable way, such as with in-toto?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2319,15 +2467,18 @@
               "questions": [
                 {
                   "id": "E.2.2.1",
-                  "text": "Can you track a package back to its repo?"
+                  "text": "Can you track a package back to its repo?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.2.2",
-                  "text": "Do you verify the integrity (i.e. digital signature or hash match) and the provenance data of each component and container?"
+                  "text": "Do you verify the integrity (i.e. digital signature or hash match) and the provenance data of each component and container?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.2.3",
-                  "text": "Do you validate that the build environment\u0027s sources and dependencies come from a secure, trusted source of truth?"
+                  "text": "Do you validate that the build environment\u0027s sources and dependencies come from a secure, trusted source of truth?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2365,11 +2516,13 @@
               "questions": [
                 {
                   "id": "E.2.3.1",
-                  "text": "Do you use compiler, interpreter, and build tool features to detect vulnerabilities?"
+                  "text": "Do you use compiler, interpreter, and build tool features to detect vulnerabilities?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.3.2",
-                  "text": "Do you have a Deny List to prevent using a vulnerable and/or malicious component in the build?"
+                  "text": "Do you have a Deny List to prevent using a vulnerable and/or malicious component in the build?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2425,47 +2578,58 @@
               "questions": [
                 {
                   "id": "E.2.4.1",
-                  "text": "Are your build steps defined in a build script, with the only manual step being to invoke the script?"
+                  "text": "Are your build steps defined in a build script, with the only manual step being to invoke the script?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.2",
-                  "text": "Is the build definition executed by the build service stored in a version control system fetched through a trusted channel with a trustworthy provenance chain?"
+                  "text": "Is the build definition executed by the build service stored in a version control system fetched through a trusted channel with a trustworthy provenance chain?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.3",
-                  "text": "Does the build run on a hosted build platform?"
+                  "text": "Does the build run on a hosted build platform?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.4",
-                  "text": "Is the build service run in an ephemeral environment, such as a container or VM, provisioned solely for the build?"
+                  "text": "Is the build service run in an ephemeral environment, such as a container or VM, provisioned solely for the build?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.5",
-                  "text": "Is the build service run in an isolated environment free of influence from other build instances?"
+                  "text": "Is the build service run in an isolated environment free of influence from other build instances?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.6",
-                  "text": "Can the build output be affected by user parameters other than the build entry point?"
+                  "text": "Can the build output be affected by user parameters other than the build entry point?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.7",
-                  "text": "Are the build steps, sources, and dependencies declared up front with immutable references/use immutable artifacts stored in a local repository manager?"
+                  "text": "Are the build steps, sources, and dependencies declared up front with immutable references/use immutable artifacts stored in a local repository manager?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.8",
-                  "text": "Is the build run with no network access (i.e., hermetic)?"
+                  "text": "Is the build run with no network access (i.e., hermetic)?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.9",
-                  "text": "Are infrastructure, build scripts, and GitHub Actions handled \u0027as code\u0027, such as with code review, scanning, testing, and version control?"
+                  "text": "Are infrastructure, build scripts, and GitHub Actions handled \u0027as code\u0027, such as with code review, scanning, testing, and version control?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.10",
-                  "text": "Are configuration changes reviewed?"
+                  "text": "Are configuration changes reviewed?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.4.11",
-                  "text": "Are CI/CD pipelines standardized across the enterprise?"
+                  "text": "Are CI/CD pipelines standardized across the enterprise?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2527,11 +2691,13 @@
               "questions": [
                 {
                   "id": "E.2.5.1",
-                  "text": "Are containers used throughout the build process?"
+                  "text": "Are containers used throughout the build process?",
+                  "answers": []
                 },
                 {
                   "id": "E.2.5.2",
-                  "text": "Do you deploy Kubernetes as the orchestration layer?"
+                  "text": "Do you deploy Kubernetes as the orchestration layer?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2557,7 +2723,8 @@
               "questions": [
                 {
                   "id": "E.2.6.1",
-                  "text": "Do you practice reproducible builds on different protected environments and compare bit-for-bit results?"
+                  "text": "Do you practice reproducible builds on different protected environments and compare bit-for-bit results?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2589,7 +2756,8 @@
               "questions": [
                 {
                   "id": "E.2.7.1",
-                  "text": "Do you write artifacts from the build to a separate shared storage from the inputs?"
+                  "text": "Do you write artifacts from the build to a separate shared storage from the inputs?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2616,11 +2784,13 @@
               "questions": [
                 {
                   "id": "E.3.1.1",
-                  "text": "Are employees and contractors authenticated to enable access control, traceability, non-repudiation, chain of custody, and provenance for systems, software, and services?"
+                  "text": "Are employees and contractors authenticated to enable access control, traceability, non-repudiation, chain of custody, and provenance for systems, software, and services?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.1.2",
-                  "text": "Where do you store access credentials (e.g., hashes for passwords) and secrets in a secured (e.g., encrypted) location, such as a secure vault?"
+                  "text": "Where do you store access credentials (e.g., hashes for passwords) and secrets in a secured (e.g., encrypted) location, such as a secure vault?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2640,15 +2810,18 @@
               "questions": [
                 {
                   "id": "E.3.2.1",
-                  "text": "Are environments involved in software development (e.g., endpoints, development, build, test, deployment) separated and protected from physical and remote access to the build environment?"
+                  "text": "Are environments involved in software development (e.g., endpoints, development, build, test, deployment) separated and protected from physical and remote access to the build environment?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.2.2",
-                  "text": "Is access logged?"
+                  "text": "Is access logged?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.2.3",
-                  "text": "What kind of approval is needed for access to the build environment?"
+                  "text": "What kind of approval is needed for access to the build environment?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2686,11 +2859,13 @@
               "questions": [
                 {
                   "id": "E.3.3.1",
-                  "text": "How are authorization levels for accounts associated with roles and the associated level of access control, including remote access, proper vetting of contractors, and that authorization does not exceed the period of performance?"
+                  "text": "How are authorization levels for accounts associated with roles and the associated level of access control, including remote access, proper vetting of contractors, and that authorization does not exceed the period of performance?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.3.2",
-                  "text": "How are access control violations handled?"
+                  "text": "How are access control violations handled?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2716,11 +2891,13 @@
               "questions": [
                 {
                   "id": "E.3.4.1",
-                  "text": "How is information flow enforced to ensure only the required information is communicated across trust boundaries to participants in the supply chain through mechanisms that ensure transmission confidentiality and integrity?"
+                  "text": "How is information flow enforced to ensure only the required information is communicated across trust boundaries to participants in the supply chain through mechanisms that ensure transmission confidentiality and integrity?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.4.2",
-                  "text": "What kind of requirements for transmission confidentiality and integrity are integrated into agreements with suppliers?"
+                  "text": "What kind of requirements for transmission confidentiality and integrity are integrated into agreements with suppliers?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2740,11 +2917,13 @@
               "questions": [
                 {
                   "id": "E.3.5.1",
-                  "text": "Is a baseline configuration of the information system and development environment in place to provide a starting point for tracking changes to components, code, and/or settings for traceability and provenance?"
+                  "text": "Is a baseline configuration of the information system and development environment in place to provide a starting point for tracking changes to components, code, and/or settings for traceability and provenance?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.5.2",
-                  "text": "Who sets the baseline?"
+                  "text": "Who sets the baseline?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2764,11 +2943,13 @@
               "questions": [
                 {
                   "id": "E.3.6.1",
-                  "text": "What kind of monitoring and auditing of changes to configuration settings is in place?"
+                  "text": "What kind of monitoring and auditing of changes to configuration settings is in place?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.6.2",
-                  "text": "What designated employees are alerted when an unauthorized change occurs?"
+                  "text": "What designated employees are alerted when an unauthorized change occurs?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2788,11 +2969,13 @@
               "questions": [
                 {
                   "id": "E.3.7.1",
-                  "text": "How are development, test, and security assessment tools and operational environments separated and isolated from external networks or information systems and each other, as appropriate considering trust boundaries?"
+                  "text": "How are development, test, and security assessment tools and operational environments separated and isolated from external networks or information systems and each other, as appropriate considering trust boundaries?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.7.2",
-                  "text": "How are trust boundaries considered, and how is the separation/isolation implemented?"
+                  "text": "How are trust boundaries considered, and how is the separation/isolation implemented?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2812,7 +2995,8 @@
               "questions": [
                 {
                   "id": "E.3.8.1",
-                  "text": "What is your key rotation policy?"
+                  "text": "What is your key rotation policy?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2832,11 +3016,13 @@
               "questions": [
                 {
                   "id": "E.3.9.1",
-                  "text": "Do you use short-lived tokens for access management of machines and services such as CI/CD pipeline agents?"
+                  "text": "Do you use short-lived tokens for access management of machines and services such as CI/CD pipeline agents?",
+                  "answers": []
                 },
                 {
                   "id": "E.3.9.2",
-                  "text": "Who uses these tokens and for what types of systems?"
+                  "text": "Who uses these tokens and for what types of systems?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2856,7 +3042,8 @@
               "questions": [
                 {
                   "id": "E.3.10.1",
-                  "text": "Do you have a root of trust that can perform specific, critical security functions such as storing keys for cryptographic functions or enabling secure boot? How are these implemented?"
+                  "text": "Do you have a root of trust that can perform specific, critical security functions such as storing keys for cryptographic functions or enabling secure boot? How are these implemented?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2890,19 +3077,23 @@
               "questions": [
                 {
                   "id": "D.1.1.1",
-                  "text": "How are discovered vulnerabilities recorded and triaged?"
+                  "text": "How are discovered vulnerabilities recorded and triaged?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.1.2",
-                  "text": "How are the vulnerabilities prioritized for remediation?"
+                  "text": "How are the vulnerabilities prioritized for remediation?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.1.3",
-                  "text": "Is a severity rating, such as CVSS, used to aid prioritization?"
+                  "text": "Is a severity rating, such as CVSS, used to aid prioritization?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.1.4",
-                  "text": "Is the access control to vulnerability information more restrictive than plain bug tracker defects?"
+                  "text": "Is the access control to vulnerability information more restrictive than plain bug tracker defects?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2946,15 +3137,18 @@
               "questions": [
                 {
                   "id": "D.1.2.1",
-                  "text": "Can you tell me about your process for making decisions on which vulnerabilities should be remediated?"
+                  "text": "Can you tell me about your process for making decisions on which vulnerabilities should be remediated?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.2.2",
-                  "text": "What is your process for responding to reported incidents quickly?"
+                  "text": "What is your process for responding to reported incidents quickly?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.2.3",
-                  "text": "Can high-priority vulnerabilities prevent the shipment of the product?"
+                  "text": "Can high-priority vulnerabilities prevent the shipment of the product?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -2992,23 +3186,28 @@
               "questions": [
                 {
                   "id": "D.1.3.1",
-                  "text": "What is your process for addressing vulnerability disclosure and remediation with roles, responsibilities, and processes in place?"
+                  "text": "What is your process for addressing vulnerability disclosure and remediation with roles, responsibilities, and processes in place?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.3.2",
-                  "text": "How do you develop and release security advisories to your software acquirers?"
+                  "text": "How do you develop and release security advisories to your software acquirers?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.3.3",
-                  "text": "Do you publish a security policy (via a security.md file) to inform users about a vulnerability and how to report it?"
+                  "text": "Do you publish a security policy (via a security.md file) to inform users about a vulnerability and how to report it?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.3.4",
-                  "text": "Do users know how to report vulnerabilities?"
+                  "text": "Do users know how to report vulnerabilities?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.3.5",
-                  "text": "Who handles PSIRT?"
+                  "text": "Who handles PSIRT?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -3052,11 +3251,13 @@
               "questions": [
                 {
                   "id": "D.1.4.1",
-                  "text": "Does your team have a process of proactively eradicating or reducing a whole class of vulnerabilities based upon previously-identified vulnerabilities or incidents?"
+                  "text": "Does your team have a process of proactively eradicating or reducing a whole class of vulnerabilities based upon previously-identified vulnerabilities or incidents?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.4.2",
-                  "text": "Are these patterns folded back into the SDLC?"
+                  "text": "Are these patterns folded back into the SDLC?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -3094,7 +3295,8 @@
               "questions": [
                 {
                   "id": "D.1.5.1",
-                  "text": "How do you handle it when an external artifact has a zero-day vulnerability that is not being fixed by an upstream maintainer in a desired timeframe?"
+                  "text": "How do you handle it when an external artifact has a zero-day vulnerability that is not being fixed by an upstream maintainer in a desired timeframe?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -3114,11 +3316,13 @@
               "questions": [
                 {
                   "id": "D.1.6.1",
-                  "text": "Do you analyze identified vulnerabilities to determine their root cause, including how the vulnerability was injected and, perhaps, how it escaped vulnerability detection efforts and made it into production?"
+                  "text": "Do you analyze identified vulnerabilities to determine their root cause, including how the vulnerability was injected and, perhaps, how it escaped vulnerability detection efforts and made it into production?",
+                  "answers": []
                 },
                 {
                   "id": "D.1.6.2",
-                  "text": "Do you communicate trends to developers? How can trends identified in root cause be factored into your SDLC process?"
+                  "text": "Do you communicate trends to developers? How can trends identified in root cause be factored into your SDLC process?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -3157,11 +3361,13 @@
               "questions": [
                 {
                   "id": "D.2.1.1",
-                  "text": "Are running systems continuously monitored to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, and insider threat, including boundary protections of supply chain components and supply chain information flow?"
+                  "text": "Are running systems continuously monitored to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, and insider threat, including boundary protections of supply chain components and supply chain information flow?",
+                  "answers": []
                 },
                 {
                   "id": "D.2.1.1",
-                  "text": "What is the process when an intrusion or violation is detected? Is there a QoS target?"
+                  "text": "What is the process when an intrusion or violation is detected? Is there a QoS target?",
+                  "answers": []
                 }
               ],
               "references": [
@@ -3187,15 +3393,18 @@
               "questions": [
                 {
                   "id": "D.2.2.1",
-                  "text": "Do you monitor the build chain for unauthorized access and modifications?"
+                  "text": "Do you monitor the build chain for unauthorized access and modifications?",
+                  "answers": []
                 },
                 {
                   "id": "D.2.2.2",
-                  "text": " Have you completed an attack surface investigation of your build environment?"
+                  "text": " Have you completed an attack surface investigation of your build environment?",
+                  "answers": []
                 },
                 {
                   "id": "D.2.2.3",
-                  "text": " What kinds of actions do you take to narrow the attack vectors?"
+                  "text": " What kinds of actions do you take to narrow the attack vectors?",
+                  "answers": []
                 }
               ],
               "references": [
