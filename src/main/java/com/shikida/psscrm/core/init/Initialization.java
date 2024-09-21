@@ -325,10 +325,10 @@ public class Initialization {
 				"Organizational security requirements, such as those imposed by standards and regulations, are included in the SDLC.",
 				"Identify, document, communicate, and maintain security requirements and policies for the organization's software development infrastructure and secure SDLC. Maintain the requirements and policies over time. Incorporate constraints imposed by standards and regulations and customer-driven security requirements.");
 		
-		t.addQuestion("Do you have a defined secure SDLC that the engineers are aware of?");
-		t.addQuestion("How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?");  
-		t.addQuestion("How are these requirements and contributions maintained over time?");  
-		t.addQuestion("How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?");
+		t.addQuestion("G.1.1.1","Do you have a defined secure SDLC that the engineers are aware of?");
+		t.addQuestion("G.1.1.2","How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?");  
+		t.addQuestion("G.1.1.3","How are these requirements and contributions maintained over time?");  
+		t.addQuestion("G.1.1.4","How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?");
 
 		t.addReference(SourceEnumV1_0.EO,"4e(ix)");
 		t.addReference(SourceEnumV1_0.SSDF,"PO.1.1");
@@ -347,9 +347,9 @@ public class Initialization {
 			    "Software licenses may or may not allow certain types of usage, contain distribution requirements or limitations, or require specific action if the software is modified. Risk is increased if the licenses of components conflict with an organization's policies. Software licenses should be documented and tracked to trace the users and use of licenses to access control information and processes according to software usage restrictions. License metadata should be recorded during the build and made available in the SBOM."
 			);
 
-			t.addQuestion("How do you scan check that the software licenses for tools or third party components comply with your organization's use policies?");
-			t.addQuestion("Is the process automated?");
-			t.addQuestion("Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?");
+			t.addQuestion("G.1.2.1","How do you scan check that the software licenses for tools or third party components comply with your organization's use policies?");
+			t.addQuestion("G.1.2.2","Is the process automated?");
+			t.addQuestion("G.1.2.1","Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "CM-10");
 			t.addReference(SourceEnumV1_0.OWASP_SCVS, "5.12");
@@ -367,13 +367,13 @@ public class Initialization {
 			    "Configure tools to generate artifacts to create an audit trail of the use of secure software development practices that conforms with record retention requirements and preserves the integrity of the findings and the confidentiality of the information. Assign responsibility for creating artifacts that tools cannot generate. Attestation should be immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log."
 			);
 
-			t.addQuestion("Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?");
-			t.addQuestion("Where are the artifacts stored?");
-			t.addQuestion("What are your auditability/retention requirements for these artifacts?");
-			t.addQuestion("Is responsibility assigned for creating needed artifacts that tools cannot generate?");
-			t.addQuestion("Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?");
-			t.addQuestion("Do you need to provide self-attestation for your product?");
-			t.addQuestion("Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?");
+			t.addQuestion("G.1.3.1","Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?");
+			t.addQuestion("G.1.3.2","Where are the artifacts stored?");
+			t.addQuestion("G.1.3.3","What are your auditability/retention requirements for these artifacts?");
+			t.addQuestion("G.1.3.4","Is responsibility assigned for creating needed artifacts that tools cannot generate?");
+			t.addQuestion("G.1.3.5","Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?");
+			t.addQuestion("G.1.3.6","Do you need to provide self-attestation for your product?");
+			t.addQuestion("G.1.3.7","Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(i)(F)", "4e(ii)", "4e(v)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.3.3");
@@ -394,11 +394,11 @@ public class Initialization {
 			    "Automatically collect and provide provenance data for generated products. For provenance data, including how the artifact was built, including: what entity built the package, what build process they used, and the top-level inputs to the build, such that the data's authenticity and integrity can be verified and is generated automatically from the build service using a convention common in the package ecosystem."
 			);
 
-			t.addQuestion("Can you tell me more about your provenance data generation process?");
-			t.addQuestion("What authentications take place relative to the production of provenance data?");
-			t.addQuestion("Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?");
-			t.addQuestion("Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?");
-			t.addQuestion("Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?");
+			t.addQuestion("G.1.4.1","Can you tell me more about your provenance data generation process?");
+			t.addQuestion("G.1.4.2","What authentications take place relative to the production of provenance data?");
+			t.addQuestion("G.1.4.3","Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?");
+			t.addQuestion("G.1.4.4","Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?");
+			t.addQuestion("G.1.4.5","Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(vi)", "4e(vii)", "4e(x)");
 			t.addReference(SourceEnumV1_0.SSDF, "PS.3.2");
@@ -420,12 +420,12 @@ public class Initialization {
 			    "Generate (preferably during build time) and provide a SBOM (in a machine-readable, NTIA-supported format) for generated products. SBOMs should be digitally signed using a verifiable and trusted key. VEX data for all components should also be considered."
 			);
 
-			t.addQuestion("Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?");
-			t.addQuestion("How and when is the SBOM built?");
-			t.addQuestion("What tool do you use?");
-			t.addQuestion("Do you digitally sign the SBOMs?");
-			t.addQuestion("Do you produce a VEX supplement for your SBOM?");
-			t.addQuestion("What is your process for generating the VEX information?");
+			t.addQuestion("G.1.5.1","Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?");
+			t.addQuestion("G.1.5.2","How and when is the SBOM built?");
+			t.addQuestion("G.1.5.3","What tool do you use?");
+			t.addQuestion("G.1.5.4","Do you digitally sign the SBOMs?");
+			t.addQuestion("G.1.5.5","Do you produce a VEX supplement for your SBOM?");
+			t.addQuestion("G.1.5.6","What is your process for generating the VEX information?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(vi)", "4e(vii)", "4e(x)");
 			t.addReference(SourceEnumV1_0.SSDF, "PS.3.2");
@@ -448,9 +448,9 @@ public class Initialization {
 			    "An upper management (e.g., c-suite) leadership team understands the business risk of insecure software development violating compliance and privacy obligations. The team is responsible for the entire software development process and deploying secure software to production. The commitment of this team is communicated to personnel associated with development-related roles and is backed up by the commitment to allocating adequate resources and making sometimes-difficult business decisions for security over faster release dates."
 			);
 
-			t.addQuestion("Can you share about upper management's commitment to secure software development?");
-			t.addQuestion("In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?");
-			t.addQuestion("Comment on the adequacy of resources dedicated to secure software development.");
+			t.addQuestion("G.2.1.1","Can you share about upper management's commitment to secure software development?");
+			t.addQuestion("G.2.1.2","In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?");
+			t.addQuestion("G.2.1.3","Comment on the adequacy of resources dedicated to secure software development.");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(ix)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.2.3");
@@ -468,10 +468,10 @@ public class Initialization {
 			    "Define criteria for a secure SDLC and associated software security checks that indicate how effectively software resulting from the SDLC meets the organization's expectations. These checks include key performance indicators (KPI), vulnerability severity scores, and security checks included in the 'definition of done' in an agile process and may be used for go/no-go decisions. The use of automated tools aids thoroughness, objectivity, and efficiency of these checks."
 			);
 
-			t.addQuestion("What kind of criteria for security checks has been established, such as for security testing results?");
-			t.addQuestion("How can these checks indicate if security practices are being used and secure software is being developed?");
-			t.addQuestion("How are these checks tracked through the SDLC?");
-			t.addQuestion("Are the checks automated or manual?");
+			t.addQuestion("G.2.2.1","What kind of criteria for security checks has been established, such as for security testing results?");
+			t.addQuestion("G.2.2.2","How can these checks indicate if security practices are being used and secure software is being developed?");
+			t.addQuestion("G.2.2.3","How are these checks tracked through the SDLC?");
+			t.addQuestion("G.2.2.4","Are the checks automated or manual?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)", "4e(v)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.4.1");
@@ -491,7 +491,7 @@ public class Initialization {
 			    "Throughout the organization, create new roles and alter responsibilities for existing roles to incorporate security tasks and practices, as appropriate, into the SDLC and to keep management educated and informed on security issues. These roles can be centralized for the organization to promote thought leadership among developers and architects; and distributed throughout the organization in a network of security advocates."
 			);
 
-			t.addQuestion("What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?");
+			t.addQuestion("G.2.3.1","What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(ix)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.2.1");
@@ -510,8 +510,8 @@ public class Initialization {
 			    "The policies for whether security-focused code review (a person looks directly at the code to find issues) and security-focused code analysis (tools are used to find issues in code, either in a fully automated way or in conjunction with a person) should be conducted based upon the characteristics/criticality of the software and its stage of development. Policies are established for both code developed in-house and third-party code."
 			);
 
-			t.addQuestion("What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?");
-			t.addQuestion("How are these guidelines communicated and enforced?");
+			t.addQuestion("G.2.4.1","What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?");
+			t.addQuestion("G.2.4.2","How are these guidelines communicated and enforced?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.7.1");
@@ -531,10 +531,10 @@ public class Initialization {
 			    "Maintain a system component inventory, including hardware, software licenses, software versions, direct and transitive component owners, containers, machine names, and network addresses. Maintain an operations software inventory, including a map of source code; open source incorporated during the build and dynamic production; software deployments and related containerization, orchestration, and deployment automation code with respective owners. Unique identifiers for the inventoried assets should be established. Suppliers should also produce an asset inventory. Particular attention should be placed when a product or system is retired."
 			);
 
-			t.addQuestion("How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?");
-			t.addQuestion("Is the components inventory process automated or manual?");
-			t.addQuestion("Are the artifacts machine-readable (such as through SBOM generation)?");
-			t.addQuestion("What process is used for the asset inventory to be updated when a product or system goes to end-of-life?");
+			t.addQuestion("G.2.5.1","How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?");
+			t.addQuestion("G.2.5.2","Is the components inventory process automated or manual?");
+			t.addQuestion("G.2.5.3","Are the artifacts machine-readable (such as through SBOM generation)?");
+			t.addQuestion("G.2.5.4","What process is used for the asset inventory to be updated when a product or system goes to end-of-life?");
 
 			t.addReference(SourceEnumV1_0.BSIMM, "CMVM2.3", "SM3.1");
 			t.addReference(SourceEnumV1_0.NIST_800_161, "CM-8", "IA-4", "PM-5");
@@ -554,8 +554,8 @@ public class Initialization {
 			    "Data protection at rest aims to secure the confidentiality and integrity of data stored on any storage device or network. Mechanisms to achieve confidentiality and integrity protections include using encryption and file share scanning. Provisions for protecting information at rest should be included in agreements with suppliers, developers, system integrators, external system providers, and other service providers."
 			);
 
-			t.addQuestion("What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?");
-			t.addQuestion("What policies are set in place for the use of cryptography in the organization’s security policy?");
+			t.addQuestion("G.2.6.1","What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?");
+			t.addQuestion("G.2.6.2","What policies are set in place for the use of cryptography in the organization’s security policy?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "SC-28");
 
@@ -571,9 +571,9 @@ public class Initialization {
 			    "Compliance requirements, security requirements, and secure SDLC practices are included in vendor contracts with specified means of adherence enforcement. Examples include supplying an SBOM, self-attestation of security practices and provenance information; having a vulnerability disclosure program and incident response plan; and a security training program. The vendors include component, cloud, middleware providers, container and orchestration providers, and contractors."
 			);
 
-			t.addQuestion("What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?");
-			t.addQuestion("Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?");
-			t.addQuestion("How is adherence to contract terms verified?");
+			t.addQuestion("G.3.1.1","What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?");
+			t.addQuestion("G.3.1.2","Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?");
+			t.addQuestion("G.3.1.3","How is adherence to contract terms verified?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(vi)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.1.3");
@@ -593,7 +593,7 @@ public class Initialization {
 			    "Ensure that appropriate separation of duties is established for decisions that require the acquisition and administration of information systems and the acquisition of components entering the supply chain. Separation of duties can be used to deny contracted developers the privilege to promote code they wrote from development to the production environment. Separation of duties can prevent collusion, for example, by ensuring personnel administering access control functions do not also administer acquisition."
 			);
 
-			t.addQuestion("How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise's supply chain or contracted developers promoting code from development to production?");
+			t.addQuestion("G.3.2.1","How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise's supply chain or contracted developers promoting code from development to production?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "AC-5");
 
@@ -608,8 +608,8 @@ public class Initialization {
 			    "Unauthorized disclosure of information is a form of data leakage. Monitoring should be in place for contractor systems to detect the unauthorized disclosure of any data, and contract language should include a requirement that vendors notify of unauthorized disclosure of information."
 			);
 
-			t.addQuestion("What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?");
-			t.addQuestion("What kind of contract language is in place to require that vendors notify of unauthorized disclosure?");
+			t.addQuestion("G.3.3.1","What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?");
+			t.addQuestion("G.3.3.2","What kind of contract language is in place to require that vendors notify of unauthorized disclosure?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "AU-13");
 
@@ -625,7 +625,7 @@ public class Initialization {
 			    "Include contract employees and prime contractors in session audits to identify security risks in the supply chain. Session audits can include monitoring keystrokes, tracking websites visited, and recording information or file transfers and may involve implementing specialized session capture technology. As such, the privacy risks of session audits should be considered, and session audits may only be activated under certain circumstances, e.g., the organization is suspicious of a specific individual."
 			);
 
-			t.addQuestion("Under what circumstances are contract employees included in audits to identify security risks in the supply chain?");
+			t.addQuestion("G.3.4.1","Under what circumstances are contract employees included in audits to identify security risks in the supply chain?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "AU-14");
 
@@ -641,9 +641,9 @@ public class Initialization {
 			    "Require suppliers to establish agreements and procedures for notification and monitoring capabilities, including notification of being the target of a supply chain threat. Timely notification of compromises and potential compromises in the supply chain is essential for an organization to initiate an incident response. Establish a minimum amount of time a vendor must declare that a product will be declared end-of-life and will no longer be supported and understand what end-of-life options exist (e.g. replace, upgrade, migrate to a new system, etc.)."
 			);
 
-			t.addQuestion("What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?");
-			t.addQuestion("How much notification does a vendor provide when a product goes end-of-life?");
-			t.addQuestion("What end-of-life options exist?");
+			t.addQuestion("G.3.5.1","What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?");
+			t.addQuestion("G.3.5.2","How much notification does a vendor provide when a product goes end-of-life?");
+			t.addQuestion("G.3.5.3","What end-of-life options exist?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "SR-8");
 
@@ -659,9 +659,9 @@ public class Initialization {
 			    "Provide literacy and role-based training on software security and secure software supply chain. This training should include information about the firm's security culture, the secure software development lifecycle, containerization and security orchestration, common security mistakes, technology such as CI/CD and DevSecOps, and recognizing insider threat. Require this training as part of onboarding and periodically."
 			);
 
-			t.addQuestion("Can you tell me about the training given to employees and to vendors related to software supply chain security?");
-			t.addQuestion("Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?");
-			t.addQuestion("Is the training specific to their roles, development tools, and language?");
+			t.addQuestion("G.4.1.1","Can you tell me about the training given to employees and to vendors related to software supply chain security?");
+			t.addQuestion("G.4.1.2","Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?");
+			t.addQuestion("G.4.1.3","Is the training specific to their roles, development tools, and language?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(vi)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.2.2");
@@ -679,7 +679,7 @@ public class Initialization {
 			    "Conduct contingency training to prepare for emergency response, backup operations, and post-disaster recovery to ensure the availability of critical information resources in emergencies. Critical suppliers should also be included in the training."
 			);
 
-			t.addQuestion("Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?");
+			t.addQuestion("G.4.2.1","Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?");
 
 			t.addReference(SourceEnumV1_0.BSIMM, "T1.1");
 			t.addReference(SourceEnumV1_0.NIST_800_161, "CP-3", "IR-2");
@@ -696,7 +696,7 @@ public class Initialization {
 			    "Have a process for continuously learning about emerging attack trends and vulnerabilities. Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software and third-party components that the software uses, and investigate all credible reports. Use a subscription to a cyber threat intelligence feed, attend technical conferences, monitor attacker forums, and study trends within the enterprise. Make this information on attack trends actionable and useful for developers, testers, security operations, and others to identify vulnerabilities in existing products, perform improved threat modeling and security architecture, and evolve the SDLC."
 			);
 
-			t.addQuestion("How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?");
+			t.addQuestion("G.4.3.1","How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(vi)", "4e(vii)");
 			t.addReference(SourceEnumV1_0.SSDF, "RV.1.1");
@@ -715,7 +715,7 @@ public class Initialization {
 			    "Perform a criticality analysis of system components, functions, or services to assign cybersecurity supply chain risk management activities commensurate with the analysis based upon the likelihood and impact of an attack. Not all system components, functions, or services necessarily require significant protection. Items to consider in the analysis include system assets/data involved in the product, applicable laws, regulations, policies, standards, system functionality requirements, system and component interfaces, and system and component dependencies. The criticality analysis impacts the procedures contractually imposed on vendors."
 			);
 
-			t.addQuestion("What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?");
+			t.addQuestion("G.5.1.1","What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?");
 
 			t.addReference(SourceEnumV1_0.BSIMM, "AA1.4");
 			t.addReference(SourceEnumV1_0.NIST_800_161, "RA-9");
@@ -731,7 +731,8 @@ public class Initialization {
 			    "Record when a design tradeoff, vulnerability decision/exception, or component choice has been made that incurs security risk and a mitigation plan to reduce that risk including with vendors. Periodically re-evaluate these exceptions and mitigation plans, potentially including a review board that can provide security guidance in design guidance, patterns, standards, features, and frameworks."
 			);
 
-			t.addQuestion("How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved? How are approved exceptions to the security requirements periodically evaluated?");
+			t.addQuestion("G.5.2.1","How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved?");
+			t.addQuestion("G.5.2.2","How are approved exceptions to the security requirements periodically evaluated?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(v)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.1.2");
@@ -749,7 +750,8 @@ public class Initialization {
 			    "Identify and regularly review metrics to measure the effectiveness of the software security program, including establishing Key Performance Indicators (KPIs). The regular review can drive budgeting and resource allocations and measure performance against risk appetite and risk tolerance statements. Publish data/dashboards about the state of software security within the organization. Automate metrics collection via security telemetry, as possible, to gather measurements to enhance efficiency and objectivity."
 			);
 
-			t.addQuestion("What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)? Are these metrics collected automatically or manually?");
+			t.addQuestion("G.5.3.1","What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)?");
+			t.addQuestion("G.5.3.2","Are these metrics collected automatically or manually?");
 
 			t.addReference(SourceEnumV1_0.BSIMM, "SM2.1", "SM3.3");
 
@@ -765,7 +767,8 @@ public class Initialization {
 			    "Implement processes and mechanisms, automated when possible, to gather and safeguard information in support of security decision-making at the product level. This information can be used to drive SDLC change at the product or organizational level and/or drive a security risk exception process."
 			);
 
-			t.addQuestion("Do you use the toolchain to gather information that informs security decision-making automatically? If not, is this information collected and reviewed manually?");
+			t.addQuestion("G.5.4.1","Do you use the toolchain to gather information that informs security decision-making automatically?");
+			t.addQuestion("G.5.4.2","If not, is this information collected and reviewed manually?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)", "4e(v)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.4.2");
@@ -785,7 +788,9 @@ public class Initialization {
 			    "Identify and document security requirements for organization-developed software, including risk-reducing software architecture and design choices, security patterns, and translating compliance constraints to requirements. Examples include using memory-safe languages and secure frameworks, isolation and sandboxing component strategies, code modularity, security features, secure-by-design components, application containers, and product features that aid in secure deployment, operation, and maintenance. Containers can be used as a strategy for tighter coupling of an application and its dependencies, immutability, and some isolation benefits. Maintain these requirements over time."
 			);
 
-			t.addQuestion("How are risk-reducing security architecture and design requirements for products considered and developed? Which of the following strategies are considered: the use of memory-safe languages, secure frameworks, isolation and sandboxing? Are completion and adherence tracked?");
+			t.addQuestion("P.1.1.1","How are risk-reducing security architecture and design requirements for products considered and developed?");
+			t.addQuestion("P.1.1.2","Which of the following strategies are considered: the use of memory-safe languages, secure frameworks, isolation and sandboxing?");
+			t.addQuestion("P.1.1.3","Are completion and adherence tracked?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.1.2");
@@ -804,7 +809,11 @@ public class Initialization {
 			    "Use code protection mechanisms, such as the use of an established certificate authority for code signing, to enable the attestation of the provenance, integrity, and authorization of important code. Make software integrity verification information, such as cryptographic hashes for release files, available to software acquirers on a well-secure website."
 			);
 
-			t.addQuestion("What software integrity artifacts do you make available to software acquirers, such as cryptographic hashes of release files? Do you use a certificate authority for code/commit signing? How often do you review code signing processes, such as certificate renewal and key rotation? Do you ensure use a dedicated, protected signing server when signing is required? What kind of license is declared for a project?");
+			t.addQuestion("P.1.2.1","What software integrity artifacts do you make available to software acquirers, such as cryptographic hashes of release files?");
+			t.addQuestion("P.1.2.2","Do you use a certificate authority for code/commit signing?");
+			t.addQuestion("P.1.2.3","How often do you review code signing processes, such as certificate renewal and key rotation?");
+			t.addQuestion("P.1.2.4","Do you ensure use a dedicated, protected signing server when signing is required?");
+			t.addQuestion("P.1.2.5","What kind of license is declared for a project?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iii)");
 			t.addReference(SourceEnumV1_0.SSDF, "PS.2.1");
@@ -824,7 +833,11 @@ public class Initialization {
 			    "Enumerate possible threat vectors. Conduct threat modeling and attack surface analysis to identify weaknesses in the software architecture and design such that the system is resistant to attack. Identify missing security features and requirements. Identify unused components in the design. Address the identified security risks through re-design, or develop and track a mitigation plan for exceptions."
 			);
 
-			t.addQuestion("For all critical software components and external services that your team operates and owns, has a qualified person not involved in the design reviewed the design and conducted an attack surface analysis and threat model? What kind of approaches are you using to narrow attack vectors? What kind of tool or methodology (like STRIDE) do you use to structure your threat modeling? Do you perform analysis such that only required modules are included in the product and unused modules are uninstalled and removed, decreasing the attack surface? How are unused modules identified - such as 'debloating' a product for unused components and containers?");
+			t.addQuestion("P.2.1.1","For all critical software components and external services that your team operates and owns, has a qualified person not involved in the design reviewed the design and conducted an attack surface analysis and threat model?");
+			t.addQuestion("P.2.1.2","What kind of approaches are you using to narrow attack vectors?");
+			t.addQuestion("P.2.1.3","What kind of tool or methodology (like STRIDE) do you use to structure your threat modeling?");
+			t.addQuestion("P.2.1.4","Do you perform analysis such that only required modules are included in the product and unused modules are uninstalled and removed, decreasing the attack surface?");
+			t.addQuestion("P.2.1.5","How are unused modules identified - such as 'debloating' a product for unused components and containers?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(v), 4e(ix)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.1.1, PW.2.1");
@@ -843,7 +856,8 @@ public class Initialization {
 			    "Follow secure coding standards and practices appropriate to the development languages, APIs, and environment. Examples include validating all inputs, encoding outputs, and avoiding unsafe functions. Use development environments and static analysis tools that support compliance with secure coding practices as source code is being implemented."
 			);
 
-			t.addQuestion("What kind of secure coding practices are used? How are these practices communicated to developers and enforced?");
+			t.addQuestion("P.2.2.1","What kind of secure coding practices are used?");
+			t.addQuestion("P.2.2.2","How are these practices communicated to developers and enforced?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.5.1");
@@ -862,7 +876,7 @@ public class Initialization {
 			    "Reduce the likelihood of software deploying with weak security settings by defining secure deployment parameters so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services."
 			);
 
-			t.addQuestion("Are the default installation settings for products, platform, network infrastructure, services defined to be secure by default?");
+			t.addQuestion("P.2.3.1","Are the default installation settings for products, platform, network infrastructure, services defined to be secure by default?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.9.1, PW.9.2");
@@ -882,7 +896,9 @@ public class Initialization {
 			    "Build support for standardized rather than proprietary security features, such as using existing log management, identity management, access control, or vulnerability management systems. These reused components are more likely to have their security posture already checked."
 			);
 
-			t.addQuestion("Can you tell me about your philosophy of whether it is better to use available security features or to 'roll your own,' for example, log management, identity management, access control, and vulnerability management? Or a combination of in-house/proprietary and standard features? What factors determine if you use in-house or standard features?");
+			t.addQuestion("P.2.4.1","Can you tell me about your philosophy of whether it is better to use available security features or to 'roll your own,' for example, log management, identity management, access control, and vulnerability management?");
+			t.addQuestion("P.2.4.2","Or a combination of in-house/proprietary and standard features?");
+			t.addQuestion("P.2.4.2","What factors determine if you use in-house or standard features?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(ix)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.1.3");
@@ -900,7 +916,9 @@ public class Initialization {
 			    "Well-secured in-house components and scripts are built following a secure SDLC process when third-party components cannot meet development needs. Similar to the processes for third-party components, in-house components should be kept in a repository, maintained, and regularly scanned for vulnerabilities, with new versions deployed through the organization as needed."
 			);
 
-			t.addQuestion("What processes are used to scan in-house components built using SDLC processes for vulnerabilities and how is the process similar or different to what is done for third-party components? Are new versions deployed throughout the organization as needed? What causes a need for a new version? Are in-house components monitored to ensure they are regularly maintained?");
+			t.addQuestion("P.2.5.1","What processes are used to scan in-house components built using SDLC processes for vulnerabilities and how is the process similar or different to what is done for third-party components?");
+			t.addQuestion("P.2.5.2","What causes a need for a new version?");
+			t.addQuestion("P.2.5.3","Are in-house components monitored to ensure they are regularly maintained?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(ix)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.4.2");
@@ -918,7 +936,13 @@ public class Initialization {
 			    "Consider component characteristics, such as the use of secure SDLC practice, evidence of ongoing maintenance, and open vulnerabilities, as quality indicators of direct and transitive dependencies. OpenSSF Scorecard metrics may be used as an indication of the security posture of a component. Components with the least functionality reduce the attack surface. Have a deny-list that prevents malicious components from being consumed."
 			);
 
-			t.addQuestion("What kind of approval process do you have, if any, for third-party libraries and containers included in a product? What do you consider when selecting a third-party component or container? Do you consider solutions with the least functionality to reduce the attack surface? How would the approval process handle dependencies that are no longer receiving updates? Do you look at the OpenSSF Scorecard metrics for a component? Are you concerned when a component contains binary artifacts that cannot be easily reviewed and more easily sneak in a vulnerability? Do you have a Deny List to prevent the choice of vulnerable and malicious components?");
+			t.addQuestion("P.3.1.1","What kind of approval process do you have, if any, for third-party libraries and containers included in a product?");
+			t.addQuestion("P.3.1.2","What do you consider when selecting a third-party component or container?");
+			t.addQuestion("P.3.1.3","Do you consider solutions with the least functionality to reduce the attack surface?");
+			t.addQuestion("P.3.1.4","How would the approval process handle dependencies that are no longer receiving updates?");
+			t.addQuestion("P.3.1.5","Do you look at the OpenSSF Scorecard metrics for a component?");
+			t.addQuestion("P.3.1.6","Are you concerned when a component contains binary artifacts that cannot be easily reviewed and more easily sneak in a vulnerability?");
+			t.addQuestion("P.3.1.7","Do you have a Deny List to prevent the choice of vulnerable and malicious components?");
 
 			t.addReference(SourceEnumV1_0.BSIMM, "SR2.4");
 			t.addReference(SourceEnumV1_0.NIST_800_161, "CM-7");
@@ -937,7 +961,8 @@ public class Initialization {
 			    "Trusted public repositories may require signed packages and provide the means to verify the signatures; the packages and containers from these ecosystems should still be scanned. Organizations should host scanned repositories for high-assurance software and restrict build machines to only those sources."
 			);
 
-			t.addQuestion("Do you search for candidate components in package managers trusted by your organization? Do you use container registries you trust?");
+			t.addQuestion("P.3.2.1","Do you search for candidate components in package managers trusted by your organization?");
+			t.addQuestion("P.3.2.2","Do you use container registries you trust?");
 
 			t.addReference(SourceEnumV1_0.OWASP_SCVS, "1.2");
 			t.addReference(SourceEnumV1_0.S2C2F, "ING-1");
@@ -954,7 +979,7 @@ public class Initialization {
 			    "Using code that has been contributed with signed source code commits provides an integrity mechanism."
 			);
 
-			t.addQuestion("Do you require the software producers to sign code commits of the components and tools you bring into your product?");
+			t.addQuestion("P.3.3.1","Do you require the software producers to sign code commits of the components and tools you bring into your product?");
 
 			t.addReference(SourceEnumV1_0.BSIMM, "SE2.4");
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "V: Require signed commits");
@@ -971,7 +996,8 @@ public class Initialization {
 			    "Components, binaries, and containers chosen from public ecosystems undergo a vetting process, including reviewing component meta-data and provenance data; secure composition analysis; binary composition analysis; and other security scanning. Rebuild software dependencies from source code when possible to remove additional software that may be contained in a compiled version. Establish repositories to host organization-approved components and containers."
 			);
 
-			t.addQuestion("Do you have a local component repository in which binaries and source code of third-party components are stored? Do you rebuild a component from source when possible?");
+			t.addQuestion("P.3.4.1","Do you have a local component repository in which binaries and source code of third-party components are stored?");
+			t.addQuestion("P.3.4.2","Do you rebuild a component from source when possible?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iii), 4e(vi), 4e(x)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.4.1");
@@ -995,7 +1021,7 @@ public class Initialization {
 			    "Audit to ensure developers are consuming components that have gone through the approved vetting process even on their own machines because developer endpoints can become infected. Restrict product build to only packages in the repository of vetted components."
 			);
 
-			t.addQuestion("What mechanisms are in place, if any, to audit that developers are consuming third party code through the approved ingestion method and not bypassing the vetting process?");
+			t.addQuestion("P.3.5.1","What mechanisms are in place, if any, to audit that developers are consuming third party code through the approved ingestion method and not bypassing the vetting process?");
 
 			t.addReference(SourceEnumV1_0.S2C2F, "AUD-2");
 
@@ -1010,7 +1036,9 @@ public class Initialization {
 			    "Perform peer code review on in-house developed code, AI-generated code, and some third-party code based on the organization’s secure coding standards. Create and use review checklists that may be informed by 'Top N' vulnerability lists. While the manual review of another programmer before check-in is essential for finding vulnerabilities injected with malicious intent, supplementing code review with automated tools, such as static analysis tools, is beneficial. Record and triage discovered issues and recommended remediations in the development team’s workflow or issue-tracking system."
 			);
 
-			t.addQuestion("How does the team perform security-related code reviews? Is a secure coding standard used? How do discovered vulnerabilities get recorded, tracked, and remediated?");
+			t.addQuestion("P.4.1.1","How does the team perform security-related code reviews?");
+			t.addQuestion("P.4.1.2","Is a secure coding standard used?");
+			t.addQuestion("P.4.1.3","How do discovered vulnerabilities get recorded, tracked, and remediated?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(v)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.7.2");
@@ -1030,7 +1058,14 @@ public class Initialization {
 			    "Specify which tools or tool types must or should be included in each toolchain to reduce human effort in discovering vulnerabilities and mitigating identified security risks and to improve the accuracy, reproducibility, usability, and comprehensiveness of security practices in the SDLC. Tools commonly include SAST, DAST, IAST, SCA, and secret detection tools. Specify how the toolchain components will be integrated, such as through the CI/CD pipeline. Follow recommended practices for tool selection/scanning, deploying, operating, and maintaining tools and toolchains."
 			);
 
-			t.addQuestion("What security tools are in your toolchain? SAST? DAST? IAST? How often is the scanning done for third-party components? Do you use a tool to detect secrets in code? What happens with the reported vulnerabilities? Do you scan your tools for vulnerabilities?");
+			t.addQuestion("P.4.2.1","What security tools are in your toolchain?");
+			t.addQuestion("P.4.2.2","SAST?");
+			t.addQuestion("P.4.2.3","DAST?");
+			t.addQuestion("P.4.2.4","IAST?");
+			t.addQuestion("P.4.2.5","How often is the scanning done for third-party components?");
+			t.addQuestion("P.4.2.6","Do you use a tool to detect secrets in code?");
+			t.addQuestion("P.4.2.7","What happens with the reported vulnerabilities?");
+			t.addQuestion("P.4.2.8","Do you scan your tools for vulnerabilities?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(i)(F), 4e(ii), 4e(iii), 4e(v), 4e(vi)");
 			t.addReference(SourceEnumV1_0.SSDF, "PO.3.1; PO.3.2");
@@ -1052,7 +1087,7 @@ public class Initialization {
 			    "Review, analyze, and/or test the software’s code to identify or confirm the presence, remediation, and disclosure of previously undetected vulnerabilities. Record and triage discovered issues and recommended remediations in the development team’s workflow or issue-tracking system."
 			);
 
-			t.addQuestion("How is code reviewed, analyzed, and tested to identify or confirm the presence, remediation, and disclosure of previously-undetected vulnerabilities such as through automated tools?");
+			t.addQuestion("P.4.3.1","How is code reviewed, analyzed, and tested to identify or confirm the presence, remediation, and disclosure of previously-undetected vulnerabilities such as through automated tools?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(vi), 4e(viii)");
 			t.addReference(SourceEnumV1_0.SSDF, "RV.1.2");
@@ -1073,7 +1108,12 @@ public class Initialization {
 			    "Executable testing, such as done by in-house testers or third-party penetration testers, is performed to find previously-undiscovered vulnerabilities. In-house testers should be guided by design review results, threat modeling, security requirements, and the security mechanisms in security features. Testing should include containers. Automate security tests as possible. Scope the testing, design the tests, perform the testing, and document the results, including recording and triaging all discovered issues and recommended remediations in the development team’s workflow or issue tracking system. Test the build process and scripts."
 			);
 
-			t.addQuestion("How are security features tested? How are test cases developed to test the security of an application? Is security testing factored into a product's test suite? Is executable code testing, such as in-house or external penetration testing, used to find vulnerabilities not found by previous reviews, analysis, and testing? Do you do executable testing on containers? Do you test your build process, scripts, GitHub actions?");
+			t.addQuestion("P.4.4.1","How are security features tested?");
+			t.addQuestion("P.4.4.2","How are test cases developed to test the security of an application?");
+			t.addQuestion("P.4.4.3","Is security testing factored into a product's test suite?");
+			t.addQuestion("P.4.4.4","Is executable code testing, such as in-house or external penetration testing, used to find vulnerabilities not found by previous reviews, analysis, and testing?");
+			t.addQuestion("P.4.4.5","Do you do executable testing on containers?");
+			t.addQuestion("P.4.4.6","Do you test your build process, scripts, GitHub actions?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(v)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.8.1, PW.8.2");
@@ -1094,7 +1134,9 @@ public class Initialization {
 			    "Regularly check that third-party software components comply with the contractual requirements, such as following a secure SDLC, and fix detected vulnerabilities. Regularly scan components and containers to monitor for vulnerabilities and for evidence that artifacts are being maintained and have not been abandoned or deprecated."
 			);
 
-			t.addQuestion("How do you verify that third-party software components continue to comply with the requirements defined by the organization, such as through using a secure SDLC and the delivery of attestation of security practices? Do you check that components are being maintained and are not at end-of-life or have been abandoned? How are known critical vulnerabilities in third-party and open-source components and containers mitigated?");
+			t.addQuestion("P.4.5.1","How do you verify that third-party software components continue to comply with the requirements defined by the organization, such as through using a secure SDLC and the delivery of attestation of security practices?");
+			t.addQuestion("P.4.5.2","Do you check that components are being maintained and are not at end-of-life or have been abandoned?");
+			t.addQuestion("P.4.5.3","How are known critical vulnerabilities in third-party and open-source components and containers mitigated?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iii), 4e(iv), 4e(vi), 4e(x)");
 			t.addReference(SourceEnumV1_0.SSDF, "PW.4.4");
@@ -1115,7 +1157,13 @@ public class Initialization {
 			    "Obtain or generate an SBOM for a product that provides a clear and direct link to the dependencies and their versions used within a product. Ideally, the SBOM will provide signed metadata from the build process. Tools can automate analysis and obtain desired information from the SBOM, such as aligning with vulnerability data to identify vulnerabilities within the exact package contents."
 			);
 
-			t.addQuestion("Does anyone check the SBOM information about pending security vulnerabilities? How do you consume the SBOMs for your components? Do you have any specific experience being aided by information provided by the SBOM? How do you feel about the assistance provided by tools to help you consume an SBOM? If not now, do you have plans to consume SBOMs in the future? Do you consider and trust the VEX information in the SBOM? What expectations do you put on the component producers for the vulnerabilities identified in the SBOM?");
+			t.addQuestion("P.5.1.1","Does anyone check the SBOM information about pending security vulnerabilities?");
+			t.addQuestion("P.5.1.2","How do you consume the SBOMs for your components?");
+			t.addQuestion("P.5.1.3","Do you have any specific experience being aided by information provided by the SBOM?");
+			t.addQuestion("P.5.1.4","How do you feel about the assistance provided by tools to help you consume an SBOM?");
+			t.addQuestion("P.5.1.5","If not now, do you have plans to consume SBOMs in the future?");
+			t.addQuestion("P.5.1.6","Do you consider and trust the VEX information in the SBOM?");
+			t.addQuestion("P.5.1.7","What expectations do you put on the component producers for the vulnerabilities identified in the SBOM?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "SR-4");
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "SM: Require SBOM from third-party supplier; SM: Track dependencies between OS components");
@@ -1132,7 +1180,11 @@ public class Initialization {
 			    "SCA tools, SBOM tools, and ecosystem tools (such as Dependabot) inform a product of vulnerabilities and provide an automated pull request for new versions of direct and transitive dependencies discovered vulnerable. Organizations need a process/strategy for updating dependencies - which may be manual or automated. Specify the software assets that require automated updates, defined from criticality/risk-based analysis. Rebuild, do not patch, containers with vulnerabilities."
 			);
 
-			t.addQuestion("What is your strategy for updating dependencies based on SCA, SBOM, or automated pull requests? Do you have a strategy for updating all, such as through a tool such as Dependabot that automates PR? Does the project use tools to help update its dependencies e.g. Dependabot, RenovateBot? Are the software assets that require automated updates defined from a criticality/risk-based perspective? How are containers updated when a vulnerability is detected?");
+			t.addQuestion("P.5.2.1","What is your strategy for updating dependencies based on SCA, SBOM, or automated pull requests?");
+			t.addQuestion("P.5.2.2","Do you have a strategy for updating all, such as through a tool such as Dependabot that automates PR?");
+			t.addQuestion("P.5.2.3","Does the project use tools to help update its dependencies e.g. Dependabot, RenovateBot?");
+			t.addQuestion("P.5.2.4","Are the software assets that require automated updates defined from a criticality/risk-based perspective?");
+			t.addQuestion("P.5.2.5","How are containers updated when a vulnerability is detected?");
 
 			t.addReference(SourceEnumV1_0.NIST_800_161, "SI-2");
 			t.addReference(SourceEnumV1_0.OSSF_SCORECARD, "Dependency update tool");
@@ -1150,7 +1202,7 @@ public class Initialization {
 			    "Securely archive the necessary files and supporting data (e.g., integrity verification information, provenance data, metadata) to be retained for each software release."
 			);
 
-			t.addQuestion("What files and supporting data (like integrity validation, provenance, and metadata) do you securely archive and retain for each software release?");
+			t.addQuestion("E.1.1.1","What files and supporting data (like integrity validation, provenance, and metadata) do you securely archive and retain for each software release?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(iii), 4e(vi), 4e(x)");
 			t.addReference(SourceEnumV1_0.SSDF, "PS.3.1");
@@ -1168,7 +1220,7 @@ public class Initialization {
 			    "Store project artifacts, including but not limited to source code, executable code, infrastructure as code, and configuration-as-code, in a repository with restricted access using the principle of least privilege based on the nature of the artifact. Use version control to track and store all changes to this code with accountability to an authenticated individual account with access granted to personnel, tools, and services. As appropriate, sign or encrypt artifacts. Indefinitely retain change history."
 			);
 
-			t.addQuestion("Are code and other important project artifacts stored with version control with access granted to strongly-authenticated personnel using the principle of least privilege?");
+			t.addQuestion("E.1.2.1","Are code and other important project artifacts stored with version control with access granted to strongly-authenticated personnel using the principle of least privilege?");
 
 			t.addReference(SourceEnumV1_0.EO, "4e(i)C, 4e(iii), 4e(iv)");
 			t.addReference(SourceEnumV1_0.SSDF, "PS.1.1");
@@ -1186,7 +1238,9 @@ public class Initialization {
 			    "Enforce multi-factor authentication (MFA) at the source code repository level by requiring a soft or physical token in addition to traditional passwords/credentials that are more likely to be compromised using techniques such as brute force guessing."
 			);
 
-			t.addQuestion("Is MFA mandated and enforced at the source code repository level? Are soft or physical tokens used? Is MFA enforced for endpoints?");
+			t.addQuestion("E.1.3.1","Is MFA mandated and enforced at the source code repository level?");
+			t.addQuestion("E.1.3.2","Are soft or physical tokens used?");
+			t.addQuestion("E.1.3.3","Is MFA enforced for endpoints?");
 
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "SA: Enforce MFA");
 
@@ -1202,7 +1256,7 @@ public class Initialization {
 			    "Use SSH keys or SSH certificates for developers and agents in CI/CD pipelines to access source code repositories from their development tools rather than traditional passwords/credentials that are more likely to be compromised. Passphrases should be used to protect SSH keys."
 			);
 
-			t.addQuestion("Do you avoid using passwords through the use of SSH keys, SSH certificates, or short-term rotated Access Tokens?");
+			t.addQuestion("E.1.4.1","Do you avoid using passwords through the use of SSH keys, SSH certificates, or short-term rotated Access Tokens?");
 
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "SA: Use SSH keys");
 
@@ -1217,7 +1271,8 @@ public class Initialization {
 			    "Branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch. Branch protection can prevent forced pushings, overwriting history, and obfuscation of code changes. In high-risk, high-assurance environments, attribution of code changes, commit signing, and full attestation can be used with branch protection to prevent and detect complex attacks."
 			);
 
-			t.addQuestion("Do you use branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch? In high assurance, high risk environments, is commit signing with full-attestation required?");
+			t.addQuestion("E.1.5.1","Do you use branch protection settings to enforce security policies, such as requiring reviews, passing checks, preventing overwriting of history, and signed commits before code is accepted into the main branch?");
+			t.addQuestion("E.1.5.2","In high assurance, high risk environments, is commit signing with full-attestation required?");
 
 			t.addReference(SourceEnumV1_0.OSSF_SCORECARD, "Branch protection");
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "V: Enforce full attestation and verification for protected branches; C: Use branch protection rules; C: Establish and adhere to contribution policies");
@@ -1234,7 +1289,7 @@ public class Initialization {
 			    "Live but abandoned systems may not get new security patches or be monitored for malicious activity, even though they may be vulnerable to new security threats and can be an attack vector. When a product or system has been declared end-of-life, decommission associated accounts, machines, data, keys, and passwords."
 			);
 
-			t.addQuestion("What decommissioning procedures are in place when a live product or system goes to end-of-life?");
+			t.addQuestion("E.1.6.1","What decommissioning procedures are in place when a live product or system goes to end-of-life?");
 
 			return t;
 	}
@@ -1247,8 +1302,8 @@ public class Initialization {
 			    "A release policy should be maintained as a policy template and outline the required workflow while the software is developed, built, tested, and packaged to ensure the integrity, authentication, and auditability of a software product from initiation to end-user installation. A framework, such as in-toto, can produce meta-data during the build pipeline to enable attestation to the steps in the desired workflow. The meta-data can be analyzed to ascertain whether the steps in the workflow have occurred and to produce cryptographic guarantees by hashing and signing the inputs and outputs of steps in the pipeline."
 			);
 
-			t.addQuestion("Do you have a templated build policy that specifies the required build workflow to ensure the integrity, authentication, and auditability?");
-			t.addQuestion("Do you verify the build policy in a cryptographically provable way, such as with in-toto?");
+			t.addQuestion("E.2.1.1","Do you have a templated build policy that specifies the required build workflow to ensure the integrity, authentication, and auditability?");
+			t.addQuestion("E.2.1.2","Do you verify the build policy in a cryptographically provable way, such as with in-toto?");
 
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "BV: Cryptographically guaranteed policy adherence");
 
@@ -1264,9 +1319,9 @@ public class Initialization {
 			    "Analyze the integrity of build tools, components, and containers before bringing them into the pipeline. Validate the point of origin/provenance, checksums, and signatures in the downloading and ingesting processes. Request SBOM, provenance, and self-attestation to aid in achieving this goal."
 			);
 
-			t.addQuestion("Can you track a package back to its repo?");
-			t.addQuestion("Do you verify the integrity (i.e. digital signature or hash match) and the provenance data of each component and container?");
-			t.addQuestion("Do you validate that the build environment's sources and dependencies come from a secure, trusted source of truth?");
+			t.addQuestion("E.2.2.1","Can you track a package back to its repo?");
+			t.addQuestion("E.2.2.2","Do you verify the integrity (i.e. digital signature or hash match) and the provenance data of each component and container?");
+			t.addQuestion("E.2.2.3","Do you validate that the build environment's sources and dependencies come from a secure, trusted source of truth?");
 
 			t.addReference(SourceEnumV1_0.SLSA, "Build L1: Provenance exists");
 			t.addReference(SourceEnumV1_0.OWASP_SCVS, "1.10, 6.1");
@@ -1286,8 +1341,8 @@ public class Initialization {
 			    "Determine which compiler, interpreter, and build tool features should be used to reduce vulnerabilities, such as producing compiler warnings for vulnerable code that are treated as errors; application of obfuscation techniques; approved configurations being used; verification of sources and manifests of dependencies; and approved tools configurations are available as configuration-as-code."
 			);
 
-			t.addQuestion("Do you use compiler, interpreter, and build tool features to detect vulnerabilities?");
-			t.addQuestion("Do you have a Deny List to prevent using a vulnerable and/or malicious component in the build?");
+			t.addQuestion("E.2.3.1","Do you use compiler, interpreter, and build tool features to detect vulnerabilities?");
+			t.addQuestion("E.2.3.2","Do you have a Deny List to prevent using a vulnerable and/or malicious component in the build?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)");
@@ -1311,17 +1366,17 @@ public class Initialization {
 			    "All CI/CD pipeline build steps should be automated with automation standardized across the enterprise via clear templated build pipelines that meet organizational standards. This automation should be treated as 'pipeline as code' with modifications being reviewed and should be immutable. The build should run in an ephemeral and hermetic (isolated and sealed) environment with no parameters or network connectivity except to the hardened local repository of source code and dependencies and code signing infrastructure. The build runs on a hosted build platform that generates and signs the provenance."
 			);
 
-			t.addQuestion("Are your build steps defined in a build script, with the only manual step being to invoke the script?");
-			t.addQuestion("Is the build definition executed by the build service stored in a version control system fetched through a trusted channel with a trustworthy provenance chain?");
-			t.addQuestion("Does the build run on a hosted build platform?");
-			t.addQuestion("Is the build service run in an ephemeral environment, such as a container or VM, provisioned solely for the build?");
-			t.addQuestion("Is the build service run in an isolated environment free of influence from other build instances?");
-			t.addQuestion("Can the build output be affected by user parameters other than the build entry point?");
-			t.addQuestion("Are the build steps, sources, and dependencies declared up front with immutable references/use immutable artifacts stored in a local repository manager?");
-			t.addQuestion("Is the build run with no network access (i.e., hermetic)?");
-			t.addQuestion("Are infrastructure, build scripts, and GitHub Actions handled 'as code', such as with code review, scanning, testing, and version control?");
-			t.addQuestion("Are configuration changes reviewed?");
-			t.addQuestion("Are CI/CD pipelines standardized across the enterprise?");
+			t.addQuestion("E.2.4.1","Are your build steps defined in a build script, with the only manual step being to invoke the script?");
+			t.addQuestion("E.2.4.2","Is the build definition executed by the build service stored in a version control system fetched through a trusted channel with a trustworthy provenance chain?");
+			t.addQuestion("E.2.4.3","Does the build run on a hosted build platform?");
+			t.addQuestion("E.2.4.4","Is the build service run in an ephemeral environment, such as a container or VM, provisioned solely for the build?");
+			t.addQuestion("E.2.4.5","Is the build service run in an isolated environment free of influence from other build instances?");
+			t.addQuestion("E.2.4.6","Can the build output be affected by user parameters other than the build entry point?");
+			t.addQuestion("E.2.4.7","Are the build steps, sources, and dependencies declared up front with immutable references/use immutable artifacts stored in a local repository manager?");
+			t.addQuestion("E.2.4.8","Is the build run with no network access (i.e., hermetic)?");
+			t.addQuestion("E.2.4.9","Are infrastructure, build scripts, and GitHub Actions handled 'as code', such as with code review, scanning, testing, and version control?");
+			t.addQuestion("E.2.4.10","Are configuration changes reviewed?");
+			t.addQuestion("E.2.4.11","Are CI/CD pipelines standardized across the enterprise?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(iv)");
@@ -1345,8 +1400,8 @@ public class Initialization {
 			    "The build pipeline should be a series of hardened build steps implemented through a hardened container image stored within a secured repository and deployed through a hardened orchestration platform, such as Kubernetes. Orchestration processes can take advantage of built-in and added-on security features, such as checking for secrets and rollbacks to ensure that each deployed workload meets predetermined security requirements."
 			);
 
-			t.addQuestion("Are containers used throughout the build process?");
-			t.addQuestion("Do you deploy Kubernetes as the orchestration layer?");
+			t.addQuestion("E.2.5.1","Are containers used throughout the build process?");
+			t.addQuestion("E.2.5.2","Do you deploy Kubernetes as the orchestration layer?");
 
 			// References
 			t.addReference(SourceEnumV1_0.BSIMM, "SE2.7");
@@ -1363,7 +1418,7 @@ public class Initialization {
 			    "Follow recommended security practices to deploy, operate, and maintain tools and toolchains, including the reproducible build steps whereby identical input artifacts are rebuilt from source in a trusted build environment, non-determinism is eliminated, and the results can be cryptographically attested to be the same output in a bit-for-bit comparison."
 			);
 
-			t.addQuestion("Do you practice reproducible builds on different protected environments and compare bit-for-bit results?");
+			t.addQuestion("E.2.6.1","Do you practice reproducible builds on different protected environments and compare bit-for-bit results?");
 
 			// References
 			t.addReference(SourceEnumV1_0.OWASP_SCVS, "3");
@@ -1382,7 +1437,7 @@ public class Initialization {
 			    "Write the output from the build process to separate storage from the inputs. A process separate from the build process should upload the artifact to the appropriate deployable repository."
 			);
 
-			t.addQuestion("Do you write artifacts from the build to a separate shared storage from the inputs?");
+			t.addQuestion("E.2.7.1","Do you write artifacts from the build to a separate shared storage from the inputs?");
 
 			// References
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "CD: Write output to a separate secured storage repo");
@@ -1400,7 +1455,8 @@ public class Initialization {
 			    "Authenticate employees and contractors to enable access control, traceability, non-repudiation, chain-of-custody, and provenance for systems, software, and services."
 			);
 
-			t.addQuestion("Are employees and contractors authenticated to enable access control, traceability, non-repudiation, chain of custody, and provenance for systems, software, and services? Where do you store access credentials (e.g., hashes for passwords) and secrets in a secured (e.g., encrypted) location, such as a secure vault?");
+			t.addQuestion("E.3.1.1","Are employees and contractors authenticated to enable access control, traceability, non-repudiation, chain of custody, and provenance for systems, software, and services?");
+			t.addQuestion("E.3.1.2","Where do you store access credentials (e.g., hashes for passwords) and secrets in a secured (e.g., encrypted) location, such as a secure vault?");
 
 			// References
 			t.addReference(SourceEnumV1_0.NIST_800_161, "IA-5, IA-9");
@@ -1417,7 +1473,9 @@ public class Initialization {
 			    "Using network segmentation and access control to separate and protect each environment (e.g., endpoints, development, build, test, deployment) involved in software development to protect from internal and external threats. Remote access to the build environment should be rare, logged, and require multi-party approval. Log and monitor access, particularly privileged access. Configure the environment's hosting infrastructure following a zero-trust architecture."
 			);
 
-			t.addQuestion("Are environments involved in software development (e.g., endpoints, development, build, test, deployment) separated and protected from physical and remote access to the build environment? Is access logged? What kind of approval is needed for access to the build environment?");
+			t.addQuestion("E.3.2.1","Are environments involved in software development (e.g., endpoints, development, build, test, deployment) separated and protected from physical and remote access to the build environment?");
+			t.addQuestion("E.3.2.2","Is access logged?");
+			t.addQuestion("E.3.2.3","What kind of approval is needed for access to the build environment?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(i)(A), 4e(i)(B), 4e(i)(C), 4e(i)(D), 4e(i)(E), 4e(i)(F), 4e(ii), 4e(iii), 4e(v), 4e(vi)");
@@ -1437,7 +1495,8 @@ public class Initialization {
 			    "Define a set of roles and accounts with an associated access control/authorization level considering remote access requirements, the period for which access is needed, and careful vetting of contractor personnel. These roles can be used for access control to ensure proper traceability of actions and actors. A process should be implemented to manage mission-critical systems' temporary or emergency access. Role-based access is enforced by physical and logical access enforcement mechanisms."
 			);
 
-			t.addQuestion("How are authorization levels for accounts associated with roles and the associated level of access control, including remote access, proper vetting of contractors, and that authorization does not exceed the period of performance? How are access control violations handled?");
+			t.addQuestion("E.3.3.1","How are authorization levels for accounts associated with roles and the associated level of access control, including remote access, proper vetting of contractors, and that authorization does not exceed the period of performance?");
+			t.addQuestion("E.3.3.2","How are access control violations handled?");
 
 			// References
 			t.addReference(SourceEnumV1_0.NIST_800_161, "AC-2, AC-3, AC-6, AC-17, IA-2");
@@ -1455,7 +1514,8 @@ public class Initialization {
 			    "Specify how information flow across trust boundaries is enforced to ensure only the required information is communicated to participants in the supply chain, including but not limited to suppliers, developers, system integrators, and external system providers. Requirements for transmission confidentiality and integrity are integrated into agreements with suppliers. The degree of protection should be based on the sensitivity of the information. Security mechanisms such as authentication, authorization, and encryption can be used to achieve enterprise confidentiality and integrity requirements."
 			);
 
-			t.addQuestion("How is information flow enforced to ensure only the required information is communicated across trust boundaries to participants in the supply chain through mechanisms that ensure transmission confidentiality and integrity? What kind of requirements for transmission confidentiality and integrity are integrated into agreements with suppliers?");
+			t.addQuestion("E.3.4.1","How is information flow enforced to ensure only the required information is communicated across trust boundaries to participants in the supply chain through mechanisms that ensure transmission confidentiality and integrity?");
+			t.addQuestion("E.3.4.2","What kind of requirements for transmission confidentiality and integrity are integrated into agreements with suppliers?");
 
 			// References
 			t.addReference(SourceEnumV1_0.NIST_800_161, "AC-4, SC-8");
@@ -1472,7 +1532,8 @@ public class Initialization {
 			    "Establish a baseline configuration of the information system and the development environment, including documenting, formally reviewing, and securing the agreement of stakeholders. The baseline provides a starting point for tracking changes to components, code, and settings for traceability and provenance."
 			);
 
-			t.addQuestion("Is a baseline configuration of the information system and development environment in place to provide a starting point for tracking changes to components, code, and/or settings for traceability and provenance? Who sets the baseline?");
+			t.addQuestion("E.3.5.1","Is a baseline configuration of the information system and development environment in place to provide a starting point for tracking changes to components, code, and/or settings for traceability and provenance?");
+			t.addQuestion("E.3.5.2","Who sets the baseline?");
 
 			// References
 			t.addReference(SourceEnumV1_0.NIST_800_161, "CM-2");
@@ -1489,7 +1550,8 @@ public class Initialization {
 			    "Monitor and audit configuration settings and change controls within the information systems and networks throughout the SDLC. Changes should be tested and approved before being implemented. Configuration settings should be monitored so designated employees can be alerted when a change has occurred."
 			);
 
-			t.addQuestion("What kind of monitoring and auditing of changes to configuration settings is in place? What designated employees are alerted when an unauthorized change occurs?");
+			t.addQuestion("E.3.6.1","What kind of monitoring and auditing of changes to configuration settings is in place?");
+			t.addQuestion("E.3.6.2","What designated employees are alerted when an unauthorized change occurs?");
 
 			// References
 			t.addReference(SourceEnumV1_0.NIST_800_161, "CM-3, CM-6");
@@ -1506,7 +1568,8 @@ public class Initialization {
 			    "The enterprise should consider the trust boundaries and provide separation and isolation of development, test, and security assessment tools and external networks or information systems. The connections should only be through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture."
 			);
 
-			t.addQuestion("How are development, test, and security assessment tools and operational environments separated and isolated from external networks or information systems and each other, as appropriate considering trust boundaries? How are trust boundaries considered, and how is the separation/isolation implemented?");
+			t.addQuestion("E.3.7.1","How are development, test, and security assessment tools and operational environments separated and isolated from external networks or information systems and each other, as appropriate considering trust boundaries?");
+			t.addQuestion("E.3.7.2","How are trust boundaries considered, and how is the separation/isolation implemented?");
 
 			// References
 			t.addReference(SourceEnumV1_0.NIST_800_161, "SC-7");
@@ -1523,7 +1586,7 @@ public class Initialization {
 			    "Have a key rotation policy to ensure that compromised keys will cease to be usable after a certain period. Replace and revoke a private key immediately if it is known to have been compromised to shut off access."
 			);
 
-			t.addQuestion("What is your key rotation policy?");
+			t.addQuestion("E.3.8.1","What is your key rotation policy?");
 
 			// References
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "SA: Have a key rotation policy");
@@ -1539,7 +1602,8 @@ public class Initialization {
 			    "As an alternative to passwords, ephemeral credentials are randomly generated, short-lived access credentials that exist only for one session to authenticate and authorize privileged connections. These credentials are automatically issued as needed, so users do not have to input credentials when connecting and enable fine-grained permissions and automation of provisioning access tokens."
 			);
 
-			t.addQuestion("Do you use short-lived tokens for access management of machines and services such as CI/CD pipeline agents? Who uses these tokens and for what types of systems?");
+			t.addQuestion("E.3.9.1","Do you use short-lived tokens for access management of machines and services such as CI/CD pipeline agents?");
+			t.addQuestion("E.3.9.2","Who uses these tokens and for what types of systems?");
 
 			// References
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "SA: Use short-lived/ephemeral credentials");
@@ -1556,7 +1620,7 @@ public class Initialization {
 			    "Roots of trust (RoT) are highly-reliable hardware, firmware, and software components that perform specific, critical security functions, such as storing the keys used for cryptographic functions and enabling a secure boot process. Many RoT are implemented in hardware so that malware cannot tamper with the functions they provide. The RoT is established from an offline source."
 			);
 
-			t.addQuestion("Do you have a root of trust that can perform specific, critical security functions such as storing keys for cryptographic functions or enabling secure boot? How are these implemented?");
+			t.addQuestion("E.3.10.1","Do you have a root of trust that can perform specific, critical security functions such as storing keys for cryptographic functions or enabling secure boot? How are these implemented?");
 
 			// References
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "SA: Follow established practices for establishing a root of trust");
@@ -1573,7 +1637,10 @@ public class Initialization {
 			    "Enter discovered vulnerabilities into a defect management system. Analyze each vulnerability to gather sufficient information to plan its remediation. Plan a risk response and prioritization, such as by estimating the probability of exploitation and the impact if it is exploited."
 			);
 
-			t.addQuestion("How are discovered vulnerabilities recorded and triaged? How are the vulnerabilities prioritized for remediation? Is a severity rating, such as CVSS, used to aid prioritization? Is the access control to vulnerability information more restrictive than plain bug tracker defects?");
+			t.addQuestion("D.1.1.1","How are discovered vulnerabilities recorded and triaged?");
+			t.addQuestion("D.1.1.2","How are the vulnerabilities prioritized for remediation?");
+			t.addQuestion("D.1.1.3","Is a severity rating, such as CVSS, used to aid prioritization?");
+			t.addQuestion("D.1.1.4","Is the access control to vulnerability information more restrictive than plain bug tracker defects?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(viii)");
@@ -1594,7 +1661,9 @@ public class Initialization {
 			    "Make risk-based decisions on whether to remediate a vulnerability or if the risk will be addressed another way (e.g. acceptance, temporary remediation, deferred remediation). Prioritize actions that will be taken. Deliver remediations via an automated and trusted delivery mechanism."
 			);
 
-			t.addQuestion("Can you tell me about your process for making decisions on which vulnerabilities should be remediated? What is your process for responding to reported incidents quickly? Can high-priority vulnerabilities prevent the shipment of the product?");
+			t.addQuestion("D.1.2.1","Can you tell me about your process for making decisions on which vulnerabilities should be remediated?");
+			t.addQuestion("D.1.2.2","What is your process for responding to reported incidents quickly?");
+			t.addQuestion("D.1.2.3","Can high-priority vulnerabilities prevent the shipment of the product?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(v), 4e(viii)");
@@ -1614,7 +1683,11 @@ public class Initialization {
 			    "Have a policy that invokes vulnerability disclosure and remediation, and organizational response. Implement the roles, responsibilities, and processes needed to support that policy, including a Product Security Incident Response Team (PSIRT) to handle responses to vulnerability reports and incidents. The disclosure program will require insight from internal stakeholders, such as legal, marketing, and public relations."
 			);
 
-			t.addQuestion("What is your process for addressing vulnerability disclosure and remediation with roles, responsibilities, and processes in place? How do you develop and release security advisories to your software acquirers? Do you publish a security policy (via a security.md file) to inform users about a vulnerability and how to report it? Do users know how to report vulnerabilities? Who handles PSIRT?");
+			t.addQuestion("D.1.3.1","What is your process for addressing vulnerability disclosure and remediation with roles, responsibilities, and processes in place?");
+			t.addQuestion("D.1.3.2","How do you develop and release security advisories to your software acquirers?");
+			t.addQuestion("D.1.3.3","Do you publish a security policy (via a security.md file) to inform users about a vulnerability and how to report it?");
+			t.addQuestion("D.1.3.4","Do users know how to report vulnerabilities?");
+			t.addQuestion("D.1.3.5","Who handles PSIRT?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(viii)");
@@ -1635,7 +1708,8 @@ public class Initialization {
 			    "Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, not just the instance originally discovered. Proactively fix a class of vulnerabilities rather than waiting for the discovery of each vulnerability through automation, testing, or an external incident. Automation and custom rules in vulnerability discovery tools or compilers can be used. Patterns of remediation efforts should provide feedback into the secure SDLC."
 			);
 
-			t.addQuestion("Does your team have a process of proactively eradicating or reducing a whole class of vulnerabilities based upon previously-identified vulnerabilities or incidents? Are these patterns folded back into the SDLC?");
+			t.addQuestion("D.1.4.1","Does your team have a process of proactively eradicating or reducing a whole class of vulnerabilities based upon previously-identified vulnerabilities or incidents?");
+			t.addQuestion("D.1.4.2","Are these patterns folded back into the SDLC?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(iv), 4e(viii)");
@@ -1655,7 +1729,7 @@ public class Initialization {
 			    "Zero-day vulnerabilities may not be fixed by an upstream maintainer in a desired timeframe. Implement an emergency response process to fix the vulnerability, re-build, deploy to your organization, and contribute the fix to the upstream maintainer."
 			);
 
-			t.addQuestion("How do you handle it when an external artifact has a zero-day vulnerability that is not being fixed by an upstream maintainer in a desired timeframe?");
+			t.addQuestion("D.1.5.1","How do you handle it when an external artifact has a zero-day vulnerability that is not being fixed by an upstream maintainer in a desired timeframe?");
 
 			// References
 			t.addReference(SourceEnumV1_0.S2C2F, "FIX-1");
@@ -1672,7 +1746,8 @@ public class Initialization {
 			    "Analyze vulnerabilities discovered throughout the process and in production to determine their root cause for being injected and not discovered earlier before production. Incident response feedback should be fed back to developers and be considered when evolving the SDLC. Record lessons learned. Identify patterns, such as security tasks in the SDLC needing to be followed. Discuss and disseminate these patterns to developers. Guide process correction if the current process is not being followed."
 			);
 
-			t.addQuestion("Do you analyze identified vulnerabilities to determine their root cause, including how the vulnerability was injected and, perhaps, how it escaped vulnerability detection efforts and made it into production? Do you communicate trends to developers? How can trends identified in root cause be factored into your SDLC process?");
+			t.addQuestion("D.1.6.1","Do you analyze identified vulnerabilities to determine their root cause, including how the vulnerability was injected and, perhaps, how it escaped vulnerability detection efforts and made it into production?");
+			t.addQuestion("D.1.6.2","Do you communicate trends to developers? How can trends identified in root cause be factored into your SDLC process?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(ix)");
@@ -1691,7 +1766,8 @@ public class Initialization {
 			    "Continuously monitor the running system to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, policy non-compliance, and insider threat detection, including boundary protection, supply chain components, and supply chain information flow."
 			);
 
-			t.addQuestion("Are running systems continuously monitored to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, and insider threat, including boundary protections of supply chain components and supply chain information flow? What is the process when an intrusion or violation is detected? Is there a QoS target?");
+			t.addQuestion("D.2.1.1","Are running systems continuously monitored to gather information for risk decisions, criticality analysis, vulnerability and threat analysis, incident response, and insider threat, including boundary protections of supply chain components and supply chain information flow?");
+			t.addQuestion("D.2.1.1","What is the process when an intrusion or violation is detected? Is there a QoS target?");
 
 			// References
 			t.addReference(SourceEnumV1_0.EO, "4e(vii)");
@@ -1709,7 +1785,9 @@ public class Initialization {
 			    "Do you monitor the build chain for unauthorized access and modifications? Have you completed an attack surface investigation of your build environment? What kinds of actions do you take to narrow the attack vectors?"
 			);
 
-			t.addQuestion("Do you monitor the build chain for unauthorized access and modifications? Have you completed an attack surface investigation of your build environment? What kinds of actions do you take to narrow the attack vectors?");
+			t.addQuestion("D.2.2.1","Do you monitor the build chain for unauthorized access and modifications?");
+			t.addQuestion("D.2.2.2"," Have you completed an attack surface investigation of your build environment?");
+			t.addQuestion("D.2.2.3"," What kinds of actions do you take to narrow the attack vectors?");
 
 			// References
 			t.addReference(SourceEnumV1_0.CNCF_SSC, "V: Validate runtime security of build workers; SA: Use short-lived workload certificates");

@@ -16,10 +16,22 @@
               "name": "Organizational security requirements",
               "objective": "Organizational security requirements, such as those imposed by standards and regulations, are included in the SDLC.",
               "questions": [
-                "Do you have a defined secure SDLC that the engineers are aware of?",
-                "How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?",
-                "How are these requirements and contributions maintained over time?",
-                "How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?"
+                {
+                  "id": "G.1.1.1",
+                  "text": "Do you have a defined secure SDLC that the engineers are aware of?"
+                },
+                {
+                  "id": "G.1.1.2",
+                  "text": "How do you define security requirements and policies for the organization, its development infrastructure, contributions, and processes?"
+                },
+                {
+                  "id": "G.1.1.3",
+                  "text": "How are these requirements and contributions maintained over time?"
+                },
+                {
+                  "id": "G.1.1.4",
+                  "text": "How are constraints imposed by regulatory and compliance drivers included in these requirements, policies, and the SDLC?"
+                }
               ],
               "references": [
                 {
@@ -71,9 +83,18 @@
               "name": "Software license conflict",
               "objective": "Software licenses that conflict with the organization\u0027s policies are identified.",
               "questions": [
-                "How do you scan check that the software licenses for tools or third party components comply with your organization\u0027s use policies?",
-                "Is the process automated?",
-                "Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?"
+                {
+                  "id": "G.1.2.1",
+                  "text": "How do you scan check that the software licenses for tools or third party components comply with your organization\u0027s use policies?"
+                },
+                {
+                  "id": "G.1.2.2",
+                  "text": "Is the process automated?"
+                },
+                {
+                  "id": "G.1.2.1",
+                  "text": "Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?"
+                }
               ],
               "references": [
                 {
@@ -108,13 +129,34 @@
               "name": "Produce attestation",
               "objective": "Produce evidence of the use of secure software development practices.",
               "questions": [
-                "Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?",
-                "Where are the artifacts stored?",
-                "What are your auditability/retention requirements for these artifacts?",
-                "Is responsibility assigned for creating needed artifacts that tools cannot generate?",
-                "Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?",
-                "Do you need to provide self-attestation for your product?",
-                "Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?"
+                {
+                  "id": "G.1.3.1",
+                  "text": "Can you tell me about automated or manual processes for producing artifacts that attest to the use of secure development practices?"
+                },
+                {
+                  "id": "G.1.3.2",
+                  "text": "Where are the artifacts stored?"
+                },
+                {
+                  "id": "G.1.3.3",
+                  "text": "What are your auditability/retention requirements for these artifacts?"
+                },
+                {
+                  "id": "G.1.3.4",
+                  "text": "Is responsibility assigned for creating needed artifacts that tools cannot generate?"
+                },
+                {
+                  "id": "G.1.3.5",
+                  "text": "Do you use a framework, like in-toto, to produce authenticated meta-data about artifacts, such as for attestation?"
+                },
+                {
+                  "id": "G.1.3.6",
+                  "text": "Do you need to provide self-attestation for your product?"
+                },
+                {
+                  "id": "G.1.3.7",
+                  "text": "Is the attestation immutable and published in the source repository releases, in the package registry, or elsewhere with their existence in a transparency log?"
+                }
               ],
               "references": [
                 {
@@ -167,11 +209,26 @@
               "name": "Deliver provenance",
               "objective": "By providing provenance data, enable customers to analyze the integrity and verifiability of the actions performed while writing code, compiling, testing, and deploying software by making transparent the steps that were performed, by whom and in what order.",
               "questions": [
-                "Can you tell me more about your provenance data generation process?",
-                "What authentications take place relative to the production of provenance data?",
-                "Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?",
-                "Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?",
-                "Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?"
+                {
+                  "id": "G.1.4.1",
+                  "text": "Can you tell me more about your provenance data generation process?"
+                },
+                {
+                  "id": "G.1.4.2",
+                  "text": "What authentications take place relative to the production of provenance data?"
+                },
+                {
+                  "id": "G.1.4.3",
+                  "text": "Is provenance data automatically generated/verified by the build service, or does it involve a manual process or the ability for alteration, or is it read-only?"
+                },
+                {
+                  "id": "G.1.4.4",
+                  "text": "Is a signing key used for a digital signature? Stored in a secure management system accessible only by the build service?"
+                },
+                {
+                  "id": "G.1.4.5",
+                  "text": "Do provenance records include the initial state of the machine, VM, or container, and include all user-specified build steps?"
+                }
               ],
               "references": [
                 {
@@ -226,12 +283,30 @@
               "name": "Deliver SBOM",
               "objective": "By providing SBOM, enable customers to analyze the contents of the final software package, including the version of the dependencies.",
               "questions": [
-                "Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?",
-                "How and when is the SBOM built?",
-                "What tool do you use?",
-                "Do you digitally sign the SBOMs?",
-                "Do you produce a VEX supplement for your SBOM?",
-                "What is your process for generating the VEX information?"
+                {
+                  "id": "G.1.5.1",
+                  "text": "Do you deliver an SBOM and provenance data that satisfy your contracts with software acquirers, such as in a standard-base format?"
+                },
+                {
+                  "id": "G.1.5.2",
+                  "text": "How and when is the SBOM built?"
+                },
+                {
+                  "id": "G.1.5.3",
+                  "text": "What tool do you use?"
+                },
+                {
+                  "id": "G.1.5.4",
+                  "text": "Do you digitally sign the SBOMs?"
+                },
+                {
+                  "id": "G.1.5.5",
+                  "text": "Do you produce a VEX supplement for your SBOM?"
+                },
+                {
+                  "id": "G.1.5.6",
+                  "text": "What is your process for generating the VEX information?"
+                }
               ],
               "references": [
                 {
@@ -301,9 +376,18 @@
               "name": "Upper management support",
               "objective": "Upper management understands the business risks of insecure software and supports the resources necessary for secure software development.",
               "questions": [
-                "Can you share about upper management\u0027s commitment to secure software development?",
-                "In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?",
-                "Comment on the adequacy of resources dedicated to secure software development."
+                {
+                  "id": "G.2.1.1",
+                  "text": "Can you share about upper management\u0027s commitment to secure software development?"
+                },
+                {
+                  "id": "G.2.1.2",
+                  "text": "In what way is this commitment publicly demonstrated and communicated to development roles and responsibilities?"
+                },
+                {
+                  "id": "G.2.1.3",
+                  "text": "Comment on the adequacy of resources dedicated to secure software development."
+                }
               ],
               "references": [
                 {
@@ -333,10 +417,22 @@
               "name": "Secure SDLC checks",
               "objective": "Criteria throughout the SDLC are used to check the software\u0027s security during development.",
               "questions": [
-                "What kind of criteria for security checks has been established, such as for security testing results?",
-                "How can these checks indicate if security practices are being used and secure software is being developed?",
-                "How are these checks tracked through the SDLC?",
-                "Are the checks automated or manual?"
+                {
+                  "id": "G.2.2.1",
+                  "text": "What kind of criteria for security checks has been established, such as for security testing results?"
+                },
+                {
+                  "id": "G.2.2.2",
+                  "text": "How can these checks indicate if security practices are being used and secure software is being developed?"
+                },
+                {
+                  "id": "G.2.2.3",
+                  "text": "How are these checks tracked through the SDLC?"
+                },
+                {
+                  "id": "G.2.2.4",
+                  "text": "Are the checks automated or manual?"
+                }
               ],
               "references": [
                 {
@@ -379,7 +475,10 @@
               "name": "Roles and responsibilities",
               "objective": "Ownership for security tasks throughout the SDLC at the organizational level and at the product team- and operational- level are established and visible.",
               "questions": [
-                "What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?"
+                {
+                  "id": "G.2.3.1",
+                  "text": "What security roles and responsibilities have been created to encompass all parts of the SDLC - both within the development teams as well as at an organizational level?"
+                }
               ],
               "references": [
                 {
@@ -416,8 +515,14 @@
               "name": "Security code review policy",
               "objective": "Guidelines on which code should undergo a security-focused manual or automated review are communicated.",
               "questions": [
-                "What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?",
-                "How are these guidelines communicated and enforced?"
+                {
+                  "id": "G.2.4.1",
+                  "text": "What kind of guidelines are set in place for which code should be manually or automatically reviewed from a security perspective?"
+                },
+                {
+                  "id": "G.2.4.2",
+                  "text": "How are these guidelines communicated and enforced?"
+                }
               ],
               "references": [
                 {
@@ -460,10 +565,22 @@
               "name": "Asset inventory",
               "objective": "Hardware and software assets are inventoried to enable incidence response; system analysis; traceability for critical components; and reliable identification when assets need to be changed or decommissioned.",
               "questions": [
-                "How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?",
-                "Is the components inventory process automated or manual?",
-                "Are the artifacts machine-readable (such as through SBOM generation)?",
-                "What process is used for the asset inventory to be updated when a product or system goes to end-of-life?"
+                {
+                  "id": "G.2.5.1",
+                  "text": "How is a system component inventory maintained for hardware, software licenses, software versions, component owners, machine names, and network addresses with identifiers for each of these?"
+                },
+                {
+                  "id": "G.2.5.2",
+                  "text": "Is the components inventory process automated or manual?"
+                },
+                {
+                  "id": "G.2.5.3",
+                  "text": "Are the artifacts machine-readable (such as through SBOM generation)?"
+                },
+                {
+                  "id": "G.2.5.4",
+                  "text": "What process is used for the asset inventory to be updated when a product or system goes to end-of-life?"
+                }
               ],
               "references": [
                 {
@@ -507,8 +624,14 @@
               "name": "Protection of information at rest",
               "objective": "Protect the confidentiality and integrity of information at rest.",
               "questions": [
-                "What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?",
-                "What policies are set in place for the use of cryptography in the organization’s security policy?"
+                {
+                  "id": "G.2.6.1",
+                  "text": "What provisions are made for the protection of information at rest included in agreements with suppliers, developers, system integrators, and external system providers?"
+                },
+                {
+                  "id": "G.2.6.2",
+                  "text": "What policies are set in place for the use of cryptography in the organization’s security policy?"
+                }
               ],
               "references": [
                 {
@@ -532,9 +655,18 @@
               "name": "Security-related contract terms",
               "objective": "Component, system, and service acquisition policies include the inclusion of adherence to security policies, security requirements, and secure SDLC practices that are compatible with compliance requirements.",
               "questions": [
-                "What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?",
-                "Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?",
-                "How is adherence to contract terms verified?"
+                {
+                  "id": "G.3.1.1",
+                  "text": "What requirements language is included in system and services acquisition policies and contracts related to adherence to security policies, security requirements, and secure SDLC practices compatible with compliance requirements?"
+                },
+                {
+                  "id": "G.3.1.2",
+                  "text": "Do you require SBOMs, provenance data, and attestation of adhering to security practices from your suppliers?"
+                },
+                {
+                  "id": "G.3.1.3",
+                  "text": "How is adherence to contract terms verified?"
+                }
               ],
               "references": [
                 {
@@ -590,7 +722,10 @@
               "name": "Separation of duties",
               "objective": "Reduce the potential for abuse of authorized privileges and the chance of collusion when acquiring components, systems, and services.",
               "questions": [
-                "How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise\u0027s supply chain or contracted developers promoting code from development to production?"
+                {
+                  "id": "G.3.2.1",
+                  "text": "How is separation of duties established for decisions that require the acquisition of information systems and supply chain components, such as components entering the enterprise\u0027s supply chain or contracted developers promoting code from development to production?"
+                }
               ],
               "references": [
                 {
@@ -607,8 +742,14 @@
               "name": "Information disclosure",
               "objective": "Contract language requires that a vendor monitors for information disclosure and notifies the enterprise of information disclosure.",
               "questions": [
-                "What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?",
-                "What kind of contract language is in place to require that vendors notify of unauthorized disclosure?"
+                {
+                  "id": "G.3.3.1",
+                  "text": "What kind of contract language is in place to stipulate that contractor systems conduct monitoring to detect unauthorized disclosure of any data?"
+                },
+                {
+                  "id": "G.3.3.2",
+                  "text": "What kind of contract language is in place to require that vendors notify of unauthorized disclosure?"
+                }
               ],
               "references": [
                 {
@@ -625,7 +766,10 @@
               "name": "Session audits",
               "objective": "Identify security risks in the supply chain.",
               "questions": [
-                "Under what circumstances are contract employees included in audits to identify security risks in the supply chain?"
+                {
+                  "id": "G.3.4.1",
+                  "text": "Under what circumstances are contract employees included in audits to identify security risks in the supply chain?"
+                }
               ],
               "references": [
                 {
@@ -642,9 +786,18 @@
               "name": "Notification agreement",
               "objective": "Timely notification of security threat and product end-of-life",
               "questions": [
-                "What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?",
-                "How much notification does a vendor provide when a product goes end-of-life?",
-                "What end-of-life options exist?"
+                {
+                  "id": "G.3.5.1",
+                  "text": "What notification agreements and monitoring capabilities are established with your suppliers related to supply chain threats or incidents?"
+                },
+                {
+                  "id": "G.3.5.2",
+                  "text": "How much notification does a vendor provide when a product goes end-of-life?"
+                },
+                {
+                  "id": "G.3.5.3",
+                  "text": "What end-of-life options exist?"
+                }
               ],
               "references": [
                 {
@@ -668,9 +821,18 @@
               "name": "Role-based training",
               "objective": "Provide security training for all personnel involved in software development",
               "questions": [
-                "Can you tell me about the training given to employees and to vendors related to software supply chain security?",
-                "Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?",
-                "Is the training specific to their roles, development tools, and language?"
+                {
+                  "id": "G.4.1.1",
+                  "text": "Can you tell me about the training given to employees and to vendors related to software supply chain security?"
+                },
+                {
+                  "id": "G.4.1.2",
+                  "text": "Do you require team members to regularly participate in secure software architecture, design, development, testing, and software supply chain training and monitor their completion of training?"
+                },
+                {
+                  "id": "G.4.1.3",
+                  "text": "Is the training specific to their roles, development tools, and language?"
+                }
               ],
               "references": [
                 {
@@ -714,7 +876,10 @@
               "name": "Contingency training",
               "objective": "Provide training on procedures in the event of a security emergency.",
               "questions": [
-                "Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?"
+                {
+                  "id": "G.4.2.1",
+                  "text": "Can you tell me about contingency training for preparing for emergency response, backup operations, and post-disaster recovery?"
+                }
               ],
               "references": [
                 {
@@ -738,7 +903,10 @@
               "name": "Gather attack trends",
               "objective": "Stay current on attack trends.",
               "questions": [
-                "How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?"
+                {
+                  "id": "G.4.3.1",
+                  "text": "How do you monitor new attack trends and vulnerabilities applicable to your software, such as by monitoring a cyberthreat intelligence feed and attacker forums, or attending conferences?"
+                }
               ],
               "references": [
                 {
@@ -789,7 +957,10 @@
               "name": "Criticality analysis",
               "objective": "Identify critical system components and functions by performing a criticality analysis.",
               "questions": [
-                "What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?"
+                {
+                  "id": "G.5.1.1",
+                  "text": "What process do you have for performing criticality analysis as input to assessments of supply chain risk management activities?"
+                }
               ],
               "references": [
                 {
@@ -812,7 +983,14 @@
               "name": "Track security risks and decisions",
               "objective": "Record and track the software’s security risk-based exceptions and mitigation plans.",
               "questions": [
-                "How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved? How are approved exceptions to the security requirements periodically evaluated?"
+                {
+                  "id": "G.5.2.1",
+                  "text": "How are the responses to security risks and design decisions recorded, including how mitigations are to be achieved?"
+                },
+                {
+                  "id": "G.5.2.2",
+                  "text": "How are approved exceptions to the security requirements periodically evaluated?"
+                }
               ],
               "references": [
                 {
@@ -842,7 +1020,14 @@
               "name": "Security metrics",
               "objective": "Provide the basis for the measurement of an effective plan for tracking and realizing software security objectives within an organization.",
               "questions": [
-                "What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)? Are these metrics collected automatically or manually?"
+                {
+                  "id": "G.5.3.1",
+                  "text": "What security metrics do you track to indicate how you are doing relative to developing secure software products and having an effective and efficient software security program (e.g., security outcomes, MTTR)?"
+                },
+                {
+                  "id": "G.5.3.2",
+                  "text": "Are these metrics collected automatically or manually?"
+                }
               ],
               "references": [
                 {
@@ -860,7 +1045,14 @@
               "name": "Data-informed product decisions",
               "objective": "Make security decisions on software release based upon criteria for checking the security of the software.",
               "questions": [
-                "Do you use the toolchain to gather information that informs security decision-making automatically? If not, is this information collected and reviewed manually?"
+                {
+                  "id": "G.5.4.1",
+                  "text": "Do you use the toolchain to gather information that informs security decision-making automatically?"
+                },
+                {
+                  "id": "G.5.4.2",
+                  "text": "If not, is this information collected and reviewed manually?"
+                }
               ],
               "references": [
                 {

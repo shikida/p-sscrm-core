@@ -9,7 +9,7 @@ public class Task {
 	private String id;
 	private String name;
 	private String objective;
-	private Set<String> questions = new LinkedHashSet<>();
+	private Set<Question> questions = new LinkedHashSet<>();
 	private Set<Reference> references = new LinkedHashSet<>();
 
 	public Task() {
@@ -28,8 +28,9 @@ public class Task {
 		this.references.add(new Reference(source.getPrefix(), sections));
 	}
 
-	public void addQuestion(String question) {
-		this.questions.add(question);
+	public void addQuestion(String id, String text) {
+		Question q = new Question(id,text);
+		this.questions.add(q);
 	}
 
 	public String getDefinition() {
@@ -48,7 +49,7 @@ public class Task {
 		return objective;
 	}
 
-	public Set<String> getQuestions() {
+	public Set<Question> getQuestions() {
 		return questions;
 	}
 
@@ -72,7 +73,7 @@ public class Task {
 		this.objective = objective;
 	}
 
-	public void setQuestions(Set<String> questions) {
+	public void setQuestions(Set<Question> questions) {
 		this.questions = questions;
 	}
 
