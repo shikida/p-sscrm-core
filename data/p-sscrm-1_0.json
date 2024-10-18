@@ -104,7 +104,7 @@
                   "answers": []
                 },
                 {
-                  "id": "G.1.2.1",
+                  "id": "G.1.2.3",
                   "text": "Do you document and track users and uses of software licenses relative to access control policies and software usage restrictions?",
                   "answers": []
                 }
@@ -2233,6 +2233,12 @@
                     "SI-2"
                   ],
                   "source": "800-161"
+                },
+                {
+                  "sections": [
+                    "RV.1.1"
+                  ],
+                  "source": "SSDF"
                 },
                 {
                   "sections": [
